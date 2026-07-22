@@ -1,0 +1,77 @@
+{
+  "go.mod": {
+    "mtime": 1784754183.9029896,
+    "ast_hash": "44793992cba471794a44a3f326e28970",
+    "semantic_hash": "44793992cba471794a44a3f326e28970"
+  },
+  "internal/oracle/errors.go": {
+    "mtime": 1784753038.9871993,
+    "ast_hash": "4ae37a2f2ddcad32b0365bd535d49250",
+    "semantic_hash": "4ae37a2f2ddcad32b0365bd535d49250"
+  },
+  "internal/oracle/models.go": {
+    "mtime": 1784753045.0071979,
+    "ast_hash": "6c8b6a6c58ac34713666f02c98df1924",
+    "semantic_hash": "6c8b6a6c58ac34713666f02c98df1924"
+  },
+  "internal/oracle/repository.go": {
+    "mtime": 1784755210.7441049,
+    "ast_hash": "4a72d0b647ba24cdf4265469d91612fa",
+    "semantic_hash": "4a72d0b647ba24cdf4265469d91612fa"
+  },
+  "cmd/multimediasc/main.go": {
+    "mtime": 1784754114.4304316,
+    "ast_hash": "9e5a4486f62f579824e05f5df0303c15",
+    "semantic_hash": "9e5a4486f62f579824e05f5df0303c15"
+  },
+  "internal/app/config.go": {
+    "mtime": 1784754665.3728855,
+    "ast_hash": "4fd2c01765d50bcf635cfc36ada4cf79",
+    "semantic_hash": "4fd2c01765d50bcf635cfc36ada4cf79"
+  },
+  "internal/app/desktop.go": {
+    "mtime": 1784754665.3738854,
+    "ast_hash": "d8e7e0ce0f262d5ef4f32e839dcbf4a3",
+    "semantic_hash": "d8e7e0ce0f262d5ef4f32e839dcbf4a3"
+  },
+  "internal/app/server.go": {
+    "mtime": 1784753958.6529813,
+    "ast_hash": "bda7da79feb38a9b94a259b0444cfe8c",
+    "semantic_hash": "bda7da79feb38a9b94a259b0444cfe8c"
+  },
+  "internal/app/zipwriter.go": {
+    "mtime": 1784753958.6519814,
+    "ast_hash": "cfb442cd1d84546538062d2bbdc7d546",
+    "semantic_hash": "cfb442cd1d84546538062d2bbdc7d546"
+  },
+  "inst01.md": {
+    "mtime": 1784752120.442201,
+    "ast_hash": "10fc1cbb3f27eda157d981eb3b11d93e",
+    "semantic_hash": "10fc1cbb3f27eda157d981eb3b11d93e"
+  },
+  "inst02.md": {
+    "mtime": 1784752168.432945,
+    "ast_hash": "82a5f31af96c7a25d261d0f3c1560886",
+    "semantic_hash": "82a5f31af96c7a25d261d0f3c1560886"
+  },
+  "prompt2_ui_zip.md": {
+    "mtime": 1784753017.3832054,
+    "ast_hash": "e83acb8d6d39ad81993028c6ec35bb5a",
+    "semantic_hash": "e83acb8d6d39ad81993028c6ec35bb5a"
+  },
+  "README.md": {
+    "mtime": 1784754665.3738854,
+    "ast_hash": "14c9a05cc4601d37dcbc33576b8af8a8",
+    "semantic_hash": "14c9a05cc4601d37dcbc33576b8af8a8"
+  },
+  "internal/app/templates/index.html": {
+    "mtime": 1784753996.681364,
+    "ast_hash": "08c7728c4cd09d29a69c0ef906ad555c",
+    "semantic_hash": "08c7728c4cd09d29a69c0ef906ad555c"
+  },
+  "cmd/oraclecheck/main.go": {
+    "mtime": 1784755011.9893677,
+    "ast_hash": "157ce21bdd7c5668061241f392b1fc75",
+    "semantic_hash": "157ce21bdd7c5668061241f392b1fc75"
+  }
+}

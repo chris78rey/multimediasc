@@ -1,7 +1,6 @@
 {
   "communities": {
     "0": [
-      "app_desktopstate_search",
       "app_pagedata",
       "app_server",
       "app_server_createzip",
@@ -48,19 +47,12 @@
       "oracle_repository_pingcontext",
       "oracle_repository_scandigitalizacion",
       "oracle_repository_splithostportloose",
-      "oracle_repository_trimdigits",
-      "oracle_repository_uniquenames",
-      "oraclecheck_main",
-      "oraclecheck_main_firstnonempty",
-      "oraclecheck_main_loadenvfile",
-      "oraclecheck_main_main",
       "pacienterow",
       "planilladetalle",
       "rows"
     ],
     "2": [
       "app_desktop",
-      "app_desktop_formattime",
       "app_desktop_planillasummary",
       "app_desktop_rundesktop",
       "app_desktopstate",
@@ -69,6 +61,7 @@
       "app_desktopstate_logout",
       "app_desktopstate_openpreview",
       "app_desktopstate_refreshdocs",
+      "app_desktopstate_search",
       "container",
       "internal_app_desktop_go_config",
       "internal_app_desktop_go_planilladetalle",
@@ -131,6 +124,7 @@
       "inst01_zip_export"
     ],
     "6": [
+      "app_desktop_formattime",
       "oracle_digitalizacionrow",
       "oracle_imagenpacienterow",
       "oracle_models",
@@ -173,33 +167,40 @@
       "app_config_loadenvconfig"
     ],
     "11": [
+      "oraclecheck_main",
+      "oraclecheck_main_firstnonempty",
+      "oraclecheck_main_loadenvfile",
+      "oraclecheck_main_main"
+    ],
+    "12": [
       "readme_allow_duplicate_fix",
       "readme_cmd_multimediasc",
       "readme_oracle_connect",
       "readme_readme"
     ],
-    "12": [
+    "13": [
       "index_toggleall"
     ],
-    "13": [
+    "14": [
       "pkg_multimediasc"
     ]
   },
   "cohesion": {
-    "0": 0.1396011396011396,
-    "1": 0.1452991452991453,
-    "2": 0.1568627450980392,
+    "0": 0.14461538461538462,
+    "1": 0.19047619047619047,
+    "2": 0.17647058823529413,
     "3": 0.2426470588235294,
     "4": 0.34285714285714286,
     "5": 0.1978021978021978,
-    "6": 0.35555555555555557,
+    "6": 0.3090909090909091,
     "7": 0.2857142857142857,
     "8": 0.4666666666666667,
     "9": 0.4,
     "10": 0.8333333333333334,
-    "11": 0.5,
-    "12": 1.0,
-    "13": 1.0
+    "11": 0.8333333333333334,
+    "12": 0.5,
+    "13": 1.0,
+    "14": 1.0
   },
   "gods": [
     {
@@ -228,11 +229,6 @@
       "degree": 9
     },
     {
-      "id": "oracle_repository_open",
-      "label": "Open()",
-      "degree": 8
-    },
-    {
       "id": "app_desktop_rundesktop",
       "label": "RunDesktop()",
       "degree": 7
@@ -251,6 +247,11 @@
       "id": "prompt2_ui_zip_contrato_visual",
       "label": "Contrato visual sugerido",
       "degree": 7
+    },
+    {
+      "id": "app_server_createzip",
+      "label": "createZip()",
+      "degree": 6
     }
   ],
   "surprises": [
@@ -264,28 +265,6 @@
       "confidence": "INFERRED",
       "relation": "calls",
       "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `main()` unexpectedly reaches hub `RunDesktop()`"
-    },
-    {
-      "source": "main()",
-      "target": "Open()",
-      "source_files": [
-        "cmd/oraclecheck/main.go",
-        "internal/oracle/repository.go"
-      ],
-      "confidence": "INFERRED",
-      "relation": "calls",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
-    },
-    {
-      "source": "loadEnvFile()",
-      "target": "Open()",
-      "source_files": [
-        "cmd/oraclecheck/main.go",
-        "internal/oracle/repository.go"
-      ],
-      "confidence": "INFERRED",
-      "relation": "calls",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
     },
     {
       "source": "RunDesktop()",
@@ -308,6 +287,17 @@
       "confidence": "INFERRED",
       "relation": "calls",
       "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "formatTime()",
+      "target": "Time",
+      "source_files": [
+        "internal/app/desktop.go",
+        "internal/oracle/models.go"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
     }
   ],
   "tokens": {
