@@ -1,0 +1,410 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "inst01.md",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inst01",
+      "community": 1,
+      "norm_label": "inst01.md"
+    },
+    {
+      "label": "Oracle 11gR2",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "inst01_oracle_11gr2",
+      "community": 1,
+      "norm_label": "oracle 11gr2"
+    },
+    {
+      "label": "\ud83c\udfa8 1. La Interfaz del \"Renombrador Inteligente\" (UX/UI de Escritorio)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "inst01_1_la_interfaz_del_renombrador_inteligente_ux_ui_de_escritorio",
+      "community": 1,
+      "norm_label": "\ud83c\udfa8 1. la interfaz del \"renombrador inteligente\" (ux/ui de escritorio)"
+    },
+    {
+      "label": "\ud83e\udde0 2. Lo que \"No te est\u00e1s dando cuenta\" en este momento (Puntos Ciegos Cr\u00edticos)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "inst01_2_lo_que_no_te_est\u00e1s_dando_cuenta_en_este_momento_puntos_ciegos_cr\u00edticos",
+      "community": 1,
+      "norm_label": "\ud83e\udde0 2. lo que \"no te estas dando cuenta\" en este momento (puntos ciegos criticos)"
+    },
+    {
+      "label": "\ud83d\udee1\ufe0f 3. C\u00f3digo del Backend en Go (Mapeo, Renombrado y Compresi\u00f3n ZIP)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "inst01_3_c\u00f3digo_del_backend_en_go_mapeo_renombrado_y_compresi\u00f3n_zip",
+      "community": 1,
+      "norm_label": "\ud83d\udee1\ufe0f 3. codigo del backend en go (mapeo, renombrado y compresion zip)"
+    },
+    {
+      "label": "A. El Archivo de Configuraci\u00f3n (`config.json`)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "inst01_a_el_archivo_de_configuraci\u00f3n_config_json",
+      "community": 1,
+      "norm_label": "a. el archivo de configuracion (`config.json`)"
+    },
+    {
+      "label": "B. El Motor en Go (`main.go` con Soporte de Oracle y ZIP Estructurado)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "inst01_b_el_motor_en_go_main_go_con_soporte_de_oracle_y_zip_estructurado",
+      "community": 1,
+      "norm_label": "b. el motor en go (`main.go` con soporte de oracle y zip estructurado)"
+    },
+    {
+      "label": "inst02.md",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inst02",
+      "community": 0,
+      "norm_label": "inst02.md"
+    },
+    {
+      "label": "Requerimientos para entregar al desarrollador",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "community": 0,
+      "norm_label": "requerimientos para entregar al desarrollador"
+    },
+    {
+      "label": "1. Inicio de sesi\u00f3n",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "inst02_1_inicio_de_sesi\u00f3n",
+      "community": 0,
+      "norm_label": "1. inicio de sesion"
+    },
+    {
+      "label": "2. Conexi\u00f3n con Oracle",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "inst02_2_conexi\u00f3n_con_oracle",
+      "community": 0,
+      "norm_label": "2. conexion con oracle"
+    },
+    {
+      "label": "3. B\u00fasqueda de la planilla",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "inst02_3_b\u00fasqueda_de_la_planilla",
+      "community": 0,
+      "norm_label": "3. busqueda de la planilla"
+    },
+    {
+      "label": "4. Localizaci\u00f3n de documentos",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "inst02_4_localizaci\u00f3n_de_documentos",
+      "community": 0,
+      "norm_label": "4. localizacion de documentos"
+    },
+    {
+      "label": "5. Regla para relacionar documentos",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "inst02_5_regla_para_relacionar_documentos",
+      "community": 0,
+      "norm_label": "5. regla para relacionar documentos"
+    },
+    {
+      "label": "6. Vista previa",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "inst02_6_vista_previa",
+      "community": 0,
+      "norm_label": "6. vista previa"
+    },
+    {
+      "label": "7. Renombrado estandarizado",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "inst02_7_renombrado_estandarizado",
+      "community": 0,
+      "norm_label": "7. renombrado estandarizado"
+    },
+    {
+      "label": "8. Nombres duplicados",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "inst02_8_nombres_duplicados",
+      "community": 0,
+      "norm_label": "8. nombres duplicados"
+    },
+    {
+      "label": "9. Generaci\u00f3n del ZIP",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "inst02_9_generaci\u00f3n_del_zip",
+      "community": 0,
+      "norm_label": "9. generacion del zip"
+    },
+    {
+      "label": "10. Manejo de errores",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "inst02_10_manejo_de_errores",
+      "community": 0,
+      "norm_label": "10. manejo de errores"
+    },
+    {
+      "label": "11. Auditor\u00eda",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "inst02_11_auditor\u00eda",
+      "community": 0,
+      "norm_label": "11. auditoria"
+    },
+    {
+      "label": "12. Alcance que no corresponde al desarrollador",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L189",
+      "_origin": "ast",
+      "id": "inst02_12_alcance_que_no_corresponde_al_desarrollador",
+      "community": 0,
+      "norm_label": "12. alcance que no corresponde al desarrollador"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "inst01",
+      "target": "inst01_oracle_11gr2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "inst01_oracle_11gr2",
+      "target": "inst01_1_la_interfaz_del_renombrador_inteligente_ux_ui_de_escritorio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "inst01_oracle_11gr2",
+      "target": "inst01_2_lo_que_no_te_est\u00e1s_dando_cuenta_en_este_momento_puntos_ciegos_cr\u00edticos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "inst01_oracle_11gr2",
+      "target": "inst01_3_c\u00f3digo_del_backend_en_go_mapeo_renombrado_y_compresi\u00f3n_zip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "inst01_3_c\u00f3digo_del_backend_en_go_mapeo_renombrado_y_compresi\u00f3n_zip",
+      "target": "inst01_a_el_archivo_de_configuraci\u00f3n_config_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "inst01_3_c\u00f3digo_del_backend_en_go_mapeo_renombrado_y_compresi\u00f3n_zip",
+      "target": "inst01_b_el_motor_en_go_main_go_con_soporte_de_oracle_y_zip_estructurado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "inst02",
+      "target": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_10_manejo_de_errores",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_11_auditor\u00eda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L189",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_12_alcance_que_no_corresponde_al_desarrollador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_1_inicio_de_sesi\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_2_conexi\u00f3n_con_oracle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_3_b\u00fasqueda_de_la_planilla",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_4_localizaci\u00f3n_de_documentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_5_regla_para_relacionar_documentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_6_vista_previa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_7_renombrado_estandarizado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_8_nombres_duplicados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_9_generaci\u00f3n_del_zip",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

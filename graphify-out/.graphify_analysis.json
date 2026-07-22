@@ -1,0 +1,98 @@
+{
+  "communities": {
+    "0": [
+      "inst02",
+      "inst02_10_manejo_de_errores",
+      "inst02_11_auditoría",
+      "inst02_12_alcance_que_no_corresponde_al_desarrollador",
+      "inst02_1_inicio_de_sesión",
+      "inst02_2_conexión_con_oracle",
+      "inst02_3_búsqueda_de_la_planilla",
+      "inst02_4_localización_de_documentos",
+      "inst02_5_regla_para_relacionar_documentos",
+      "inst02_6_vista_previa",
+      "inst02_7_renombrado_estandarizado",
+      "inst02_8_nombres_duplicados",
+      "inst02_9_generación_del_zip",
+      "inst02_requerimientos_para_entregar_al_desarrollador"
+    ],
+    "1": [
+      "inst01",
+      "inst01_1_la_interfaz_del_renombrador_inteligente_ux_ui_de_escritorio",
+      "inst01_2_lo_que_no_te_estás_dando_cuenta_en_este_momento_puntos_ciegos_críticos",
+      "inst01_3_código_del_backend_en_go_mapeo_renombrado_y_compresión_zip",
+      "inst01_a_el_archivo_de_configuración_config_json",
+      "inst01_b_el_motor_en_go_main_go_con_soporte_de_oracle_y_zip_estructurado",
+      "inst01_oracle_11gr2"
+    ]
+  },
+  "cohesion": {
+    "0": 0.14285714285714285,
+    "1": 0.2857142857142857
+  },
+  "gods": [
+    {
+      "id": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "label": "Requerimientos para entregar al desarrollador",
+      "degree": 13
+    },
+    {
+      "id": "inst01_oracle_11gr2",
+      "label": "Oracle 11gR2",
+      "degree": 4
+    },
+    {
+      "id": "inst01_3_código_del_backend_en_go_mapeo_renombrado_y_compresión_zip",
+      "label": "🛡️ 3. Código del Backend en Go (Mapeo, Renombrado y Compresión ZIP)",
+      "degree": 3
+    },
+    {
+      "id": "inst01_1_la_interfaz_del_renombrador_inteligente_ux_ui_de_escritorio",
+      "label": "🎨 1. La Interfaz del \"Renombrador Inteligente\" (UX/UI de Escritorio)",
+      "degree": 1
+    },
+    {
+      "id": "inst01_2_lo_que_no_te_estás_dando_cuenta_en_este_momento_puntos_ciegos_críticos",
+      "label": "🧠 2. Lo que \"No te estás dando cuenta\" en este momento (Puntos Ciegos Críticos)",
+      "degree": 1
+    },
+    {
+      "id": "inst01_a_el_archivo_de_configuración_config_json",
+      "label": "A. El Archivo de Configuración (`config.json`)",
+      "degree": 1
+    },
+    {
+      "id": "inst01_b_el_motor_en_go_main_go_con_soporte_de_oracle_y_zip_estructurado",
+      "label": "B. El Motor en Go (`main.go` con Soporte de Oracle y ZIP Estructurado)",
+      "degree": 1
+    },
+    {
+      "id": "inst02_1_inicio_de_sesión",
+      "label": "1. Inicio de sesión",
+      "degree": 1
+    },
+    {
+      "id": "inst02_2_conexión_con_oracle",
+      "label": "2. Conexión con Oracle",
+      "degree": 1
+    },
+    {
+      "id": "inst02_3_búsqueda_de_la_planilla",
+      "label": "3. Búsqueda de la planilla",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `🎨 1. La Interfaz del \"Renombrador Inteligente\" (UX/UI de Escritorio)`, `🧠 2. Lo que \"No te estás dando cuenta\" en este momento (Puntos Ciegos Críticos)`, `A. El Archivo de Configuración (`config.json`)` to the rest of the system?",
+      "why": "16 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
