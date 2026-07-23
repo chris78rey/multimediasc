@@ -31,13 +31,14 @@ type Server struct {
 }
 
 type pageData struct {
-	OracleConnect string
-	AllowedNames  []string
-	Error         string
-	Notice        string
-	Result        *oracle.PlanillaDetalle
-	Planilla      string
-	Selected      map[string]string
+	OracleConnect  string
+	AllowedNames   []string
+	PlanillaRanges []string
+	Error          string
+	Notice         string
+	Result         *oracle.PlanillaDetalle
+	Planilla       string
+	Selected       map[string]string
 }
 
 type zipDocument struct {
@@ -79,9 +80,10 @@ func (s *Server) handleIndex(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	data := pageData{
-		OracleConnect: s.cfg.OracleConnect,
-		AllowedNames:  s.cfg.AllowedNames,
-		Selected:      map[string]string{},
+		OracleConnect:  s.cfg.OracleConnect,
+		AllowedNames:   s.cfg.AllowedNames,
+		PlanillaRanges: s.cfg.PlanillaRanges,
+		Selected:       map[string]string{},
 	}
 	_ = s.tmpl.ExecuteTemplate(w, "index.html", data)
 }
@@ -114,12 +116,13 @@ func (s *Server) handleSearch(w http.ResponseWriter, r *http.Request) {
 	pass := r.FormValue("password")
 
 	data := pageData{
-		OracleConnect: r.FormValue("connect"),
-		AllowedNames:  s.cfg.AllowedNames,
-		Planilla:      planilla,
-		Selected:      map[string]string{},
+		OracleConnect:  r.FormValue("connect"),
+		AllowedNames:   s.cfg.AllowedNames,
+		PlanillaRanges: s.cfg.PlanillaRanges,
+		Planilla:       planilla,
+		Selected:       map[string]string{},
 	}
-	if err := validatePlanilla(planilla); err != nil {
+	if err := validatePlanilla(planilla, s.cfg.PlanillaRanges); err != nil {
 		data.Error = err.Error()
 		_ = s.tmpl.ExecuteTemplate(w, "index.html", data)
 		return
@@ -187,7 +190,7 @@ func (s *Server) handleExport(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "json inválido", http.StatusBadRequest)
 		return
 	}
-	if err := validatePlanilla(req.Planilla); err != nil {
+	if err := validatePlanilla(req.Planilla, s.cfg.PlanillaRanges); err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
@@ -207,7 +210,7 @@ func (s *Server) handleExport(w http.ResponseWriter, r *http.Request) {
 	_ = json.NewEncoder(w).Encode(map[string]string{"status": "ok"})
 }
 
-func validatePlanilla(s string) error {
+func validatePlanilla(s string, ranges []string) error {
 	if s == "" {
 		return fmt.Errorf("planilla vacía")
 	}
@@ -219,7 +222,44 @@ func validatePlanilla(s string) error {
 	if len(s) < 3 {
 		return fmt.Errorf("la planilla es demasiado corta")
 	}
+	if len(ranges) > 0 {
+		n, err := strconv.ParseInt(s, 10, 64)
+		if err != nil {
+			return fmt.Errorf("la planilla debe ser numérica")
+		}
+		if !planillaInRanges(n, ranges) {
+			return fmt.Errorf("la planilla no está dentro de los rangos permitidos")
+		}
+	}
 	return nil
+}
+
+func planillaInRanges(planilla int64, ranges []string) bool {
+	for _, raw := range ranges {
+		raw = strings.TrimSpace(raw)
+		if raw == "" {
+			continue
+		}
+		parts := strings.SplitN(raw, "-", 2)
+		if len(parts) != 2 {
+			if n, err := strconv.ParseInt(strings.TrimSpace(raw), 10, 64); err == nil && n == planilla {
+				return true
+			}
+			continue
+		}
+		min, err1 := strconv.ParseInt(strings.TrimSpace(parts[0]), 10, 64)
+		max, err2 := strconv.ParseInt(strings.TrimSpace(parts[1]), 10, 64)
+		if err1 != nil || err2 != nil {
+			continue
+		}
+		if min > max {
+			min, max = max, min
+		}
+		if planilla >= min && planilla <= max {
+			return true
+		}
+	}
+	return false
 }
 
 func friendlyErr(err error) string {

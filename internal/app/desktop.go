@@ -2,11 +2,11 @@ package app
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"net/url"
 	"os"
 	"path/filepath"
-	"runtime"
 	"strconv"
 	"strings"
 	"time"
@@ -30,6 +30,9 @@ type desktopState struct {
 	status      *widget.Label
 	previewInfo *widget.Label
 	docsBox     *fyne.Container
+	rangeText   *widget.Entry
+	rangeInfo   *widget.Label
+	window      fyne.Window
 }
 
 func RunDesktop() error {
@@ -39,6 +42,7 @@ func RunDesktop() error {
 	w.Resize(fyne.NewSize(1320, 840))
 
 	state := &desktopState{cfg: cfg}
+	state.window = w
 
 	loginUser := widget.NewEntry()
 	loginPass := widget.NewPasswordEntry()
@@ -63,6 +67,18 @@ func RunDesktop() error {
 	state.status = widget.NewLabel("Listo")
 	state.previewInfo = widget.NewLabel("Busca una planilla para ver documentos.")
 	state.docsBox = container.NewVBox(widget.NewLabel("Sin resultados todavía"))
+	state.rangeInfo = widget.NewLabel("Rangos activos: " + strings.Join(cfg.PlanillaRanges, ", "))
+	state.rangeText = widget.NewMultiLineEntry()
+	state.rangeText.SetPlaceHolder("Una planilla por línea o un rango por línea, por ejemplo 6076406-6076422")
+	state.rangeText.OnChanged = func(string) {
+		state.cfg.PlanillaRanges = parseRangesText(state.rangeText.Text)
+		state.rangeInfo.SetText("Rangos activos: " + strings.Join(state.cfg.PlanillaRanges, ", "))
+		if len(state.cfg.PlanillaRanges) == 1 && isSinglePlanilla(state.cfg.PlanillaRanges[0]) && strings.TrimSpace(planilla.Text) == "" {
+			planilla.SetText(strings.TrimSpace(state.cfg.PlanillaRanges[0]))
+		}
+		_ = state.cfg.Save()
+	}
+	state.rangeText.SetText(cfg.AllowedRangesText())
 
 	leftPanel := container.NewVBox(
 		widget.NewLabelWithStyle("Acceso Oracle", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
@@ -71,6 +87,9 @@ func RunDesktop() error {
 			widget.NewFormItem("Contraseña", loginPass),
 			widget.NewFormItem("Planilla", planilla),
 		),
+		widget.NewLabelWithStyle("Rangos permitidos", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+		state.rangeText,
+		state.rangeInfo,
 		silentLogin,
 		searchBtn,
 		logoutBtn,
@@ -81,9 +100,6 @@ func RunDesktop() error {
 		container.NewVBox(
 			widget.NewLabelWithStyle("Documentos", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
 			state.previewInfo,
-			widget.NewButton("Abrir PDF", func() {
-				state.openPreview(w)
-			}),
 			widget.NewButton("Exportar ZIP", func() {
 				state.exportWithDialog(w)
 			}),
@@ -101,7 +117,10 @@ func RunDesktop() error {
 
 func (s *desktopState) search(w fyne.Window, user, pass, planillaText string) {
 	planillaText = strings.TrimSpace(planillaText)
-	if err := validatePlanilla(planillaText); err != nil {
+	if planillaText == "" && len(s.cfg.PlanillaRanges) == 1 && isSinglePlanilla(s.cfg.PlanillaRanges[0]) {
+		planillaText = strings.TrimSpace(s.cfg.PlanillaRanges[0])
+	}
+	if err := validatePlanilla(planillaText, s.cfg.PlanillaRanges); err != nil {
 		s.status.SetText(err.Error())
 		return
 	}
@@ -136,7 +155,6 @@ func (s *desktopState) search(w fyne.Window, user, pass, planillaText string) {
 		return
 	}
 	enrichDocuments(det.Documentos)
-	runAutomaticDiagnostics(det.Documentos)
 	s.planilla = det
 	s.docChecks = make([]bool, len(det.Documentos))
 	s.docNames = make([]string, len(det.Documentos))
@@ -195,17 +213,13 @@ func (s *desktopState) refreshDocs() {
 			nameSel.SetSelected(s.cfg.AllowedNames[0])
 		}
 		openBtn := widget.NewButton("Ver", func() {
-			s.previewPath = doc.Ruta
-			s.previewInfo.SetText(documentSummary(doc))
-		})
-		fixBtn := widget.NewButton("Corregir", func() {
-			s.correctAccess(doc)
+			s.openDocument(doc)
 		})
 		row := container.NewBorder(nil, nil, cb, openBtn, container.NewVBox(
 			widget.NewLabel(formatTime(doc.Fecha)),
 			widget.NewLabel(doc.Descripcion),
 			widget.NewLabel(documentStatusLine(doc)),
-			container.NewHBox(nameSel, fixBtn),
+			nameSel,
 		))
 		rows = append(rows, row)
 	}
@@ -213,65 +227,22 @@ func (s *desktopState) refreshDocs() {
 	s.docsBox.Refresh()
 }
 
-func (s *desktopState) openPreview(w fyne.Window) {
-	if s.previewPath == "" {
-		dialog.ShowInformation("Vista previa", "Selecciona un documento primero.", w)
+func (s *desktopState) openDocument(doc oracle.ImagenPacienteRow) {
+	s.previewPath = doc.Ruta
+	s.previewInfo.SetText(documentSummary(doc))
+	if s.window == nil {
 		return
 	}
-	if _, err := os.Stat(s.previewPath); err != nil {
-		dialog.ShowError(err, w)
-		return
-	}
-	u := &url.URL{Scheme: "file", Path: filepath.ToSlash(s.previewPath)}
-	_ = fyne.CurrentApp().OpenURL(u)
-}
-
-func (s *desktopState) correctAccess(doc oracle.ImagenPacienteRow) {
-	if runtime.GOOS != "windows" {
-		s.status.SetText("la corrección PowerShell solo está disponible en Windows")
-		return
-	}
-	if strings.TrimSpace(doc.Ruta) == "" {
-		s.status.SetText("la ruta del documento está vacía")
-		return
-	}
-	result, err := fixWindowsHidden(doc.Ruta)
-	if err != nil {
+	if _, err := os.Stat(doc.Ruta); err != nil {
 		s.status.SetText(friendlyErr(err))
 		return
 	}
-	s.status.SetText("corrección aplicada: " + result)
-}
-
-func runAutomaticDiagnostics(docs []oracle.ImagenPacienteRow) {
-	if runtime.GOOS != "windows" {
+	u := &url.URL{Scheme: "file", Path: filepath.ToSlash(doc.Ruta)}
+	if err := fyne.CurrentApp().OpenURL(u); err != nil {
+		s.status.SetText(friendlyErr(err))
 		return
 	}
-	for i := range docs {
-		if docs[i].State == "ok" {
-			continue
-		}
-		diag, err := diagnoseWindowsPath(docs[i].Ruta)
-		if err != nil {
-			docs[i].Reason = appendReason(docs[i].Reason, err.Error())
-			continue
-		}
-		if diag.Hidden {
-			docs[i].Hidden = true
-			docs[i].State = "oculto"
-		}
-		if !diag.Exists {
-			docs[i].Exists = false
-			docs[i].State = "inexistente"
-		}
-		if !diag.Accessible {
-			docs[i].Accessible = false
-			docs[i].State = "inaccesible"
-		}
-		if diag.Reason != "" {
-			docs[i].Reason = appendReason(docs[i].Reason, diag.Reason)
-		}
-	}
+	s.status.SetText("Abriendo archivo: " + filepath.Base(doc.Ruta))
 }
 
 func (s *desktopState) exportWithDialog(w fyne.Window) {
@@ -279,19 +250,24 @@ func (s *desktopState) exportWithDialog(w fyne.Window) {
 		dialog.ShowInformation("Exportar ZIP", "Busca una planilla primero.", w)
 		return
 	}
+	def := fmt.Sprintf("%s.zip", strconv.FormatInt(s.planilla.Planilla.DigTramite, 10))
 	dialog.ShowFileSave(func(uc fyne.URIWriteCloser, err error) {
 		if err != nil || uc == nil {
 			return
 		}
-		dest := uc.URI().Path()
+		dest := ensureZipExtension(uc.URI().Path())
 		_ = uc.Close()
-		s.exportToPath(dest)
+		if err := s.exportToPath(dest); err != nil {
+			s.status.SetText(friendlyErr(err))
+			dialog.ShowError(err, w)
+		}
 	}, w)
+	s.status.SetText("Elige dónde guardar " + def)
 }
 
-func (s *desktopState) exportToPath(dest string) {
+func (s *desktopState) exportToPath(dest string) error {
 	if s.planilla == nil {
-		return
+		return errors.New("busca una planilla primero")
 	}
 	lookup := map[string]string{}
 	var docs []zipDocument
@@ -305,10 +281,21 @@ func (s *desktopState) exportToPath(dest string) {
 		})
 	}
 	if err := exportZip(strconv.FormatInt(s.planilla.Planilla.DigTramite, 10), docs, lookup, dest, s.cfg.AllowDuplicateFix); err != nil {
-		s.status.SetText(friendlyErr(err))
-		return
+		return err
 	}
 	s.status.SetText("ZIP generado: " + dest)
+	return nil
+}
+
+func ensureZipExtension(dest string) string {
+	dest = strings.TrimSpace(dest)
+	if dest == "" {
+		return dest
+	}
+	if strings.EqualFold(filepath.Ext(dest), ".zip") {
+		return dest
+	}
+	return dest + ".zip"
 }
 
 func planillaSummary(det *oracle.PlanillaDetalle) string {
@@ -369,6 +356,19 @@ func documentStatusLine(doc oracle.ImagenPacienteRow) string {
 		return ""
 	}
 	return strings.Join(parts, " | ")
+}
+
+func isSinglePlanilla(s string) bool {
+	s = strings.TrimSpace(s)
+	if s == "" || strings.Contains(s, "-") {
+		return false
+	}
+	for _, r := range s {
+		if r < '0' || r > '9' {
+			return false
+		}
+	}
+	return true
 }
 
 func formatTime(t *time.Time) string {

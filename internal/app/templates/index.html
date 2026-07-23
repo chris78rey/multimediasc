@@ -45,6 +45,11 @@
     <div class="muted" style="margin-top:12px">
       Nombres permitidos: {{range $i,$n := .AllowedNames}}{{if $i}}, {{end}}{{$n}}{{end}}
     </div>
+    {{if .PlanillaRanges}}
+    <div class="muted" style="margin-top:8px">
+      Rangos permitidos: {{range $i,$r := .PlanillaRanges}}{{if $i}}, {{end}}{{$r}}{{end}}
+    </div>
+    {{end}}
     {{if .Result}}
       <h3>Resumen</h3>
       <div class="muted">Planilla: {{.Result.Planilla.DigTramite}}</div>

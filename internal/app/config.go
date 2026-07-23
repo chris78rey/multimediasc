@@ -3,6 +3,7 @@ package app
 import (
 	"bufio"
 	"encoding/json"
+	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
@@ -14,6 +15,7 @@ type Config struct {
 	DefaultMaxOpen    int      `json:"default_max_open"`
 	DefaultMaxIdle    int      `json:"default_max_idle"`
 	AllowedNames      []string `json:"allowed_names"`
+	PlanillaRanges    []string `json:"planilla_ranges"`
 	AllowDuplicateFix bool     `json:"allow_duplicate_fix"`
 }
 
@@ -24,6 +26,7 @@ func LoadEnvConfig() Config {
 		DefaultMaxOpen:    3,
 		DefaultMaxIdle:    1,
 		AllowedNames:      []string{"013B.pdf", "Epicrisis.docx", "Consentimiento_Informado.pdf", "Protocolo_Quirurgico.docx", "Resultados_Laboratorio.xlsx", "Imagen_Estudio.jpg"},
+		PlanillaRanges:    nil,
 		AllowDuplicateFix: false,
 	}
 
@@ -52,6 +55,33 @@ func getenv(k, def string) string {
 
 func (c Config) ConfigPath() string {
 	return filepath.Join(".", "config.json")
+}
+
+func (c Config) Save() error {
+	b, err := json.MarshalIndent(c, "", "  ")
+	if err != nil {
+		return err
+	}
+	if err := os.WriteFile(c.ConfigPath(), b, 0o644); err != nil {
+		return fmt.Errorf("no se pudo guardar config.json: %w", err)
+	}
+	return nil
+}
+
+func (c Config) AllowedRangesText() string {
+	return strings.Join(c.PlanillaRanges, "\n")
+}
+
+func parseRangesText(text string) []string {
+	lines := strings.Split(text, "\n")
+	out := make([]string, 0, len(lines))
+	for _, line := range lines {
+		line = strings.TrimSpace(line)
+		if line != "" {
+			out = append(out, line)
+		}
+	}
+	return out
 }
 
 func loadKeyValues(path string) error {

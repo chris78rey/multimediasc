@@ -15,9 +15,9 @@
     "semantic_hash": ""
   },
   "internal/oracle/repository.go": {
-    "mtime": 1784755398.298754,
-    "ast_hash": "544c1efbc5d98445b7703f9ba5ff9352",
-    "semantic_hash": "544c1efbc5d98445b7703f9ba5ff9352"
+    "mtime": 1784830357.0161421,
+    "ast_hash": "e0717a6303e2be5fee7d020ae8c60fb1",
+    "semantic_hash": ""
   },
   "cmd/multimediasc/main.go": {
     "mtime": 1784754114.4304316,
@@ -25,18 +25,18 @@
     "semantic_hash": "9e5a4486f62f579824e05f5df0303c15"
   },
   "internal/app/config.go": {
-    "mtime": 1784819419.7739275,
-    "ast_hash": "ec1dc6eccf48e399f271028476d283f6",
+    "mtime": 1784831643.2661424,
+    "ast_hash": "7ec7dc03ed24a79884c90debb4e34dd4",
     "semantic_hash": ""
   },
   "internal/app/desktop.go": {
-    "mtime": 1784824610.752974,
-    "ast_hash": "128e45c2c3f250cb1728646cbdef9c47",
+    "mtime": 1784832108.854523,
+    "ast_hash": "0437e59976314faf6929c9fd373091c5",
     "semantic_hash": ""
   },
   "internal/app/server.go": {
-    "mtime": 1784819386.9705973,
-    "ast_hash": "deeb5a4d8ab06e60c38c526bc48fc0f3",
+    "mtime": 1784831943.130612,
+    "ast_hash": "00abe8ba9da5987b0b4b894840675921",
     "semantic_hash": ""
   },
   "internal/app/zipwriter.go": {
@@ -65,8 +65,8 @@
     "semantic_hash": "14c9a05cc4601d37dcbc33576b8af8a8"
   },
   "internal/app/templates/index.html": {
-    "mtime": 1784819397.6780396,
-    "ast_hash": "0930e4f3bfe202da528f742367183302",
+    "mtime": 1784826618.51697,
+    "ast_hash": "794bda946fbf4aa88be3711c816a87e8",
     "semantic_hash": ""
   },
   "cmd/oraclecheck/main.go": {
@@ -75,7 +75,7 @@
     "semantic_hash": "7b5078d883831f1cc62d3928f006f918"
   },
   "internal/app/fileobs.go": {
-    "mtime": 1784819617.582586,
+    "mtime": 1784831744.924718,
     "ast_hash": "2139adef1c29896fd9079d80bb271442",
     "semantic_hash": ""
   },
@@ -90,8 +90,8 @@
     "semantic_hash": ""
   },
   "scripts/unhide_share.ps1": {
-    "mtime": 1784818815.4096615,
-    "ast_hash": "13e3370e2b7a7db6cf2084d1ab846c60",
+    "mtime": 1784831937.834726,
+    "ast_hash": "1be98f179d6b0d8f4b907a60117ed3a1",
     "semantic_hash": ""
   },
   "graphify-out.backup-20260723-113533/.graphify_analysis.json": {
@@ -319,16 +319,6 @@
     "ast_hash": "8c77f3d462dd96c5473a0878e20b8fc4",
     "semantic_hash": ""
   },
-  "internal/app/windows_diag_other.go": {
-    "mtime": 1784824580.9488826,
-    "ast_hash": "014cb839f9782fb9c1764650fe3eef12",
-    "semantic_hash": ""
-  },
-  "internal/app/windows_diag_windows.go": {
-    "mtime": 1784824576.0878677,
-    "ast_hash": "7765a15cee5552e787fe92504bea42b3",
-    "semantic_hash": ""
-  },
   "graphify-out.backup-20260723-113533/2026-07-22/GRAPH_REPORT.md": {
     "mtime": 1784752320.1202984,
     "ast_hash": "ac451ca8fb503da4af4508eeca459fe7",
@@ -352,6 +342,21 @@
   "repomix-multimediasc.md": {
     "mtime": 1784822079.8399522,
     "ast_hash": "12365ab8b5beb64636b3cdccbbe10d76",
+    "semantic_hash": ""
+  },
+  "config.json": {
+    "mtime": 1784828356.7321491,
+    "ast_hash": "9383b314f7c5ddedf6781d07cdc421cc",
+    "semantic_hash": ""
+  },
+  "internal/app/windows_access_other.go": {
+    "mtime": 1784831773.0638773,
+    "ast_hash": "85f7ffdf29a7840969a77e677b3ac78c",
+    "semantic_hash": ""
+  },
+  "internal/app/windows_access_windows.go": {
+    "mtime": 1784831760.9772332,
+    "ast_hash": "d14dfda3eb6554209dcb65fdf7392297",
     "semantic_hash": ""
   }
 }

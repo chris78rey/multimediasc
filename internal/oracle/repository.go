@@ -286,15 +286,27 @@ func (r *Repository) ListarDocumentos(ctx context.Context, numeroHC int64) ([]Im
 	var out []ImagenPacienteRow
 	for rows.Next() {
 		var d ImagenPacienteRow
-		if err := rows.Scan(&d.PCNNumeroHC, &d.Fecha, &d.Descripcion, &d.Ruta, &d.Tipo, &d.DprAraCodigo, &d.DprCodigo, &d.PrsCodigo); err != nil {
+		var tipo, dprAra, dpr, prs sql.NullString
+		if err := rows.Scan(&d.PCNNumeroHC, &d.Fecha, &d.Descripcion, &d.Ruta, &tipo, &dprAra, &dpr, &prs); err != nil {
 			return nil, ClassifyOracleError(err)
 		}
+		d.Tipo = nullStringValue(tipo)
+		d.DprAraCodigo = nullStringValue(dprAra)
+		d.DprCodigo = nullStringValue(dpr)
+		d.PrsCodigo = nullStringValue(prs)
 		out = append(out, d)
 	}
 	if err := rows.Err(); err != nil {
 		return nil, ClassifyOracleError(err)
 	}
 	return out, nil
+}
+
+func nullStringValue(v sql.NullString) string {
+	if v.Valid {
+		return v.String
+	}
+	return ""
 }
 
 func (r *Repository) ObtenerDetallePlanilla(ctx context.Context, tramite int64) (*PlanillaDetalle, error) {
