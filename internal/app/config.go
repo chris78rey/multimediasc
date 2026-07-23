@@ -14,6 +14,7 @@ type Config struct {
 	OracleConnect     string   `json:"oracle_connect"`
 	DefaultMaxOpen    int      `json:"default_max_open"`
 	DefaultMaxIdle    int      `json:"default_max_idle"`
+	MaxBatchPlanillas int      `json:"max_batch_planillas"`
 	AllowedNames      []string `json:"allowed_names"`
 	PlanillaRanges    []string `json:"planilla_ranges"`
 	AllowDuplicateFix bool     `json:"allow_duplicate_fix"`
@@ -25,7 +26,8 @@ func LoadEnvConfig() Config {
 		OracleConnect:     getenv("ORACLE_CONNECT", "172.16.60.21:1521/prdsgh2"),
 		DefaultMaxOpen:    3,
 		DefaultMaxIdle:    1,
-		AllowedNames:      []string{"013B.pdf", "Epicrisis.docx", "Consentimiento_Informado.pdf", "Protocolo_Quirurgico.docx", "Resultados_Laboratorio.xlsx", "Imagen_Estudio.jpg"},
+		MaxBatchPlanillas: 25,
+		AllowedNames:      []string{"013B", "Epicrisis", "Consentimiento_Informado", "Protocolo_Quirurgico", "Resultados_Laboratorio", "Imagen_Estudio"},
 		PlanillaRanges:    nil,
 		AllowDuplicateFix: false,
 	}
@@ -36,8 +38,12 @@ func LoadEnvConfig() Config {
 	if b, err := os.ReadFile("config.json"); err == nil {
 		_ = json.Unmarshal(b, &cfg)
 		if len(cfg.AllowedNames) == 0 {
-			cfg.AllowedNames = []string{"013B.pdf", "Epicrisis.docx", "Consentimiento_Informado.pdf", "Protocolo_Quirurgico.docx", "Resultados_Laboratorio.xlsx", "Imagen_Estudio.jpg"}
+			cfg.AllowedNames = []string{"013B", "Epicrisis", "Consentimiento_Informado", "Protocolo_Quirurgico", "Resultados_Laboratorio", "Imagen_Estudio"}
 		}
+		if cfg.MaxBatchPlanillas <= 0 {
+			cfg.MaxBatchPlanillas = 25
+		}
+		cfg.AllowedNames = normalizeAllowedNames(cfg.AllowedNames)
 	}
 
 	if v := os.Getenv("MULTIMEDIASC_ALLOW_DUPLICATE_FIX"); v == "1" || v == "true" {
@@ -72,6 +78,10 @@ func (c Config) AllowedRangesText() string {
 	return strings.Join(c.PlanillaRanges, "\n")
 }
 
+func (c Config) AllowedNamesText() string {
+	return strings.Join(c.AllowedNames, "\n")
+}
+
 func parseRangesText(text string) []string {
 	lines := strings.Split(text, "\n")
 	out := make([]string, 0, len(lines))
@@ -82,6 +92,53 @@ func parseRangesText(text string) []string {
 		}
 	}
 	return out
+}
+
+func parseNamesText(text string) []string {
+	lines := strings.Split(text, "\n")
+	out := make([]string, 0, len(lines))
+	seen := map[string]bool{}
+	for _, line := range lines {
+		line = strings.TrimSpace(line)
+		if line == "" {
+			continue
+		}
+		line = strings.TrimSuffix(line, filepath.Ext(line))
+		if line == "" || seen[strings.ToLower(line)] {
+			continue
+		}
+		seen[strings.ToLower(line)] = true
+		out = append(out, line)
+	}
+	return out
+}
+
+func normalizeAllowedNames(names []string) []string {
+	out := make([]string, 0, len(names))
+	seen := map[string]bool{}
+	for _, n := range names {
+		n = strings.TrimSpace(n)
+		if n == "" {
+			continue
+		}
+		n = strings.TrimSuffix(n, filepath.Ext(n))
+		if n == "" || seen[strings.ToLower(n)] {
+			continue
+		}
+		seen[strings.ToLower(n)] = true
+		out = append(out, n)
+	}
+	if len(out) == 0 {
+		return []string{"013B", "Epicrisis", "Consentimiento_Informado", "Protocolo_Quirurgico", "Resultados_Laboratorio", "Imagen_Estudio"}
+	}
+	return out
+}
+
+func (c Config) MaxBatchPlanillasOrDefault() int {
+	if c.MaxBatchPlanillas <= 0 {
+		return 25
+	}
+	return c.MaxBatchPlanillas
 }
 
 func loadKeyValues(path string) error {
