@@ -134,6 +134,7 @@ func (s *desktopState) search(w fyne.Window, user, pass, planillaText string) {
 		s.status.SetText(friendlyErr(err))
 		return
 	}
+	enrichDocuments(det.Documentos)
 	s.planilla = det
 	s.docChecks = make([]bool, len(det.Documentos))
 	s.docNames = make([]string, len(det.Documentos))
@@ -193,12 +194,12 @@ func (s *desktopState) refreshDocs() {
 		}
 		openBtn := widget.NewButton("Ver", func() {
 			s.previewPath = doc.Ruta
-			s.previewInfo.SetText(fmt.Sprintf("%s\n%s", doc.Descripcion, doc.Ruta))
+			s.previewInfo.SetText(documentSummary(doc))
 		})
 		row := container.NewBorder(nil, nil, cb, openBtn, container.NewVBox(
 			widget.NewLabel(formatTime(doc.Fecha)),
 			widget.NewLabel(doc.Descripcion),
-			widget.NewLabel(doc.Tipo),
+			widget.NewLabel(documentStatusLine(doc)),
 			nameSel,
 		))
 		rows = append(rows, row)
@@ -283,6 +284,38 @@ func planillaSummary(det *oracle.PlanillaDetalle) string {
 		det.Planilla.DigNumeroPermanencia,
 		det.Planilla.DigPathRepo,
 	)
+}
+
+func documentSummary(doc oracle.ImagenPacienteRow) string {
+	return fmt.Sprintf(
+		"%s\n%s\nTipo: %s  Ext: %s  Estado: %s\nMotivo: %s",
+		doc.Descripcion,
+		doc.Ruta,
+		firstNonEmpty(doc.Tipo, doc.Kind),
+		firstNonEmpty(doc.Ext, "-"),
+		firstNonEmpty(doc.State, "desconocido"),
+		firstNonEmpty(doc.Reason, "sin observaciones"),
+	)
+}
+
+func documentStatusLine(doc oracle.ImagenPacienteRow) string {
+	parts := []string{}
+	if v := firstNonEmpty(doc.Kind, doc.Tipo); v != "" {
+		parts = append(parts, v)
+	}
+	if v := doc.Ext; v != "" {
+		parts = append(parts, v)
+	}
+	if v := doc.State; v != "" {
+		parts = append(parts, v)
+	}
+	if v := doc.Reason; v != "" {
+		parts = append(parts, v)
+	}
+	if len(parts) == 0 {
+		return ""
+	}
+	return strings.Join(parts, " | ")
 }
 
 func formatTime(t *time.Time) string {

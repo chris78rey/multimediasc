@@ -23,7 +23,7 @@ func LoadEnvConfig() Config {
 		OracleConnect:     getenv("ORACLE_CONNECT", "172.16.60.21:1521/prdsgh2"),
 		DefaultMaxOpen:    3,
 		DefaultMaxIdle:    1,
-		AllowedNames:      []string{"013B.pdf", "Epicrisis.pdf", "Consentimiento_Informado.pdf", "Protocolo_Quirurgico.pdf", "Resultados_Laboratorio.pdf"},
+		AllowedNames:      []string{"013B.pdf", "Epicrisis.docx", "Consentimiento_Informado.pdf", "Protocolo_Quirurgico.docx", "Resultados_Laboratorio.xlsx", "Imagen_Estudio.jpg"},
 		AllowDuplicateFix: false,
 	}
 
@@ -33,7 +33,7 @@ func LoadEnvConfig() Config {
 	if b, err := os.ReadFile("config.json"); err == nil {
 		_ = json.Unmarshal(b, &cfg)
 		if len(cfg.AllowedNames) == 0 {
-			cfg.AllowedNames = []string{"013B.pdf", "Epicrisis.pdf", "Consentimiento_Informado.pdf", "Protocolo_Quirurgico.pdf", "Resultados_Laboratorio.pdf"}
+			cfg.AllowedNames = []string{"013B.pdf", "Epicrisis.docx", "Consentimiento_Informado.pdf", "Protocolo_Quirurgico.docx", "Resultados_Laboratorio.xlsx", "Imagen_Estudio.jpg"}
 		}
 	}
 

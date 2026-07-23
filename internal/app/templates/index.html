@@ -74,7 +74,7 @@
       <form id="exportForm">
         <table id="docsTable">
           <thead>
-            <tr><th>Sel</th><th>Fecha</th><th>Descripción</th><th>Tipo</th><th>Nombre</th><th>Vista</th></tr>
+            <tr><th>Sel</th><th>Fecha</th><th>Descripción</th><th>Tipo</th><th>Ext</th><th>Estado</th><th>Motivo</th><th>Nombre</th><th>Vista</th></tr>
           </thead>
           <tbody>
           {{range $i, $d := .Result.Documentos}}
@@ -82,7 +82,10 @@
               <td><input type="checkbox" class="doc-check" data-index="{{$i}}" checked></td>
               <td>{{if $d.Fecha}}{{ $d.Fecha.Format "2006-01-02 15:04" }}{{end}}</td>
               <td>{{$d.Descripcion}}</td>
-              <td>{{$d.Tipo}}</td>
+              <td>{{if $d.Kind}}{{$d.Kind}}{{else}}{{$d.Tipo}}{{end}}</td>
+              <td>{{$d.Ext}}</td>
+              <td>{{$d.State}}</td>
+              <td class="muted">{{$d.Reason}}</td>
               <td>
                 <select class="doc-name" data-index="{{$i}}">
                   {{range $n := $.AllowedNames}}<option value="{{$n}}">{{$n}}</option>{{end}}

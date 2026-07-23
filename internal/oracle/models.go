@@ -60,6 +60,13 @@ type ImagenPacienteRow struct {
 	DprAraCodigo string     `json:"dpr_ara_codigo"`
 	DprCodigo    string     `json:"dpr_codigo"`
 	PrsCodigo    string     `json:"prs_codigo"`
+	Ext          string     `json:"ext,omitempty"`
+	Kind         string     `json:"kind,omitempty"`
+	State        string     `json:"state,omitempty"`
+	Reason       string     `json:"reason,omitempty"`
+	Hidden       bool       `json:"hidden,omitempty"`
+	Accessible   bool       `json:"accessible,omitempty"`
+	Exists       bool       `json:"exists,omitempty"`
 }
 
 type PlanillaDetalle struct {

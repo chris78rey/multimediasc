@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"html/template"
 	"io"
+	"mime"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -139,6 +140,7 @@ func (s *Server) handleSearch(w http.ResponseWriter, r *http.Request) {
 		_ = s.tmpl.ExecuteTemplate(w, "index.html", data)
 		return
 	}
+	enrichDocuments(det.Documentos)
 	data.Result = det
 	data.Notice = fmt.Sprintf("Se cargaron %d documentos", len(det.Documentos))
 	_ = s.tmpl.ExecuteTemplate(w, "index.html", data)
@@ -161,7 +163,11 @@ func (s *Server) handlePreview(w http.ResponseWriter, r *http.Request) {
 	}
 	defer f.Close()
 
-	w.Header().Set("Content-Type", "application/pdf")
+	if ct := mime.TypeByExtension(strings.ToLower(filepath.Ext(path))); ct != "" {
+		w.Header().Set("Content-Type", ct)
+	} else {
+		w.Header().Set("Content-Type", "application/octet-stream")
+	}
 	w.Header().Set("Content-Disposition", "inline")
 	_, _ = io.Copy(w, f)
 }
@@ -310,7 +316,7 @@ func createZip(planilla string, docs []zipDocument, lookup map[string]string, w 
 }
 
 func validWindowsFilename(name string) bool {
-	if name == "" || !strings.HasSuffix(strings.ToLower(name), ".pdf") {
+	if name == "" {
 		return false
 	}
 	bad := `<>:"/\|?*`

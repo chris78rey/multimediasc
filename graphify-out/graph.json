@@ -4,184 +4,14 @@
   "graph": {},
   "nodes": [
     {
-      "label": "errors.go",
-      "file_type": "code",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "errors.go",
-      "id": "oracle_errors"
-    },
-    {
-      "label": "OracleError",
-      "file_type": "code",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "oracleerror",
-      "id": "oracle_oracleerror"
-    },
-    {
-      "label": ".Error()",
-      "file_type": "code",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L22",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": ".error()",
-      "id": "oracle_oracleerror_error"
-    },
-    {
-      "label": ".Unwrap()",
-      "file_type": "code",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L26",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": ".unwrap()",
-      "id": "oracle_oracleerror_unwrap"
-    },
-    {
-      "label": "ClassifyOracleError()",
-      "file_type": "code",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "classifyoracleerror()",
-      "id": "oracle_errors_classifyoracleerror"
-    },
-    {
-      "label": "IsKind()",
-      "file_type": "code",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L56",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "iskind()",
-      "id": "oracle_errors_iskind"
-    },
-    {
-      "label": ".String()",
-      "file_type": "code",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L64",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": ".string()",
-      "id": "oracle_oracleerror_string"
-    },
-    {
-      "label": "models.go",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "models.go",
-      "id": "oracle_models"
-    },
-    {
-      "label": "DigitalizacionRow",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "digitalizacionrow",
-      "id": "oracle_digitalizacionrow"
-    },
-    {
-      "label": "Time",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "time",
-      "id": "time"
-    },
-    {
-      "label": "PacienteRow",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L41",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "pacienterow",
-      "id": "oracle_pacienterow"
-    },
-    {
-      "label": ".NombreCompleto()",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L50",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": ".nombrecompleto()",
-      "id": "oracle_pacienterow_nombrecompleto"
-    },
-    {
-      "label": "ImagenPacienteRow",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L54",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "imagenpacienterow",
-      "id": "oracle_imagenpacienterow"
-    },
-    {
-      "label": "PlanillaDetalle",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L65",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "planilladetalle",
-      "id": "oracle_planilladetalle"
-    },
-    {
-      "label": "joinNonEmpty()",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L71",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "joinnonempty()",
-      "id": "oracle_models_joinnonempty"
-    },
-    {
-      "label": "trimSpace()",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L81",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "trimspace()",
-      "id": "oracle_models_trimspace"
-    },
-    {
-      "label": "joinWithSpace()",
-      "file_type": "code",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L93",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "joinwithspace()",
-      "id": "oracle_models_joinwithspace"
-    },
-    {
       "label": "main.go",
       "file_type": "code",
       "source_file": "cmd/multimediasc/main.go",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "multimediasc_main",
       "community": 2,
-      "norm_label": "main.go",
-      "id": "multimediasc_main"
+      "norm_label": "main.go"
     },
     {
       "label": "main()",
@@ -189,9 +19,49 @@
       "source_file": "cmd/multimediasc/main.go",
       "source_location": "L9",
       "_origin": "ast",
+      "id": "multimediasc_main_main",
       "community": 2,
-      "norm_label": "main()",
-      "id": "multimediasc_main_main"
+      "norm_label": "main()"
+    },
+    {
+      "label": "main.go",
+      "file_type": "code",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "oraclecheck_main",
+      "community": 1,
+      "norm_label": "main.go"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "oraclecheck_main_main",
+      "community": 1,
+      "norm_label": "main()"
+    },
+    {
+      "label": "firstNonEmpty()",
+      "file_type": "code",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "oraclecheck_main_firstnonempty",
+      "community": 1,
+      "norm_label": "firstnonempty()"
+    },
+    {
+      "label": "loadEnvFile()",
+      "file_type": "code",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "oraclecheck_main_loadenvfile",
+      "community": 1,
+      "norm_label": "loadenvfile()"
     },
     {
       "label": "multimediasc",
@@ -201,49 +71,59 @@
       "source_file": "go.mod",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "pkg_multimediasc",
       "community": 13,
-      "norm_label": "multimediasc",
-      "id": "pkg_multimediasc"
+      "norm_label": "multimediasc"
     },
     {
-      "label": "config.go",
+      "label": "Config",
       "file_type": "code",
       "source_file": "internal/app/config.go",
-      "source_location": "L1",
+      "source_location": "L11",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "config.go",
-      "id": "app_config"
+      "id": "app_config",
+      "community": 1,
+      "norm_label": "config"
     },
     {
       "label": "LoadEnvConfig()",
       "file_type": "code",
       "source_file": "internal/app/config.go",
-      "source_location": "L18",
+      "source_location": "L20",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "loadenvconfig()",
-      "id": "app_config_loadenvconfig"
+      "id": "app_config_loadenvconfig",
+      "community": 1,
+      "norm_label": "loadenvconfig()"
     },
     {
       "label": "getenv()",
       "file_type": "code",
       "source_file": "internal/app/config.go",
-      "source_location": "L41",
+      "source_location": "L46",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "getenv()",
-      "id": "app_config_getenv"
+      "id": "app_config_getenv",
+      "community": 1,
+      "norm_label": "getenv()"
     },
     {
       "label": ".ConfigPath()",
       "file_type": "code",
       "source_file": "internal/app/config.go",
-      "source_location": "L48",
+      "source_location": "L53",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": ".configpath()",
-      "id": "app_config_configpath"
+      "id": "app_config_configpath",
+      "community": 1,
+      "norm_label": ".configpath()"
+    },
+    {
+      "label": "loadKeyValues()",
+      "file_type": "code",
+      "source_file": "internal/app/config.go",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "app_config_loadkeyvalues",
+      "community": 1,
+      "norm_label": "loadkeyvalues()"
     },
     {
       "label": "desktop.go",
@@ -251,9 +131,9 @@
       "source_file": "internal/app/desktop.go",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "app_desktop",
       "community": 2,
-      "norm_label": "desktop.go",
-      "id": "app_desktop"
+      "norm_label": "desktop.go"
     },
     {
       "label": "desktopState",
@@ -261,9 +141,9 @@
       "source_file": "internal/app/desktop.go",
       "source_location": "L22",
       "_origin": "ast",
+      "id": "app_desktopstate",
       "community": 2,
-      "norm_label": "desktopstate",
-      "id": "app_desktopstate"
+      "norm_label": "desktopstate"
     },
     {
       "label": "Config",
@@ -271,9 +151,9 @@
       "source_file": "internal/app/desktop.go",
       "source_location": "L23",
       "_origin": "ast",
+      "id": "internal_app_desktop_go_config",
       "community": 2,
-      "norm_label": "config",
-      "id": "internal_app_desktop_go_config"
+      "norm_label": "config"
     },
     {
       "label": "Repository",
@@ -281,9 +161,9 @@
       "source_file": "internal/app/desktop.go",
       "source_location": "L24",
       "_origin": "ast",
+      "id": "internal_app_desktop_go_repository",
       "community": 2,
-      "norm_label": "repository",
-      "id": "internal_app_desktop_go_repository"
+      "norm_label": "repository"
     },
     {
       "label": "PlanillaDetalle",
@@ -291,9 +171,9 @@
       "source_file": "internal/app/desktop.go",
       "source_location": "L25",
       "_origin": "ast",
+      "id": "internal_app_desktop_go_planilladetalle",
       "community": 2,
-      "norm_label": "planilladetalle",
-      "id": "internal_app_desktop_go_planilladetalle"
+      "norm_label": "planilladetalle"
     },
     {
       "label": "Label",
@@ -301,9 +181,9 @@
       "source_file": "internal/app/desktop.go",
       "source_location": "L29",
       "_origin": "ast",
+      "id": "label",
       "community": 2,
-      "norm_label": "label",
-      "id": "label"
+      "norm_label": "label"
     },
     {
       "label": "Container",
@@ -311,9 +191,9 @@
       "source_file": "internal/app/desktop.go",
       "source_location": "L31",
       "_origin": "ast",
+      "id": "container",
       "community": 2,
-      "norm_label": "container",
-      "id": "container"
+      "norm_label": "container"
     },
     {
       "label": "RunDesktop()",
@@ -321,369 +201,559 @@
       "source_file": "internal/app/desktop.go",
       "source_location": "L34",
       "_origin": "ast",
+      "id": "app_desktop_rundesktop",
       "community": 2,
-      "norm_label": "rundesktop()",
-      "id": "app_desktop_rundesktop"
+      "norm_label": "rundesktop()"
     },
     {
       "label": ".search()",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L92",
+      "source_location": "L101",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".search()",
-      "id": "app_desktopstate_search"
+      "id": "app_desktopstate_search",
+      "community": 2,
+      "norm_label": ".search()"
     },
     {
       "label": "Window",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L92",
+      "source_location": "L101",
       "_origin": "ast",
+      "id": "window",
       "community": 2,
-      "norm_label": "window",
-      "id": "window"
+      "norm_label": "window"
+    },
+    {
+      "label": "firstNonEmpty()",
+      "file_type": "code",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L153",
+      "_origin": "ast",
+      "id": "app_desktop_firstnonempty",
+      "community": 2,
+      "norm_label": "firstnonempty()"
     },
     {
       "label": ".logout()",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L143",
+      "source_location": "L162",
       "_origin": "ast",
+      "id": "app_desktopstate_logout",
       "community": 2,
-      "norm_label": ".logout()",
-      "id": "app_desktopstate_logout"
+      "norm_label": ".logout()"
     },
     {
       "label": ".refreshDocs()",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L160",
+      "source_location": "L179",
       "_origin": "ast",
+      "id": "app_desktopstate_refreshdocs",
       "community": 2,
-      "norm_label": ".refreshdocs()",
-      "id": "app_desktopstate_refreshdocs"
+      "norm_label": ".refreshdocs()"
     },
     {
       "label": ".openPreview()",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L192",
+      "source_location": "L211",
       "_origin": "ast",
+      "id": "app_desktopstate_openpreview",
       "community": 2,
-      "norm_label": ".openpreview()",
-      "id": "app_desktopstate_openpreview"
+      "norm_label": ".openpreview()"
     },
     {
       "label": ".exportWithDialog()",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L205",
+      "source_location": "L224",
       "_origin": "ast",
+      "id": "app_desktopstate_exportwithdialog",
       "community": 2,
-      "norm_label": ".exportwithdialog()",
-      "id": "app_desktopstate_exportwithdialog"
+      "norm_label": ".exportwithdialog()"
     },
     {
       "label": ".exportToPath()",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L220",
+      "source_location": "L239",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": ".exporttopath()",
-      "id": "app_desktopstate_exporttopath"
+      "id": "app_desktopstate_exporttopath",
+      "community": 0,
+      "norm_label": ".exporttopath()"
     },
     {
       "label": "planillaSummary()",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L242",
+      "source_location": "L261",
       "_origin": "ast",
+      "id": "app_desktop_planillasummary",
       "community": 2,
-      "norm_label": "planillasummary()",
-      "id": "app_desktop_planillasummary"
+      "norm_label": "planillasummary()"
+    },
+    {
+      "label": "documentSummary()",
+      "file_type": "code",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L289",
+      "_origin": "ast",
+      "id": "app_desktop_documentsummary",
+      "community": 2,
+      "norm_label": "documentsummary()"
+    },
+    {
+      "label": "ImagenPacienteRow",
+      "file_type": "code",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L289",
+      "_origin": "ast",
+      "id": "internal_app_desktop_go_imagenpacienterow",
+      "community": 2,
+      "norm_label": "imagenpacienterow"
+    },
+    {
+      "label": "documentStatusLine()",
+      "file_type": "code",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L301",
+      "_origin": "ast",
+      "id": "app_desktop_documentstatusline",
+      "community": 2,
+      "norm_label": "documentstatusline()"
     },
     {
       "label": "formatTime()",
       "file_type": "code",
       "source_file": "internal/app/desktop.go",
-      "source_location": "L270",
+      "source_location": "L321",
       "_origin": "ast",
+      "id": "app_desktop_formattime",
       "community": 2,
-      "norm_label": "formattime()",
-      "id": "app_desktop_formattime"
+      "norm_label": "formattime()"
     },
     {
-      "label": "server.go",
+      "label": "Time",
       "file_type": "code",
-      "source_file": "internal/app/server.go",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L321",
+      "_origin": "ast",
+      "id": "internal_app_desktop_go_time",
+      "community": 2,
+      "norm_label": "time"
+    },
+    {
+      "label": "fileobs.go",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs.go",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "app_fileobs",
+      "community": 14,
+      "norm_label": "fileobs.go"
+    },
+    {
+      "label": "enrichDocuments()",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "app_fileobs_enrichdocuments",
+      "community": 14,
+      "norm_label": "enrichdocuments()"
+    },
+    {
+      "label": "ImagenPacienteRow",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "internal_app_fileobs_go_imagenpacienterow",
+      "community": 14,
+      "norm_label": "imagenpacienterow"
+    },
+    {
+      "label": "fileObservation",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "app_fileobservation",
+      "community": 14,
+      "norm_label": "fileobservation"
+    },
+    {
+      "label": "inspectFile()",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "app_fileobs_inspectfile",
+      "community": 14,
+      "norm_label": "inspectfile()"
+    },
+    {
+      "label": "classifyFileError()",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "app_fileobs_classifyfileerror",
+      "community": 14,
+      "norm_label": "classifyfileerror()"
+    },
+    {
+      "label": "fileKindFromExt()",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "app_fileobs_filekindfromext",
+      "community": 14,
+      "norm_label": "filekindfromext()"
+    },
+    {
+      "label": "appendReason()",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "app_fileobs_appendreason",
+      "community": 14,
+      "norm_label": "appendreason()"
+    },
+    {
+      "label": "fileobs_other.go",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs_other.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_fileobs_other",
+      "community": 1,
+      "norm_label": "fileobs_other.go"
+    },
+    {
+      "label": "isHidden()",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs_other.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "app_fileobs_other_ishidden",
+      "community": 1,
+      "norm_label": "ishidden()"
+    },
+    {
+      "label": "FileInfo",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs_other.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "internal_app_fileobs_other_go_fileinfo",
+      "community": 1,
+      "norm_label": "fileinfo"
+    },
+    {
+      "label": "fileobs_windows.go",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs_windows.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_fileobs_windows",
+      "community": 17,
+      "norm_label": "fileobs_windows.go"
+    },
+    {
+      "label": "isHidden()",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs_windows.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "app_fileobs_windows_ishidden",
+      "community": 17,
+      "norm_label": "ishidden()"
+    },
+    {
+      "label": "FileInfo",
+      "file_type": "code",
+      "source_file": "internal/app/fileobs_windows.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "internal_app_fileobs_windows_go_fileinfo",
+      "community": 17,
+      "norm_label": "fileinfo"
+    },
+    {
+      "label": "Server",
+      "file_type": "code",
+      "source_file": "internal/app/server.go",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "app_server",
       "community": 0,
-      "norm_label": "server.go",
-      "id": "app_server"
+      "norm_label": "server"
     },
     {
       "label": "Config",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L26",
+      "source_location": "L27",
       "_origin": "ast",
+      "id": "internal_app_server_go_config",
       "community": 0,
-      "norm_label": "config",
-      "id": "internal_app_server_go_config"
+      "norm_label": "config"
     },
     {
       "label": "Template",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
+      "id": "template",
       "community": 0,
-      "norm_label": "template",
-      "id": "template"
+      "norm_label": "template"
     },
     {
       "label": "ServeMux",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
+      "id": "servemux",
       "community": 0,
-      "norm_label": "servemux",
-      "id": "servemux"
+      "norm_label": "servemux"
     },
     {
       "label": "Client",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L29",
+      "source_location": "L30",
       "_origin": "ast",
+      "id": "client",
       "community": 0,
-      "norm_label": "client",
-      "id": "client"
+      "norm_label": "client"
     },
     {
       "label": "pageData",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L32",
+      "source_location": "L33",
       "_origin": "ast",
+      "id": "app_pagedata",
       "community": 0,
-      "norm_label": "pagedata",
-      "id": "app_pagedata"
+      "norm_label": "pagedata"
     },
     {
       "label": "PlanillaDetalle",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L37",
+      "source_location": "L38",
       "_origin": "ast",
+      "id": "internal_app_server_go_planilladetalle",
       "community": 0,
-      "norm_label": "planilladetalle",
-      "id": "internal_app_server_go_planilladetalle"
+      "norm_label": "planilladetalle"
     },
     {
       "label": "zipDocument",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L42",
+      "source_location": "L43",
       "_origin": "ast",
+      "id": "app_zipdocument",
       "community": 0,
-      "norm_label": "zipdocument",
-      "id": "app_zipdocument"
+      "norm_label": "zipdocument"
     },
     {
       "label": "NewServer()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L49",
+      "source_location": "L50",
       "_origin": "ast",
+      "id": "app_server_newserver",
       "community": 0,
-      "norm_label": "newserver()",
-      "id": "app_server_newserver"
+      "norm_label": "newserver()"
     },
     {
       "label": ".Start()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L63",
+      "source_location": "L64",
       "_origin": "ast",
+      "id": "app_server_start",
       "community": 0,
-      "norm_label": ".start()",
-      "id": "app_server_start"
+      "norm_label": ".start()"
     },
     {
       "label": ".routes()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L67",
+      "source_location": "L68",
       "_origin": "ast",
+      "id": "app_server_routes",
       "community": 0,
-      "norm_label": ".routes()",
-      "id": "app_server_routes"
+      "norm_label": ".routes()"
     },
     {
       "label": ".handleIndex()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L75",
+      "source_location": "L76",
       "_origin": "ast",
+      "id": "app_server_handleindex",
       "community": 0,
-      "norm_label": ".handleindex()",
-      "id": "app_server_handleindex"
+      "norm_label": ".handleindex()"
     },
     {
       "label": "ResponseWriter",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L75",
+      "source_location": "L76",
       "_origin": "ast",
+      "id": "responsewriter",
       "community": 0,
-      "norm_label": "responsewriter",
-      "id": "responsewriter"
+      "norm_label": "responsewriter"
     },
     {
       "label": "Request",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L75",
+      "source_location": "L76",
       "_origin": "ast",
+      "id": "request",
       "community": 0,
-      "norm_label": "request",
-      "id": "request"
+      "norm_label": "request"
     },
     {
       "label": ".openRepo()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L88",
+      "source_location": "L89",
       "_origin": "ast",
+      "id": "app_server_openrepo",
       "community": 0,
-      "norm_label": ".openrepo()",
-      "id": "app_server_openrepo"
+      "norm_label": ".openrepo()"
     },
     {
       "label": "Repository",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L88",
+      "source_location": "L89",
       "_origin": "ast",
+      "id": "internal_app_server_go_repository",
       "community": 0,
-      "norm_label": "repository",
-      "id": "internal_app_server_go_repository"
+      "norm_label": "repository"
     },
     {
       "label": ".handleSearch()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L106",
+      "source_location": "L107",
       "_origin": "ast",
+      "id": "app_server_handlesearch",
       "community": 0,
-      "norm_label": ".handlesearch()",
-      "id": "app_server_handlesearch"
+      "norm_label": ".handlesearch()"
     },
     {
       "label": ".handlePreview()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L147",
+      "source_location": "L149",
       "_origin": "ast",
+      "id": "app_server_handlepreview",
       "community": 0,
-      "norm_label": ".handlepreview()",
-      "id": "app_server_handlepreview"
+      "norm_label": ".handlepreview()"
     },
     {
       "label": ".handleExport()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L169",
+      "source_location": "L175",
       "_origin": "ast",
+      "id": "app_server_handleexport",
       "community": 0,
-      "norm_label": ".handleexport()",
-      "id": "app_server_handleexport"
+      "norm_label": ".handleexport()"
     },
     {
       "label": "validatePlanilla()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L204",
+      "source_location": "L210",
       "_origin": "ast",
+      "id": "app_server_validateplanilla",
       "community": 0,
-      "norm_label": "validateplanilla()",
-      "id": "app_server_validateplanilla"
+      "norm_label": "validateplanilla()"
     },
     {
       "label": "friendlyErr()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L219",
+      "source_location": "L225",
       "_origin": "ast",
+      "id": "app_server_friendlyerr",
       "community": 0,
-      "norm_label": "friendlyerr()",
-      "id": "app_server_friendlyerr"
+      "norm_label": "friendlyerr()"
     },
     {
       "label": "errorsIs()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L243",
+      "source_location": "L249",
       "_origin": "ast",
+      "id": "app_server_errorsis",
       "community": 0,
-      "norm_label": "errorsis()",
-      "id": "app_server_errorsis"
+      "norm_label": "errorsis()"
     },
     {
       "label": "exportZip()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L250",
+      "source_location": "L256",
       "_origin": "ast",
+      "id": "app_server_exportzip",
       "community": 0,
-      "norm_label": "exportzip()",
-      "id": "app_server_exportzip"
+      "norm_label": "exportzip()"
     },
     {
       "label": "createZip()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L263",
+      "source_location": "L269",
       "_origin": "ast",
+      "id": "app_server_createzip",
       "community": 0,
-      "norm_label": "createzip()",
-      "id": "app_server_createzip"
+      "norm_label": "createzip()"
     },
     {
       "label": "Writer",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L263",
+      "source_location": "L269",
       "_origin": "ast",
+      "id": "internal_app_server_go_writer",
       "community": 0,
-      "norm_label": "writer",
-      "id": "internal_app_server_go_writer"
+      "norm_label": "writer"
     },
     {
       "label": "validWindowsFilename()",
       "file_type": "code",
       "source_file": "internal/app/server.go",
-      "source_location": "L312",
+      "source_location": "L318",
       "_origin": "ast",
+      "id": "app_server_validwindowsfilename",
       "community": 0,
-      "norm_label": "validwindowsfilename()",
-      "id": "app_server_validwindowsfilename"
+      "norm_label": "validwindowsfilename()"
     },
     {
-      "label": "zipwriter.go",
+      "label": "zipWriter",
       "file_type": "code",
       "source_file": "internal/app/zipwriter.go",
-      "source_location": "L1",
+      "source_location": "L9",
       "_origin": "ast",
+      "id": "app_zipwriter",
       "community": 8,
-      "norm_label": "zipwriter.go",
-      "id": "app_zipwriter"
+      "norm_label": "zipwriter"
     },
     {
       "label": "Writer",
@@ -691,9 +761,9 @@
       "source_file": "internal/app/zipwriter.go",
       "source_location": "L10",
       "_origin": "ast",
+      "id": "internal_app_zipwriter_go_writer",
       "community": 8,
-      "norm_label": "writer",
-      "id": "internal_app_zipwriter_go_writer"
+      "norm_label": "writer"
     },
     {
       "label": "File",
@@ -701,9 +771,9 @@
       "source_file": "internal/app/zipwriter.go",
       "source_location": "L11",
       "_origin": "ast",
+      "id": "file",
       "community": 8,
-      "norm_label": "file",
-      "id": "file"
+      "norm_label": "file"
     },
     {
       "label": "newZipWriter()",
@@ -711,9 +781,9 @@
       "source_file": "internal/app/zipwriter.go",
       "source_location": "L14",
       "_origin": "ast",
+      "id": "app_zipwriter_newzipwriter",
       "community": 8,
-      "norm_label": "newzipwriter()",
-      "id": "app_zipwriter_newzipwriter"
+      "norm_label": "newzipwriter()"
     },
     {
       "label": ".addFile()",
@@ -721,9 +791,9 @@
       "source_file": "internal/app/zipwriter.go",
       "source_location": "L18",
       "_origin": "ast",
+      "id": "app_zipwriter_addfile",
       "community": 8,
-      "norm_label": ".addfile()",
-      "id": "app_zipwriter_addfile"
+      "norm_label": ".addfile()"
     },
     {
       "label": ".close()",
@@ -731,9 +801,909 @@
       "source_file": "internal/app/zipwriter.go",
       "source_location": "L32",
       "_origin": "ast",
+      "id": "app_zipwriter_close",
       "community": 8,
-      "norm_label": ".close()",
-      "id": "app_zipwriter_close"
+      "norm_label": ".close()"
+    },
+    {
+      "label": "errors.go",
+      "file_type": "code",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "oracle_errors",
+      "community": 7,
+      "norm_label": "errors.go"
+    },
+    {
+      "label": "OracleError",
+      "file_type": "code",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "oracle_oracleerror",
+      "community": 7,
+      "norm_label": "oracleerror"
+    },
+    {
+      "label": ".Error()",
+      "file_type": "code",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "oracle_oracleerror_error",
+      "community": 7,
+      "norm_label": ".error()"
+    },
+    {
+      "label": ".Unwrap()",
+      "file_type": "code",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "oracle_oracleerror_unwrap",
+      "community": 7,
+      "norm_label": ".unwrap()"
+    },
+    {
+      "label": "ClassifyOracleError()",
+      "file_type": "code",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "oracle_errors_classifyoracleerror",
+      "community": 1,
+      "norm_label": "classifyoracleerror()"
+    },
+    {
+      "label": "IsKind()",
+      "file_type": "code",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "oracle_errors_iskind",
+      "community": 7,
+      "norm_label": "iskind()"
+    },
+    {
+      "label": ".String()",
+      "file_type": "code",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "oracle_oracleerror_string",
+      "community": 7,
+      "norm_label": ".string()"
+    },
+    {
+      "label": "models.go",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "oracle_models",
+      "community": 6,
+      "norm_label": "models.go"
+    },
+    {
+      "label": "DigitalizacionRow",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "oracle_digitalizacionrow",
+      "community": 6,
+      "norm_label": "digitalizacionrow"
+    },
+    {
+      "label": "Time",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "internal_oracle_models_go_time",
+      "community": 6,
+      "norm_label": "time"
+    },
+    {
+      "label": "PacienteRow",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "oracle_pacienterow",
+      "community": 6,
+      "norm_label": "pacienterow"
+    },
+    {
+      "label": ".NombreCompleto()",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "oracle_pacienterow_nombrecompleto",
+      "community": 6,
+      "norm_label": ".nombrecompleto()"
+    },
+    {
+      "label": "ImagenPacienteRow",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "oracle_imagenpacienterow",
+      "community": 6,
+      "norm_label": "imagenpacienterow"
+    },
+    {
+      "label": "PlanillaDetalle",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "oracle_planilladetalle",
+      "community": 6,
+      "norm_label": "planilladetalle"
+    },
+    {
+      "label": "joinNonEmpty()",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "oracle_models_joinnonempty",
+      "community": 6,
+      "norm_label": "joinnonempty()"
+    },
+    {
+      "label": "trimSpace()",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "oracle_models_trimspace",
+      "community": 1,
+      "norm_label": "trimspace()"
+    },
+    {
+      "label": "joinWithSpace()",
+      "file_type": "code",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "oracle_models_joinwithspace",
+      "community": 6,
+      "norm_label": "joinwithspace()"
+    },
+    {
+      "label": "Repository",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "oracle_repository",
+      "community": 1,
+      "norm_label": "repository"
+    },
+    {
+      "label": "OpenConfig",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "oracle_openconfig",
+      "community": 1,
+      "norm_label": "openconfig"
+    },
+    {
+      "label": "Duration",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "duration",
+      "community": 1,
+      "norm_label": "duration"
+    },
+    {
+      "label": "DB",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "db",
+      "community": 1,
+      "norm_label": "db"
+    },
+    {
+      "label": "Open()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "oracle_repository_open",
+      "community": 1,
+      "norm_label": "open()"
+    },
+    {
+      "label": "Context",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "context",
+      "community": 1,
+      "norm_label": "context"
+    },
+    {
+      "label": "buildDSNCandidates()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "oracle_repository_builddsncandidates",
+      "community": 1,
+      "norm_label": "builddsncandidates()"
+    },
+    {
+      "label": "uniqueNames()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "oracle_repository_uniquenames",
+      "community": 1,
+      "norm_label": "uniquenames()"
+    },
+    {
+      "label": "trimDigits()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L182",
+      "_origin": "ast",
+      "id": "oracle_repository_trimdigits",
+      "community": 1,
+      "norm_label": "trimdigits()"
+    },
+    {
+      "label": "parseEasyConnect()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "oracle_repository_parseeasyconnect",
+      "community": 1,
+      "norm_label": "parseeasyconnect()"
+    },
+    {
+      "label": "splitHostPortLoose()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L225",
+      "_origin": "ast",
+      "id": "oracle_repository_splithostportloose",
+      "community": 1,
+      "norm_label": "splithostportloose()"
+    },
+    {
+      "label": "pingContext()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L236",
+      "_origin": "ast",
+      "id": "oracle_repository_pingcontext",
+      "community": 1,
+      "norm_label": "pingcontext()"
+    },
+    {
+      "label": ".Close()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L242",
+      "_origin": "ast",
+      "id": "oracle_repository_close",
+      "community": 1,
+      "norm_label": ".close()"
+    },
+    {
+      "label": ".BuscarPlanilla()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L249",
+      "_origin": "ast",
+      "id": "oracle_repository_buscarplanilla",
+      "community": 1,
+      "norm_label": ".buscarplanilla()"
+    },
+    {
+      "label": "DigitalizacionRow",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L249",
+      "_origin": "ast",
+      "id": "digitalizacionrow",
+      "community": 1,
+      "norm_label": "digitalizacionrow"
+    },
+    {
+      "label": ".BuscarPaciente()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "oracle_repository_buscarpaciente",
+      "community": 1,
+      "norm_label": ".buscarpaciente()"
+    },
+    {
+      "label": "PacienteRow",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "pacienterow",
+      "community": 1,
+      "norm_label": "pacienterow"
+    },
+    {
+      "label": ".ListarDocumentos()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L279",
+      "_origin": "ast",
+      "id": "oracle_repository_listardocumentos",
+      "community": 1,
+      "norm_label": ".listardocumentos()"
+    },
+    {
+      "label": "ImagenPacienteRow",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L279",
+      "_origin": "ast",
+      "id": "internal_oracle_repository_go_imagenpacienterow",
+      "community": 1,
+      "norm_label": "imagenpacienterow"
+    },
+    {
+      "label": ".ObtenerDetallePlanilla()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L300",
+      "_origin": "ast",
+      "id": "oracle_repository_obtenerdetalleplanilla",
+      "community": 1,
+      "norm_label": ".obtenerdetalleplanilla()"
+    },
+    {
+      "label": "PlanillaDetalle",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L300",
+      "_origin": "ast",
+      "id": "internal_oracle_repository_go_planilladetalle",
+      "community": 1,
+      "norm_label": "planilladetalle"
+    },
+    {
+      "label": "scanDigitalizacion()",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L325",
+      "_origin": "ast",
+      "id": "oracle_repository_scandigitalizacion",
+      "community": 1,
+      "norm_label": "scandigitalizacion()"
+    },
+    {
+      "label": "Rows",
+      "file_type": "code",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L325",
+      "_origin": "ast",
+      "id": "rows",
+      "community": 1,
+      "norm_label": "rows"
+    },
+    {
+      "label": "unhide_share.ps1",
+      "file_type": "code",
+      "source_file": "scripts/unhide_share.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_unhide_share",
+      "community": 18,
+      "norm_label": "unhide_share.ps1"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 11,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "MultimediaSC",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_multimediasc",
+      "community": 11,
+      "norm_label": "multimediasc"
+    },
+    {
+      "label": "Ejecutar",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "readme_ejecutar",
+      "community": 11,
+      "norm_label": "ejecutar"
+    },
+    {
+      "label": "Variables opcionales",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "readme_variables_opcionales",
+      "community": 11,
+      "norm_label": "variables opcionales"
+    },
+    {
+      "label": "inst01.md",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inst01_md",
+      "community": 16,
+      "norm_label": "inst01.md"
+    },
+    {
+      "label": "Oracle 11gR2",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "inst01_oracle_11gr2",
+      "community": 16,
+      "norm_label": "oracle 11gr2"
+    },
+    {
+      "label": "\ud83c\udfa8 1. La Interfaz del \"Renombrador Inteligente\" (UX/UI de Escritorio)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "inst01_1_la_interfaz_del_renombrador_inteligente_ux_ui_de_escritorio",
+      "community": 16,
+      "norm_label": "\ud83c\udfa8 1. la interfaz del \"renombrador inteligente\" (ux/ui de escritorio)"
+    },
+    {
+      "label": "\ud83e\udde0 2. Lo que \"No te est\u00e1s dando cuenta\" en este momento (Puntos Ciegos Cr\u00edticos)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "inst01_2_lo_que_no_te_est\u00e1s_dando_cuenta_en_este_momento_puntos_ciegos_cr\u00edticos",
+      "community": 16,
+      "norm_label": "\ud83e\udde0 2. lo que \"no te estas dando cuenta\" en este momento (puntos ciegos criticos)"
+    },
+    {
+      "label": "\ud83d\udee1\ufe0f 3. C\u00f3digo del Backend en Go (Mapeo, Renombrado y Compresi\u00f3n ZIP)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "inst01_3_c\u00f3digo_del_backend_en_go_mapeo_renombrado_y_compresi\u00f3n_zip",
+      "community": 16,
+      "norm_label": "\ud83d\udee1\ufe0f 3. codigo del backend en go (mapeo, renombrado y compresion zip)"
+    },
+    {
+      "label": "A. El Archivo de Configuraci\u00f3n (`config.json`)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "inst01_a_el_archivo_de_configuraci\u00f3n_config_json",
+      "community": 16,
+      "norm_label": "a. el archivo de configuracion (`config.json`)"
+    },
+    {
+      "label": "B. El Motor en Go (`main.go` con Soporte de Oracle y ZIP Estructurado)",
+      "file_type": "document",
+      "source_file": "inst01.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "inst01_b_el_motor_en_go_main_go_con_soporte_de_oracle_y_zip_estructurado",
+      "community": 16,
+      "norm_label": "b. el motor en go (`main.go` con soporte de oracle y zip estructurado)"
+    },
+    {
+      "label": "inst02.md",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inst02_md",
+      "community": 10,
+      "norm_label": "inst02.md"
+    },
+    {
+      "label": "Requerimientos para entregar al desarrollador",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "community": 10,
+      "norm_label": "requerimientos para entregar al desarrollador"
+    },
+    {
+      "label": "1. Inicio de sesi\u00f3n",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "inst02_1_inicio_de_sesi\u00f3n",
+      "community": 10,
+      "norm_label": "1. inicio de sesion"
+    },
+    {
+      "label": "2. Conexi\u00f3n con Oracle",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "inst02_2_conexi\u00f3n_con_oracle",
+      "community": 10,
+      "norm_label": "2. conexion con oracle"
+    },
+    {
+      "label": "3. B\u00fasqueda de la planilla",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "inst02_3_b\u00fasqueda_de_la_planilla",
+      "community": 10,
+      "norm_label": "3. busqueda de la planilla"
+    },
+    {
+      "label": "4. Localizaci\u00f3n de documentos",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "inst02_4_localizaci\u00f3n_de_documentos",
+      "community": 10,
+      "norm_label": "4. localizacion de documentos"
+    },
+    {
+      "label": "5. Regla para relacionar documentos",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "inst02_5_regla_para_relacionar_documentos",
+      "community": 10,
+      "norm_label": "5. regla para relacionar documentos"
+    },
+    {
+      "label": "6. Vista previa",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "inst02_6_vista_previa",
+      "community": 10,
+      "norm_label": "6. vista previa"
+    },
+    {
+      "label": "7. Renombrado estandarizado",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "inst02_7_renombrado_estandarizado",
+      "community": 10,
+      "norm_label": "7. renombrado estandarizado"
+    },
+    {
+      "label": "8. Nombres duplicados",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "inst02_8_nombres_duplicados",
+      "community": 10,
+      "norm_label": "8. nombres duplicados"
+    },
+    {
+      "label": "9. Generaci\u00f3n del ZIP",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "inst02_9_generaci\u00f3n_del_zip",
+      "community": 10,
+      "norm_label": "9. generacion del zip"
+    },
+    {
+      "label": "10. Manejo de errores",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "inst02_10_manejo_de_errores",
+      "community": 10,
+      "norm_label": "10. manejo de errores"
+    },
+    {
+      "label": "11. Auditor\u00eda",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "inst02_11_auditor\u00eda",
+      "community": 10,
+      "norm_label": "11. auditoria"
+    },
+    {
+      "label": "12. Alcance que no corresponde al desarrollador",
+      "file_type": "document",
+      "source_file": "inst02.md",
+      "source_location": "L189",
+      "_origin": "ast",
+      "id": "inst02_12_alcance_que_no_corresponde_al_desarrollador",
+      "community": 10,
+      "norm_label": "12. alcance que no corresponde al desarrollador"
+    },
+    {
+      "label": "prompt2_ui_zip.md",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip",
+      "community": 4,
+      "norm_label": "prompt2_ui_zip.md"
+    },
+    {
+      "label": "Prompt 2: UI + ZIP",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_prompt_2_ui_zip",
+      "community": 4,
+      "norm_label": "prompt 2: ui + zip"
+    },
+    {
+      "label": "Objetivo funcional",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_objetivo_funcional",
+      "community": 4,
+      "norm_label": "objetivo funcional"
+    },
+    {
+      "label": "Componentes UI",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_componentes_ui",
+      "community": 15,
+      "norm_label": "componentes ui"
+    },
+    {
+      "label": "1. Encabezado de sesi\u00f3n",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_1_encabezado_de_sesi\u00f3n",
+      "community": 15,
+      "norm_label": "1. encabezado de sesion"
+    },
+    {
+      "label": "2. Panel de b\u00fasqueda",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_2_panel_de_b\u00fasqueda",
+      "community": 15,
+      "norm_label": "2. panel de busqueda"
+    },
+    {
+      "label": "3. Resumen de planilla",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_3_resumen_de_planilla",
+      "community": 15,
+      "norm_label": "3. resumen de planilla"
+    },
+    {
+      "label": "4. Tabla de documentos",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_4_tabla_de_documentos",
+      "community": 15,
+      "norm_label": "4. tabla de documentos"
+    },
+    {
+      "label": "5. Men\u00fa de asignaci\u00f3n de nombre",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_5_men\u00fa_de_asignaci\u00f3n_de_nombre",
+      "community": 15,
+      "norm_label": "5. menu de asignacion de nombre"
+    },
+    {
+      "label": "6. Vista previa PDF",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_6_vista_previa_pdf",
+      "community": 15,
+      "norm_label": "6. vista previa pdf"
+    },
+    {
+      "label": "7. Pie de exportaci\u00f3n",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_7_pie_de_exportaci\u00f3n",
+      "community": 15,
+      "norm_label": "7. pie de exportacion"
+    },
+    {
+      "label": "Flujo de exportaci\u00f3n local",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "community": 4,
+      "norm_label": "flujo de exportacion local"
+    },
+    {
+      "label": "Validaciones",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_validaciones",
+      "community": 4,
+      "norm_label": "validaciones"
+    },
+    {
+      "label": "Entrada de planilla",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_entrada_de_planilla",
+      "community": 4,
+      "norm_label": "entrada de planilla"
+    },
+    {
+      "label": "Selecci\u00f3n de documentos",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_selecci\u00f3n_de_documentos",
+      "community": 4,
+      "norm_label": "seleccion de documentos"
+    },
+    {
+      "label": "Nombres estandarizados",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_nombres_estandarizados",
+      "community": 4,
+      "norm_label": "nombres estandarizados"
+    },
+    {
+      "label": "Archivos f\u00edsicos",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_archivos_f\u00edsicos",
+      "community": 4,
+      "norm_label": "archivos fisicos"
+    },
+    {
+      "label": "ZIP",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_zip",
+      "community": 4,
+      "norm_label": "zip"
+    },
+    {
+      "label": "Manejo de nombres duplicados",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_manejo_de_nombres_duplicados",
+      "community": 4,
+      "norm_label": "manejo de nombres duplicados"
+    },
+    {
+      "label": "Manejo de errores",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L176",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_manejo_de_errores",
+      "community": 4,
+      "norm_label": "manejo de errores"
+    },
+    {
+      "label": "Progreso",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_progreso",
+      "community": 4,
+      "norm_label": "progreso"
+    },
+    {
+      "label": "Contrato visual sugerido",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_contrato_visual_sugerido",
+      "community": 4,
+      "norm_label": "contrato visual sugerido"
+    },
+    {
+      "label": "Resultado esperado de esta fase",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L228",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_resultado_esperado_de_esta_fase",
+      "community": 4,
+      "norm_label": "resultado esperado de esta fase"
+    },
+    {
+      "label": "Fuera de alcance",
+      "file_type": "document",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L238",
+      "_origin": "ast",
+      "id": "prompt2_ui_zip_fuera_de_alcance",
+      "community": 4,
+      "norm_label": "fuera de alcance"
     },
     {
       "label": "SIS Extractor de Expedientes Digitales (Desktop App)",
@@ -1152,19 +2122,6 @@
       "id": "prompt2_ui_zip_feature"
     },
     {
-      "label": "Objetivo funcional",
-      "file_type": "concept",
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "objetivo funcional",
-      "id": "prompt2_ui_zip_objetivo_funcional"
-    },
-    {
       "label": "Encabezado de sesi\u00f3n",
       "file_type": "concept",
       "source_file": "prompt2_ui_zip.md",
@@ -1254,97 +2211,6 @@
       "community": 4,
       "norm_label": "pie de exportacion",
       "id": "prompt2_ui_zip_pie_exportacion"
-    },
-    {
-      "label": "Flujo de exportaci\u00f3n local",
-      "file_type": "concept",
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "flujo de exportacion local",
-      "id": "prompt2_ui_zip_flujo_exportacion"
-    },
-    {
-      "label": "Validaciones",
-      "file_type": "concept",
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "validaciones",
-      "id": "prompt2_ui_zip_validaciones"
-    },
-    {
-      "label": "Manejo de errores",
-      "file_type": "concept",
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "manejo de errores",
-      "id": "prompt2_ui_zip_manejo_errores"
-    },
-    {
-      "label": "Progreso",
-      "file_type": "concept",
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "progreso",
-      "id": "prompt2_ui_zip_progreso"
-    },
-    {
-      "label": "Contrato visual sugerido",
-      "file_type": "concept",
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "contrato visual sugerido",
-      "id": "prompt2_ui_zip_contrato_visual"
-    },
-    {
-      "label": "Fuera de alcance",
-      "file_type": "concept",
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "fuera de alcance",
-      "id": "prompt2_ui_zip_fuera_de_alcance"
-    },
-    {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 11,
-      "norm_label": "readme.md",
-      "id": "readme_readme"
     },
     {
       "label": "Command: go run ./cmd/multimediasc",
@@ -1462,518 +2328,9 @@
       "community": 9,
       "norm_label": "api endpoint: /api/preview",
       "id": "api_preview"
-    },
-    {
-      "label": "main.go",
-      "file_type": "code",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "oraclecheck_main",
-      "community": 1,
-      "norm_label": "main.go"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "oraclecheck_main_main",
-      "community": 1,
-      "norm_label": "main()"
-    },
-    {
-      "label": "firstNonEmpty()",
-      "file_type": "code",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L57",
-      "_origin": "ast",
-      "id": "oraclecheck_main_firstnonempty",
-      "community": 1,
-      "norm_label": "firstnonempty()"
-    },
-    {
-      "label": "loadEnvFile()",
-      "file_type": "code",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L66",
-      "_origin": "ast",
-      "id": "oraclecheck_main_loadenvfile",
-      "community": 1,
-      "norm_label": "loadenvfile()"
-    },
-    {
-      "label": "repository.go",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "oracle_repository",
-      "community": 1,
-      "norm_label": "repository.go"
-    },
-    {
-      "label": "OpenConfig",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L80",
-      "_origin": "ast",
-      "id": "oracle_openconfig",
-      "community": 1,
-      "norm_label": "openconfig"
-    },
-    {
-      "label": "Duration",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L84",
-      "_origin": "ast",
-      "id": "duration",
-      "community": 1,
-      "norm_label": "duration"
-    },
-    {
-      "label": "DB",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L88",
-      "_origin": "ast",
-      "id": "db",
-      "community": 1,
-      "norm_label": "db"
-    },
-    {
-      "label": "Open()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L91",
-      "_origin": "ast",
-      "id": "oracle_repository_open",
-      "community": 1,
-      "norm_label": "open()"
-    },
-    {
-      "label": "Context",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L91",
-      "_origin": "ast",
-      "id": "context",
-      "community": 1,
-      "norm_label": "context"
-    },
-    {
-      "label": "buildDSNCandidates()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L128",
-      "_origin": "ast",
-      "id": "oracle_repository_builddsncandidates",
-      "community": 1,
-      "norm_label": "builddsncandidates()"
-    },
-    {
-      "label": "uniqueNames()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L164",
-      "_origin": "ast",
-      "id": "oracle_repository_uniquenames",
-      "community": 1,
-      "norm_label": "uniquenames()"
-    },
-    {
-      "label": "trimDigits()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L182",
-      "_origin": "ast",
-      "id": "oracle_repository_trimdigits",
-      "community": 1,
-      "norm_label": "trimdigits()"
-    },
-    {
-      "label": "parseEasyConnect()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L194",
-      "_origin": "ast",
-      "id": "oracle_repository_parseeasyconnect",
-      "community": 1,
-      "norm_label": "parseeasyconnect()"
-    },
-    {
-      "label": "splitHostPortLoose()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L225",
-      "_origin": "ast",
-      "id": "oracle_repository_splithostportloose",
-      "community": 1,
-      "norm_label": "splithostportloose()"
-    },
-    {
-      "label": "pingContext()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L236",
-      "_origin": "ast",
-      "id": "oracle_repository_pingcontext",
-      "community": 1,
-      "norm_label": "pingcontext()"
-    },
-    {
-      "label": ".Close()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L242",
-      "_origin": "ast",
-      "id": "oracle_repository_close",
-      "community": 1,
-      "norm_label": ".close()"
-    },
-    {
-      "label": ".BuscarPlanilla()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L249",
-      "_origin": "ast",
-      "id": "oracle_repository_buscarplanilla",
-      "community": 1,
-      "norm_label": ".buscarplanilla()"
-    },
-    {
-      "label": "DigitalizacionRow",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L249",
-      "_origin": "ast",
-      "id": "digitalizacionrow",
-      "community": 1,
-      "norm_label": "digitalizacionrow"
-    },
-    {
-      "label": ".BuscarPaciente()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L270",
-      "_origin": "ast",
-      "id": "oracle_repository_buscarpaciente",
-      "community": 1,
-      "norm_label": ".buscarpaciente()"
-    },
-    {
-      "label": "PacienteRow",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L270",
-      "_origin": "ast",
-      "id": "pacienterow",
-      "community": 1,
-      "norm_label": "pacienterow"
-    },
-    {
-      "label": ".ListarDocumentos()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L279",
-      "_origin": "ast",
-      "id": "oracle_repository_listardocumentos",
-      "community": 1,
-      "norm_label": ".listardocumentos()"
-    },
-    {
-      "label": "ImagenPacienteRow",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L279",
-      "_origin": "ast",
-      "id": "imagenpacienterow",
-      "community": 1,
-      "norm_label": "imagenpacienterow"
-    },
-    {
-      "label": ".ObtenerDetallePlanilla()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L300",
-      "_origin": "ast",
-      "id": "oracle_repository_obtenerdetalleplanilla",
-      "community": 1,
-      "norm_label": ".obtenerdetalleplanilla()"
-    },
-    {
-      "label": "PlanillaDetalle",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L300",
-      "_origin": "ast",
-      "id": "planilladetalle",
-      "community": 1,
-      "norm_label": "planilladetalle"
-    },
-    {
-      "label": "scanDigitalizacion()",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L325",
-      "_origin": "ast",
-      "id": "oracle_repository_scandigitalizacion",
-      "community": 1,
-      "norm_label": "scandigitalizacion()"
-    },
-    {
-      "label": "Rows",
-      "file_type": "code",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L325",
-      "_origin": "ast",
-      "id": "rows",
-      "community": 1,
-      "norm_label": "rows"
     }
   ],
   "links": [
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_errors",
-      "target": "oracle_errors_classifyoracleerror"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_errors",
-      "target": "oracle_errors_iskind"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_errors",
-      "target": "oracle_oracleerror"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_oracleerror",
-      "target": "oracle_oracleerror_error"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L64",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_oracleerror",
-      "target": "oracle_oracleerror_string"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/errors.go",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_oracleerror",
-      "target": "oracle_oracleerror_unwrap"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models",
-      "target": "oracle_digitalizacionrow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L54",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models",
-      "target": "oracle_imagenpacienterow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models",
-      "target": "oracle_models_joinnonempty"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L93",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models",
-      "target": "oracle_models_joinwithspace"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L81",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models",
-      "target": "oracle_models_trimspace"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models",
-      "target": "oracle_pacienterow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L65",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models",
-      "target": "oracle_planilladetalle"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L36",
-      "weight": 1.0,
-      "context": "field",
-      "confidence_score": 1.0,
-      "source": "oracle_digitalizacionrow",
-      "target": "time"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L66",
-      "weight": 1.0,
-      "context": "field",
-      "confidence_score": 1.0,
-      "source": "oracle_planilladetalle",
-      "target": "oracle_digitalizacionrow"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/app/desktop.go",
-      "source_location": "L270",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "app_desktop_formattime",
-      "target": "time"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L56",
-      "weight": 1.0,
-      "context": "field",
-      "confidence_score": 1.0,
-      "source": "oracle_imagenpacienterow",
-      "target": "time"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L50",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_pacienterow",
-      "target": "oracle_pacienterow_nombrecompleto"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L67",
-      "weight": 1.0,
-      "context": "field",
-      "confidence_score": 1.0,
-      "source": "oracle_planilladetalle",
-      "target": "oracle_pacienterow"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_pacienterow_nombrecompleto",
-      "target": "oracle_models_joinnonempty"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L68",
-      "weight": 1.0,
-      "context": "field",
-      "confidence_score": 1.0,
-      "source": "oracle_planilladetalle",
-      "target": "oracle_imagenpacienterow"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L78",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models_joinnonempty",
-      "target": "oracle_models_joinwithspace"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/models.go",
-      "source_location": "L74",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "oracle_models_joinnonempty",
-      "target": "oracle_models_trimspace"
-    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -1998,12 +2355,119 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "internal/app/config.go",
-      "source_location": "L9",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L57",
       "weight": 1.0,
       "confidence_score": 1.0,
+      "source": "oraclecheck_main",
+      "target": "oraclecheck_main_firstnonempty"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oraclecheck_main",
+      "target": "oraclecheck_main_loadenvfile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oraclecheck_main",
+      "target": "oraclecheck_main_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "oraclecheck_main_main",
+      "target": "app_config_getenv"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "oraclecheck_main_main",
+      "target": "oracle_repository_open"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oraclecheck_main_main",
+      "target": "oraclecheck_main_firstnonempty"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oraclecheck_main_main",
+      "target": "oraclecheck_main_loadenvfile"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "oraclecheck_main_firstnonempty",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "oraclecheck_main_loadenvfile",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "cmd/oraclecheck/main.go",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "oraclecheck_main_loadenvfile",
+      "target": "oracle_repository_open"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/config.go",
+      "source_location": "L11",
+      "weight": 1.0,
       "source": "app_config",
-      "target": "app_config"
+      "target": "app_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -2037,6 +2501,16 @@
       "target": "app_config"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/config.go",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "app_config",
+      "target": "app_config_loadkeyvalues",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -2050,6 +2524,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/config.go",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "app_config_loadenvconfig",
+      "target": "app_config_loadkeyvalues",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "internal/app/desktop.go",
@@ -2057,6 +2542,80 @@
       "weight": 1.0,
       "source": "app_desktop_rundesktop",
       "target": "app_config_loadenvconfig"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/config.go",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "app_config_loadkeyvalues",
+      "target": "app_config_getenv"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "app_desktop_rundesktop",
+      "target": "app_config_getenv"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/config.go",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "app_config_loadkeyvalues",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/config.go",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "app_config_loadkeyvalues",
+      "target": "oracle_repository_open"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L301",
+      "weight": 1.0,
+      "source": "app_desktop",
+      "target": "app_desktop_documentstatusline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L289",
+      "weight": 1.0,
+      "source": "app_desktop",
+      "target": "app_desktop_documentsummary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "app_desktop",
+      "target": "app_desktop_firstnonempty",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2229,6 +2788,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "internal/app/desktop.go",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "app_desktop_rundesktop",
+      "target": "app_desktop_firstnonempty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
       "source_location": "L78",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2296,6 +2866,17 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "internal/app/desktop.go",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "app_desktopstate_search",
+      "target": "app_fileobs_enrichdocuments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/desktop.go",
       "source_location": "L112",
       "weight": 1.0,
       "source": "app_desktopstate_search",
@@ -2311,6 +2892,28 @@
       "weight": 1.0,
       "source": "app_desktopstate_search",
       "target": "app_server_validateplanilla"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "app_desktopstate_search",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "app_desktopstate_search",
+      "target": "oracle_repository_open"
     },
     {
       "relation": "references",
@@ -2344,6 +2947,61 @@
       "confidence_score": 1.0,
       "source": "app_desktopstate_openpreview",
       "target": "window"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L303",
+      "weight": 1.0,
+      "source": "app_desktop_documentstatusline",
+      "target": "app_desktop_firstnonempty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L294",
+      "weight": 1.0,
+      "source": "app_desktop_documentsummary",
+      "target": "app_desktop_firstnonempty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "app_desktop_firstnonempty",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "app_desktopstate_refreshdocs",
+      "target": "app_desktop_documentstatusline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "app_desktopstate_refreshdocs",
+      "target": "app_desktop_documentsummary",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2390,6 +3048,240 @@
       "target": "app_server_friendlyerr"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L289",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "app_desktop_documentsummary",
+      "target": "internal_app_desktop_go_imagenpacienterow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L301",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "app_desktop_documentstatusline",
+      "target": "internal_app_desktop_go_imagenpacienterow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/desktop.go",
+      "source_location": "L321",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "app_desktop_formattime",
+      "target": "internal_app_desktop_go_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "app_fileobs",
+      "target": "app_fileobs_appendreason",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "app_fileobs",
+      "target": "app_fileobs_classifyfileerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "app_fileobs",
+      "target": "app_fileobs_enrichdocuments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "app_fileobs",
+      "target": "app_fileobs_filekindfromext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "app_fileobs",
+      "target": "app_fileobs_inspectfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "app_fileobs",
+      "target": "app_fileobservation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_fileobs_enrichdocuments",
+      "target": "app_fileobs_inspectfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "app_fileobs_enrichdocuments",
+      "target": "internal_app_fileobs_go_imagenpacienterow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/server.go",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "app_server_handlesearch",
+      "target": "app_fileobs_enrichdocuments"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "app_fileobs_inspectfile",
+      "target": "app_fileobservation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "app_fileobs_inspectfile",
+      "target": "app_fileobs_appendreason",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "app_fileobs_inspectfile",
+      "target": "app_fileobs_classifyfileerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "app_fileobs_inspectfile",
+      "target": "app_fileobs_filekindfromext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/fileobs.go",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "app_fileobs_inspectfile",
+      "target": "oracle_repository_open"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs_other.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_fileobs_other",
+      "target": "app_fileobs_other_ishidden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs_other.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "app_fileobs_other_ishidden",
+      "target": "internal_app_fileobs_other_go_fileinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/fileobs_other.go",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_fileobs_other_ishidden",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs_windows.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_fileobs_windows",
+      "target": "app_fileobs_windows_ishidden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/fileobs_windows.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "app_fileobs_windows_ishidden",
+      "target": "internal_app_fileobs_windows_go_fileinfo",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "internal/app/server.go",
@@ -2403,11 +3295,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "internal/app/server.go",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_server",
-      "target": "app_server"
+      "target": "app_server",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2488,6 +3380,17 @@
       "confidence_score": 1.0,
       "source": "app_server",
       "target": "app_server_handlesearch"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/server.go",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "return_type",
+      "confidence_score": 1.0,
+      "source": "app_server_newserver",
+      "target": "app_server"
     },
     {
       "relation": "method",
@@ -2592,17 +3495,6 @@
       "confidence_score": 1.0,
       "source": "app_server",
       "target": "template"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/app/server.go",
-      "source_location": "L49",
-      "weight": 1.0,
-      "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "app_server_newserver",
-      "target": "app_server"
     },
     {
       "relation": "references",
@@ -2783,6 +3675,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/server.go",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "app_server_openrepo",
+      "target": "oracle_repository_open"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "internal/app/server.go",
       "source_location": "L129",
@@ -2805,6 +3708,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/server.go",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "app_server_handlesearch",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "internal/app/server.go",
       "source_location": "L159",
@@ -2812,6 +3726,17 @@
       "confidence_score": 1.0,
       "source": "app_server_handlepreview",
       "target": "app_server_friendlyerr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/server.go",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "app_server_handlepreview",
+      "target": "oracle_repository_open"
     },
     {
       "relation": "calls",
@@ -2856,6 +3781,17 @@
       "confidence_score": 1.0,
       "source": "app_server_friendlyerr",
       "target": "app_server_errorsis"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/server.go",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "app_server_friendlyerr",
+      "target": "oracle_errors_iskind"
     },
     {
       "relation": "calls",
@@ -2907,9 +3843,9 @@
       "source_file": "internal/app/zipwriter.go",
       "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "app_zipwriter",
-      "target": "app_zipwriter"
+      "target": "app_zipwriter",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -2930,6 +3866,17 @@
       "confidence_score": 1.0,
       "source": "app_zipwriter",
       "target": "app_zipwriter_close"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/app/zipwriter.go",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "return_type",
+      "confidence_score": 1.0,
+      "source": "app_zipwriter_newzipwriter",
+      "target": "app_zipwriter"
     },
     {
       "relation": "references",
@@ -2959,21 +3906,1588 @@
       "source_file": "internal/app/zipwriter.go",
       "source_location": "L14",
       "weight": 1.0,
-      "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "app_zipwriter_newzipwriter",
-      "target": "app_zipwriter"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/app/zipwriter.go",
-      "source_location": "L14",
-      "weight": 1.0,
       "context": "parameter_type",
       "confidence_score": 1.0,
       "source": "app_zipwriter_newzipwriter",
       "target": "internal_app_zipwriter_go_writer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/app/zipwriter.go",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "app_zipwriter_addfile",
+      "target": "oracle_repository_open"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_errors",
+      "target": "oracle_errors_classifyoracleerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_errors",
+      "target": "oracle_errors_iskind"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_errors",
+      "target": "oracle_oracleerror"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_oracleerror",
+      "target": "oracle_oracleerror_error"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_oracleerror",
+      "target": "oracle_oracleerror_string"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/errors.go",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_oracleerror",
+      "target": "oracle_oracleerror_unwrap"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L274",
+      "weight": 1.0,
+      "source": "oracle_repository_buscarpaciente",
+      "target": "oracle_errors_classifyoracleerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L252",
+      "weight": 1.0,
+      "source": "oracle_repository_buscarplanilla",
+      "target": "oracle_errors_classifyoracleerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L282",
+      "weight": 1.0,
+      "source": "oracle_repository_listardocumentos",
+      "target": "oracle_errors_classifyoracleerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "oracle_repository_open",
+      "target": "oracle_errors_classifyoracleerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L360",
+      "weight": 1.0,
+      "source": "oracle_repository_scandigitalizacion",
+      "target": "oracle_errors_classifyoracleerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models",
+      "target": "oracle_digitalizacionrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models",
+      "target": "oracle_imagenpacienterow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models",
+      "target": "oracle_models_joinnonempty"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models",
+      "target": "oracle_models_joinwithspace"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models",
+      "target": "oracle_pacienterow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models",
+      "target": "oracle_planilladetalle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "field",
+      "source": "oracle_digitalizacionrow",
+      "target": "internal_oracle_models_go_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L66",
+      "weight": 1.0,
+      "context": "field",
+      "confidence_score": 1.0,
+      "source": "oracle_planilladetalle",
+      "target": "oracle_digitalizacionrow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "field",
+      "source": "oracle_imagenpacienterow",
+      "target": "internal_oracle_models_go_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_pacienterow",
+      "target": "oracle_pacienterow_nombrecompleto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "field",
+      "confidence_score": 1.0,
+      "source": "oracle_planilladetalle",
+      "target": "oracle_pacienterow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_pacienterow_nombrecompleto",
+      "target": "oracle_models_joinnonempty"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L68",
+      "weight": 1.0,
+      "context": "field",
+      "confidence_score": 1.0,
+      "source": "oracle_planilladetalle",
+      "target": "oracle_imagenpacienterow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models_joinnonempty",
+      "target": "oracle_models_joinwithspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/models.go",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_models_joinnonempty",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "oracle_repository_builddsncandidates",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "oracle_repository_parseeasyconnect",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "oracle_repository_trimdigits",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "oracle_repository_uniquenames",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L88",
+      "weight": 1.0,
+      "context": "field",
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_openconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_builddsncandidates"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L270",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_buscarpaciente"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L249",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_buscarplanilla"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L242",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_close"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L279",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_listardocumentos"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L300",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_obtenerdetalleplanilla"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "return_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_open",
+      "target": "oracle_repository"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_parseeasyconnect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L236",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_pingcontext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L325",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_scandigitalizacion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_splithostportloose"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L182",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_trimdigits"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository",
+      "target": "oracle_repository_uniquenames"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L84",
+      "weight": 1.0,
+      "context": "field",
+      "confidence_score": 1.0,
+      "source": "oracle_openconfig",
+      "target": "duration"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_open",
+      "target": "oracle_openconfig"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L236",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_pingcontext",
+      "target": "db"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_open",
+      "target": "context"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_open",
+      "target": "oracle_repository_builddsncandidates"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L117",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_open",
+      "target": "oracle_repository_close"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_open",
+      "target": "oracle_repository_pingcontext"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L270",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_buscarpaciente",
+      "target": "context"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L249",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_buscarplanilla",
+      "target": "context"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L279",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_listardocumentos",
+      "target": "context"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L300",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_obtenerdetalleplanilla",
+      "target": "context"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L236",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_pingcontext",
+      "target": "context"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_builddsncandidates",
+      "target": "oracle_repository_parseeasyconnect"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L141",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_builddsncandidates",
+      "target": "oracle_repository_trimdigits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L141",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_builddsncandidates",
+      "target": "oracle_repository_uniquenames"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_parseeasyconnect",
+      "target": "oracle_repository_splithostportloose"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L254",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_buscarplanilla",
+      "target": "oracle_repository_close"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L284",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_listardocumentos",
+      "target": "oracle_repository_close"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L249",
+      "weight": 1.0,
+      "context": "return_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_buscarplanilla",
+      "target": "digitalizacionrow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L258",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_buscarplanilla",
+      "target": "oracle_repository_scandigitalizacion"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L301",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_obtenerdetalleplanilla",
+      "target": "oracle_repository_buscarplanilla"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L325",
+      "weight": 1.0,
+      "context": "return_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_scandigitalizacion",
+      "target": "digitalizacionrow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L270",
+      "weight": 1.0,
+      "context": "return_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_buscarpaciente",
+      "target": "pacienterow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L310",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_obtenerdetalleplanilla",
+      "target": "oracle_repository_buscarpaciente"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L279",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "oracle_repository_listardocumentos",
+      "target": "internal_oracle_repository_go_imagenpacienterow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L314",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "oracle_repository_obtenerdetalleplanilla",
+      "target": "oracle_repository_listardocumentos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L300",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "oracle_repository_obtenerdetalleplanilla",
+      "target": "internal_oracle_repository_go_planilladetalle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/oracle/repository.go",
+      "source_location": "L325",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "oracle_repository_scandigitalizacion",
+      "target": "rows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_multimediasc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_allow_duplicate_fix"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_cmd_multimediasc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_oracle_connect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "readme_multimediasc",
+      "target": "readme_ejecutar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "readme_multimediasc",
+      "target": "readme_variables_opcionales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "inst01_md",
+      "target": "inst01_oracle_11gr2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "inst01_oracle_11gr2",
+      "target": "inst01_1_la_interfaz_del_renombrador_inteligente_ux_ui_de_escritorio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "inst01_oracle_11gr2",
+      "target": "inst01_2_lo_que_no_te_est\u00e1s_dando_cuenta_en_este_momento_puntos_ciegos_cr\u00edticos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "inst01_oracle_11gr2",
+      "target": "inst01_3_c\u00f3digo_del_backend_en_go_mapeo_renombrado_y_compresi\u00f3n_zip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "inst01_3_c\u00f3digo_del_backend_en_go_mapeo_renombrado_y_compresi\u00f3n_zip",
+      "target": "inst01_a_el_archivo_de_configuraci\u00f3n_config_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst01.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "inst01_3_c\u00f3digo_del_backend_en_go_mapeo_renombrado_y_compresi\u00f3n_zip",
+      "target": "inst01_b_el_motor_en_go_main_go_con_soporte_de_oracle_y_zip_estructurado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "inst02_md",
+      "target": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_10_manejo_de_errores",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_11_auditor\u00eda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L189",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_12_alcance_que_no_corresponde_al_desarrollador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_1_inicio_de_sesi\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_2_conexi\u00f3n_con_oracle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_3_b\u00fasqueda_de_la_planilla",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_4_localizaci\u00f3n_de_documentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_5_regla_para_relacionar_documentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_6_vista_previa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_7_renombrado_estandarizado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_8_nombres_duplicados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inst02.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "inst02_requerimientos_para_entregar_al_desarrollador",
+      "target": "inst02_9_generaci\u00f3n_del_zip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip",
+      "target": "prompt2_ui_zip_prompt_2_ui_zip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_componentes_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_contrato_visual_sugerido",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_fuera_de_alcance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_manejo_de_errores",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_manejo_de_nombres_duplicados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_objetivo_funcional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_progreso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_resultado_esperado_de_esta_fase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_prompt_2_ui_zip",
+      "target": "prompt2_ui_zip_validaciones",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_feature",
+      "target": "prompt2_ui_zip_objetivo_funcional"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_componentes_ui",
+      "target": "prompt2_ui_zip_1_encabezado_de_sesi\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_componentes_ui",
+      "target": "prompt2_ui_zip_2_panel_de_b\u00fasqueda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_componentes_ui",
+      "target": "prompt2_ui_zip_3_resumen_de_planilla",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_componentes_ui",
+      "target": "prompt2_ui_zip_4_tabla_de_documentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_componentes_ui",
+      "target": "prompt2_ui_zip_5_men\u00fa_de_asignaci\u00f3n_de_nombre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_componentes_ui",
+      "target": "prompt2_ui_zip_6_vista_previa_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_componentes_ui",
+      "target": "prompt2_ui_zip_7_pie_de_exportaci\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_feature",
+      "target": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "target": "prompt2_ui_zip_menu_asignacion"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "target": "prompt2_ui_zip_panel_busqueda"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "target": "prompt2_ui_zip_pie_exportacion"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "target": "prompt2_ui_zip_resumen_planilla"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "target": "prompt2_ui_zip_tabla_documentos"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "target": "prompt2_ui_zip_validaciones"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local",
+      "target": "prompt2_ui_zip_vista_previa_pdf"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_manejo_de_errores",
+      "target": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_progreso",
+      "target": "prompt2_ui_zip_flujo_de_exportaci\u00f3n_local"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_feature",
+      "target": "prompt2_ui_zip_validaciones"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_archivos_f\u00edsicos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_entrada_de_planilla",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_menu_asignacion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_nombres_estandarizados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_panel_busqueda"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_pie_exportacion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_selecci\u00f3n_de_documentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_tabla_documentos"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_vista_previa_pdf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_validaciones",
+      "target": "prompt2_ui_zip_zip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_feature",
+      "target": "prompt2_ui_zip_manejo_de_errores"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_manejo_de_errores",
+      "target": "prompt2_ui_zip_vista_previa_pdf"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_feature",
+      "target": "prompt2_ui_zip_progreso"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_progreso",
+      "target": "prompt2_ui_zip_pie_exportacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_contrato_visual_sugerido",
+      "target": "prompt2_ui_zip_encabezado_sesion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_contrato_visual_sugerido",
+      "target": "prompt2_ui_zip_panel_busqueda"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_contrato_visual_sugerido",
+      "target": "prompt2_ui_zip_pie_exportacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_contrato_visual_sugerido",
+      "target": "prompt2_ui_zip_resumen_planilla"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_contrato_visual_sugerido",
+      "target": "prompt2_ui_zip_tabla_documentos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_contrato_visual_sugerido",
+      "target": "prompt2_ui_zip_vista_previa_pdf"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_feature",
+      "target": "prompt2_ui_zip_contrato_visual_sugerido"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prompt2_ui_zip.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt2_ui_zip_feature",
+      "target": "prompt2_ui_zip_fuera_de_alcance"
     },
     {
       "relation": "conceptually_related_to",
@@ -3493,16 +6007,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "prompt2_ui_zip_feature",
-      "target": "prompt2_ui_zip_contrato_visual"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_feature",
       "target": "prompt2_ui_zip_encabezado_sesion"
     },
     {
@@ -3513,47 +6017,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "prompt2_ui_zip_feature",
-      "target": "prompt2_ui_zip_flujo_exportacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_feature",
-      "target": "prompt2_ui_zip_fuera_de_alcance"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_feature",
-      "target": "prompt2_ui_zip_manejo_errores"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_feature",
       "target": "prompt2_ui_zip_menu_asignacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_feature",
-      "target": "prompt2_ui_zip_objetivo_funcional"
     },
     {
       "relation": "conceptually_related_to",
@@ -3574,16 +6038,6 @@
       "weight": 1.0,
       "source": "prompt2_ui_zip_feature",
       "target": "prompt2_ui_zip_pie_exportacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_feature",
-      "target": "prompt2_ui_zip_progreso"
     },
     {
       "relation": "conceptually_related_to",
@@ -3613,267 +6067,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "prompt2_ui_zip_feature",
-      "target": "prompt2_ui_zip_validaciones"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_feature",
       "target": "prompt2_ui_zip_vista_previa_pdf"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_contrato_visual",
-      "target": "prompt2_ui_zip_encabezado_sesion"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_contrato_visual",
-      "target": "prompt2_ui_zip_panel_busqueda"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_flujo_exportacion",
-      "target": "prompt2_ui_zip_panel_busqueda"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_validaciones",
-      "target": "prompt2_ui_zip_panel_busqueda"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_contrato_visual",
-      "target": "prompt2_ui_zip_resumen_planilla"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_flujo_exportacion",
-      "target": "prompt2_ui_zip_resumen_planilla"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_contrato_visual",
-      "target": "prompt2_ui_zip_tabla_documentos"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_flujo_exportacion",
-      "target": "prompt2_ui_zip_tabla_documentos"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_validaciones",
-      "target": "prompt2_ui_zip_tabla_documentos"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_flujo_exportacion",
-      "target": "prompt2_ui_zip_menu_asignacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_validaciones",
-      "target": "prompt2_ui_zip_menu_asignacion"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_contrato_visual",
-      "target": "prompt2_ui_zip_vista_previa_pdf"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_flujo_exportacion",
-      "target": "prompt2_ui_zip_vista_previa_pdf"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_manejo_errores",
-      "target": "prompt2_ui_zip_vista_previa_pdf"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_validaciones",
-      "target": "prompt2_ui_zip_vista_previa_pdf"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_contrato_visual",
-      "target": "prompt2_ui_zip_pie_exportacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_flujo_exportacion",
-      "target": "prompt2_ui_zip_pie_exportacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_progreso",
-      "target": "prompt2_ui_zip_pie_exportacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_validaciones",
-      "target": "prompt2_ui_zip_pie_exportacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_flujo_exportacion",
-      "target": "prompt2_ui_zip_validaciones"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_manejo_errores",
-      "target": "prompt2_ui_zip_flujo_exportacion"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prompt2_ui_zip.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt2_ui_zip_progreso",
-      "target": "prompt2_ui_zip_flujo_exportacion"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_readme",
-      "target": "readme_allow_duplicate_fix"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_readme",
-      "target": "readme_cmd_multimediasc"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "readme_readme",
-      "target": "readme_oracle_connect"
     },
     {
       "relation": "references",
@@ -3914,552 +6108,8 @@
       "weight": 1.0,
       "source": "index_exportzip",
       "target": "api_export"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L57",
-      "weight": 1.0,
-      "source": "oraclecheck_main",
-      "target": "oraclecheck_main_firstnonempty",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L66",
-      "weight": 1.0,
-      "source": "oraclecheck_main",
-      "target": "oraclecheck_main_loadenvfile",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "oraclecheck_main",
-      "target": "oraclecheck_main_main",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "oraclecheck_main_main",
-      "target": "oracle_repository_open"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "oraclecheck_main_main",
-      "target": "oraclecheck_main_firstnonempty",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "oraclecheck_main_main",
-      "target": "oraclecheck_main_loadenvfile",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cmd/oraclecheck/main.go",
-      "source_location": "L67",
-      "weight": 1.0,
-      "source": "oraclecheck_main_loadenvfile",
-      "target": "oracle_repository_open"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L88",
-      "weight": 1.0,
-      "context": "field",
-      "source": "oracle_repository",
-      "target": "db",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L80",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_openconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L87",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L128",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_builddsncandidates",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L270",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_buscarpaciente",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L249",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_buscarplanilla",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L242",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_close",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L279",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_listardocumentos",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L300",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_obtenerdetalleplanilla",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L91",
-      "weight": 1.0,
-      "context": "return_type",
-      "source": "oracle_repository_open",
-      "target": "oracle_repository",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L194",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_parseeasyconnect",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L236",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_pingcontext",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L325",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_scandigitalizacion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L225",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_splithostportloose",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L182",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_trimdigits",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L164",
-      "weight": 1.0,
-      "source": "oracle_repository",
-      "target": "oracle_repository_uniquenames",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L84",
-      "weight": 1.0,
-      "context": "field",
-      "source": "oracle_openconfig",
-      "target": "duration",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L91",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_open",
-      "target": "oracle_openconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L236",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_pingcontext",
-      "target": "db",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L91",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_open",
-      "target": "context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L95",
-      "weight": 1.0,
-      "source": "oracle_repository_open",
-      "target": "oracle_repository_builddsncandidates",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L117",
-      "weight": 1.0,
-      "source": "oracle_repository_open",
-      "target": "oracle_repository_close",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L115",
-      "weight": 1.0,
-      "source": "oracle_repository_open",
-      "target": "oracle_repository_pingcontext",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L270",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_buscarpaciente",
-      "target": "context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L249",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_buscarplanilla",
-      "target": "context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L279",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_listardocumentos",
-      "target": "context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L300",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_obtenerdetalleplanilla",
-      "target": "context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L236",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_pingcontext",
-      "target": "context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L136",
-      "weight": 1.0,
-      "source": "oracle_repository_builddsncandidates",
-      "target": "oracle_repository_parseeasyconnect",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L141",
-      "weight": 1.0,
-      "source": "oracle_repository_builddsncandidates",
-      "target": "oracle_repository_trimdigits",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L141",
-      "weight": 1.0,
-      "source": "oracle_repository_builddsncandidates",
-      "target": "oracle_repository_uniquenames",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L199",
-      "weight": 1.0,
-      "source": "oracle_repository_parseeasyconnect",
-      "target": "oracle_repository_splithostportloose",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L254",
-      "weight": 1.0,
-      "source": "oracle_repository_buscarplanilla",
-      "target": "oracle_repository_close",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L284",
-      "weight": 1.0,
-      "source": "oracle_repository_listardocumentos",
-      "target": "oracle_repository_close",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L249",
-      "weight": 1.0,
-      "context": "return_type",
-      "source": "oracle_repository_buscarplanilla",
-      "target": "digitalizacionrow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L258",
-      "weight": 1.0,
-      "source": "oracle_repository_buscarplanilla",
-      "target": "oracle_repository_scandigitalizacion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L301",
-      "weight": 1.0,
-      "source": "oracle_repository_obtenerdetalleplanilla",
-      "target": "oracle_repository_buscarplanilla",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L325",
-      "weight": 1.0,
-      "context": "return_type",
-      "source": "oracle_repository_scandigitalizacion",
-      "target": "digitalizacionrow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L270",
-      "weight": 1.0,
-      "context": "return_type",
-      "source": "oracle_repository_buscarpaciente",
-      "target": "pacienterow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L310",
-      "weight": 1.0,
-      "source": "oracle_repository_obtenerdetalleplanilla",
-      "target": "oracle_repository_buscarpaciente",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L279",
-      "weight": 1.0,
-      "context": "return_type",
-      "source": "oracle_repository_listardocumentos",
-      "target": "imagenpacienterow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L314",
-      "weight": 1.0,
-      "source": "oracle_repository_obtenerdetalleplanilla",
-      "target": "oracle_repository_listardocumentos",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L300",
-      "weight": 1.0,
-      "context": "return_type",
-      "source": "oracle_repository_obtenerdetalleplanilla",
-      "target": "planilladetalle",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/oracle/repository.go",
-      "source_location": "L325",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "oracle_repository_scandigitalizacion",
-      "target": "rows",
-      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9397efd1f6a93aab092b9dab9a301f1dc6065829"
+  "built_at_commit": "a0fe8e9d6508bd34587e869dac3e09f57bf00e25"
 }

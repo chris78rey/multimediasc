@@ -1,0 +1,317 @@
+{
+  "communities": {
+    "0": [
+      "app_desktopstate_search",
+      "app_pagedata",
+      "app_server",
+      "app_server_createzip",
+      "app_server_errorsis",
+      "app_server_exportzip",
+      "app_server_friendlyerr",
+      "app_server_handleexport",
+      "app_server_handleindex",
+      "app_server_handlepreview",
+      "app_server_handlesearch",
+      "app_server_newserver",
+      "app_server_openrepo",
+      "app_server_routes",
+      "app_server_start",
+      "app_server_validateplanilla",
+      "app_server_validwindowsfilename",
+      "app_zipdocument",
+      "client",
+      "internal_app_server_go_config",
+      "internal_app_server_go_planilladetalle",
+      "internal_app_server_go_repository",
+      "internal_app_server_go_writer",
+      "request",
+      "responsewriter",
+      "servemux",
+      "template"
+    ],
+    "1": [
+      "context",
+      "db",
+      "digitalizacionrow",
+      "duration",
+      "imagenpacienterow",
+      "oracle_openconfig",
+      "oracle_repository",
+      "oracle_repository_builddsncandidates",
+      "oracle_repository_buscarpaciente",
+      "oracle_repository_buscarplanilla",
+      "oracle_repository_close",
+      "oracle_repository_listardocumentos",
+      "oracle_repository_obtenerdetalleplanilla",
+      "oracle_repository_open",
+      "oracle_repository_parseeasyconnect",
+      "oracle_repository_pingcontext",
+      "oracle_repository_scandigitalizacion",
+      "oracle_repository_splithostportloose",
+      "oracle_repository_trimdigits",
+      "oracle_repository_uniquenames",
+      "oraclecheck_main",
+      "oraclecheck_main_firstnonempty",
+      "oraclecheck_main_loadenvfile",
+      "oraclecheck_main_main",
+      "pacienterow",
+      "planilladetalle",
+      "rows"
+    ],
+    "2": [
+      "app_desktop",
+      "app_desktop_formattime",
+      "app_desktop_planillasummary",
+      "app_desktop_rundesktop",
+      "app_desktopstate",
+      "app_desktopstate_exporttopath",
+      "app_desktopstate_exportwithdialog",
+      "app_desktopstate_logout",
+      "app_desktopstate_openpreview",
+      "app_desktopstate_refreshdocs",
+      "container",
+      "internal_app_desktop_go_config",
+      "internal_app_desktop_go_planilladetalle",
+      "internal_app_desktop_go_repository",
+      "label",
+      "multimediasc_main",
+      "multimediasc_main_main",
+      "window"
+    ],
+    "3": [
+      "inst02_application",
+      "inst02_audit_log",
+      "inst02_config_file",
+      "inst02_digitalizacion_table",
+      "inst02_document",
+      "inst02_duplicate_name_handling",
+      "inst02_error_handling",
+      "inst02_imagenes_pacientes_table",
+      "inst02_login_window",
+      "inst02_main_screen",
+      "inst02_oracle_connection",
+      "inst02_oracle_credentials",
+      "inst02_pdf_preview",
+      "inst02_renaming_config_file",
+      "inst02_renaming_standardization",
+      "inst02_search_planilla",
+      "inst02_zip_generation"
+    ],
+    "4": [
+      "prompt2_ui_zip_contrato_visual",
+      "prompt2_ui_zip_encabezado_sesion",
+      "prompt2_ui_zip_feature",
+      "prompt2_ui_zip_flujo_exportacion",
+      "prompt2_ui_zip_fuera_de_alcance",
+      "prompt2_ui_zip_manejo_errores",
+      "prompt2_ui_zip_menu_asignacion",
+      "prompt2_ui_zip_objetivo_funcional",
+      "prompt2_ui_zip_panel_busqueda",
+      "prompt2_ui_zip_pie_exportacion",
+      "prompt2_ui_zip_progreso",
+      "prompt2_ui_zip_resumen_planilla",
+      "prompt2_ui_zip_tabla_documentos",
+      "prompt2_ui_zip_validaciones",
+      "prompt2_ui_zip_vista_previa_pdf"
+    ],
+    "5": [
+      "inst01_config_json",
+      "inst01_digitalizacion_table",
+      "inst01_go_backend",
+      "inst01_hc_308455",
+      "inst01_imagenes_pacientes_table",
+      "inst01_login_window",
+      "inst01_oracle_db",
+      "inst01_pacientes_table",
+      "inst01_pdf_viewer",
+      "inst01_planilla_search",
+      "inst01_sis_extractor_desktop_app",
+      "inst01_unc_path",
+      "inst01_wails_framework",
+      "inst01_zip_export"
+    ],
+    "6": [
+      "oracle_digitalizacionrow",
+      "oracle_imagenpacienterow",
+      "oracle_models",
+      "oracle_models_joinnonempty",
+      "oracle_models_joinwithspace",
+      "oracle_models_trimspace",
+      "oracle_pacienterow",
+      "oracle_pacienterow_nombrecompleto",
+      "oracle_planilladetalle",
+      "time"
+    ],
+    "7": [
+      "oracle_errors",
+      "oracle_errors_classifyoracleerror",
+      "oracle_errors_iskind",
+      "oracle_oracleerror",
+      "oracle_oracleerror_error",
+      "oracle_oracleerror_string",
+      "oracle_oracleerror_unwrap"
+    ],
+    "8": [
+      "app_zipwriter",
+      "app_zipwriter_addfile",
+      "app_zipwriter_close",
+      "app_zipwriter_newzipwriter",
+      "file",
+      "internal_app_zipwriter_go_writer"
+    ],
+    "9": [
+      "api_export",
+      "api_preview",
+      "api_search",
+      "index_exportzip",
+      "index_index"
+    ],
+    "10": [
+      "app_config",
+      "app_config_configpath",
+      "app_config_getenv",
+      "app_config_loadenvconfig"
+    ],
+    "11": [
+      "readme_allow_duplicate_fix",
+      "readme_cmd_multimediasc",
+      "readme_oracle_connect",
+      "readme_readme"
+    ],
+    "12": [
+      "index_toggleall"
+    ],
+    "13": [
+      "pkg_multimediasc"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1396011396011396,
+    "1": 0.1452991452991453,
+    "2": 0.1568627450980392,
+    "3": 0.2426470588235294,
+    "4": 0.34285714285714286,
+    "5": 0.1978021978021978,
+    "6": 0.35555555555555557,
+    "7": 0.2857142857142857,
+    "8": 0.4666666666666667,
+    "9": 0.4,
+    "10": 0.8333333333333334,
+    "11": 0.5,
+    "12": 1.0,
+    "13": 1.0
+  },
+  "gods": [
+    {
+      "id": "inst02_document",
+      "label": "Requirements Document inst02.md",
+      "degree": 16
+    },
+    {
+      "id": "prompt2_ui_zip_feature",
+      "label": "UI + ZIP Export Feature",
+      "degree": 14
+    },
+    {
+      "id": "app_desktopstate",
+      "label": "desktopState",
+      "degree": 12
+    },
+    {
+      "id": "prompt2_ui_zip_flujo_exportacion",
+      "label": "Flujo de exportaci\u00f3n local",
+      "degree": 10
+    },
+    {
+      "id": "inst02_application",
+      "label": "Desktop Application",
+      "degree": 9
+    },
+    {
+      "id": "oracle_repository_open",
+      "label": "Open()",
+      "degree": 8
+    },
+    {
+      "id": "app_desktop_rundesktop",
+      "label": "RunDesktop()",
+      "degree": 7
+    },
+    {
+      "id": "app_server_friendlyerr",
+      "label": "friendlyErr()",
+      "degree": 7
+    },
+    {
+      "id": "prompt2_ui_zip_validaciones",
+      "label": "Validaciones",
+      "degree": 7
+    },
+    {
+      "id": "prompt2_ui_zip_contrato_visual",
+      "label": "Contrato visual sugerido",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "main()",
+      "target": "RunDesktop()",
+      "source_files": [
+        "cmd/multimediasc/main.go",
+        "internal/app/desktop.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `main()` unexpectedly reaches hub `RunDesktop()`"
+    },
+    {
+      "source": "main()",
+      "target": "Open()",
+      "source_files": [
+        "cmd/oraclecheck/main.go",
+        "internal/oracle/repository.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "loadEnvFile()",
+      "target": "Open()",
+      "source_files": [
+        "cmd/oraclecheck/main.go",
+        "internal/oracle/repository.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "RunDesktop()",
+      "target": "LoadEnvConfig()",
+      "source_files": [
+        "internal/app/desktop.go",
+        "internal/app/config.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "createZip()",
+      "target": "newZipWriter()",
+      "source_files": [
+        "internal/app/server.go",
+        "internal/app/zipwriter.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
