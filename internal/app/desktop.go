@@ -6,6 +6,7 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strconv"
 	"strings"
 	"time"
@@ -135,6 +136,7 @@ func (s *desktopState) search(w fyne.Window, user, pass, planillaText string) {
 		return
 	}
 	enrichDocuments(det.Documentos)
+	runAutomaticDiagnostics(det.Documentos)
 	s.planilla = det
 	s.docChecks = make([]bool, len(det.Documentos))
 	s.docNames = make([]string, len(det.Documentos))
@@ -196,11 +198,14 @@ func (s *desktopState) refreshDocs() {
 			s.previewPath = doc.Ruta
 			s.previewInfo.SetText(documentSummary(doc))
 		})
+		fixBtn := widget.NewButton("Corregir", func() {
+			s.correctAccess(doc)
+		})
 		row := container.NewBorder(nil, nil, cb, openBtn, container.NewVBox(
 			widget.NewLabel(formatTime(doc.Fecha)),
 			widget.NewLabel(doc.Descripcion),
 			widget.NewLabel(documentStatusLine(doc)),
-			nameSel,
+			container.NewHBox(nameSel, fixBtn),
 		))
 		rows = append(rows, row)
 	}
@@ -219,6 +224,54 @@ func (s *desktopState) openPreview(w fyne.Window) {
 	}
 	u := &url.URL{Scheme: "file", Path: filepath.ToSlash(s.previewPath)}
 	_ = fyne.CurrentApp().OpenURL(u)
+}
+
+func (s *desktopState) correctAccess(doc oracle.ImagenPacienteRow) {
+	if runtime.GOOS != "windows" {
+		s.status.SetText("la corrección PowerShell solo está disponible en Windows")
+		return
+	}
+	if strings.TrimSpace(doc.Ruta) == "" {
+		s.status.SetText("la ruta del documento está vacía")
+		return
+	}
+	result, err := fixWindowsHidden(doc.Ruta)
+	if err != nil {
+		s.status.SetText(friendlyErr(err))
+		return
+	}
+	s.status.SetText("corrección aplicada: " + result)
+}
+
+func runAutomaticDiagnostics(docs []oracle.ImagenPacienteRow) {
+	if runtime.GOOS != "windows" {
+		return
+	}
+	for i := range docs {
+		if docs[i].State == "ok" {
+			continue
+		}
+		diag, err := diagnoseWindowsPath(docs[i].Ruta)
+		if err != nil {
+			docs[i].Reason = appendReason(docs[i].Reason, err.Error())
+			continue
+		}
+		if diag.Hidden {
+			docs[i].Hidden = true
+			docs[i].State = "oculto"
+		}
+		if !diag.Exists {
+			docs[i].Exists = false
+			docs[i].State = "inexistente"
+		}
+		if !diag.Accessible {
+			docs[i].Accessible = false
+			docs[i].State = "inaccesible"
+		}
+		if diag.Reason != "" {
+			docs[i].Reason = appendReason(docs[i].Reason, diag.Reason)
+		}
+	}
 }
 
 func (s *desktopState) exportWithDialog(w fyne.Window) {
