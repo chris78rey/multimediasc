@@ -55,9 +55,6 @@ func errorsIs(err error, target error) bool {
 }
 
 func exportZip(planilla string, docs []zipDocument, lookup map[string]string, dest string, allowDup bool) error {
-	if _, err := os.Stat(dest); err == nil {
-		return fmt.Errorf("el archivo destino ya existe")
-	}
 	f, err := os.Create(dest)
 	if err != nil {
 		return err
@@ -74,7 +71,7 @@ func createZip(planilla string, docs []zipDocument, lookup map[string]string, w 
 		path     string
 	}
 	var items []pair
-	seen := map[string]int{}
+	seenByPlanilla := map[string]map[string]int{}
 	for _, d := range docs {
 		if !d.Selected {
 			continue
@@ -90,15 +87,6 @@ func createZip(planilla string, docs []zipDocument, lookup map[string]string, w 
 		if !validWindowsFilename(name) {
 			return fmt.Errorf("nombre inválido: %s", name)
 		}
-		if count := seen[strings.ToLower(name)]; count > 0 {
-			if !allowDup {
-				return fmt.Errorf("nombre duplicado: %s", name)
-			}
-			base := strings.TrimSuffix(name, filepath.Ext(name))
-			ext := filepath.Ext(name)
-			name = fmt.Sprintf("%s_%d%s", base, count, ext)
-		}
-		seen[strings.ToLower(name)]++
 		itemPlanilla := strings.TrimSpace(d.Planilla)
 		if itemPlanilla == "" {
 			itemPlanilla = planilla
@@ -106,6 +94,22 @@ func createZip(planilla string, docs []zipDocument, lookup map[string]string, w 
 		if itemPlanilla == "" {
 			return fmt.Errorf("falta planilla para %s", name)
 		}
+		planillaSeen := seenByPlanilla[itemPlanilla]
+		if planillaSeen == nil {
+			planillaSeen = map[string]int{}
+			seenByPlanilla[itemPlanilla] = planillaSeen
+		}
+		key := strings.ToLower(name)
+		if count := planillaSeen[key]; count > 0 {
+			if !allowDup {
+				return fmt.Errorf("nombre duplicado en la planilla %s: %s", itemPlanilla, name)
+			}
+			base := strings.TrimSuffix(name, filepath.Ext(name))
+			ext := filepath.Ext(name)
+			name = fmt.Sprintf("%s_%d%s", base, count, ext)
+			key = strings.ToLower(name)
+		}
+		planillaSeen[key]++
 		items = append(items, pair{planilla: itemPlanilla, name: name, path: path})
 	}
 	if len(items) == 0 {
@@ -146,10 +150,14 @@ func defaultZipFilename(planilla string, count int) string {
 	return planilla + ".zip"
 }
 
+func defaultExportFolderName() string {
+	return "pl_" + time.Now().Format("200601021504")
+}
+
 func normalizeExportName(name, sourcePath string) string {
 	name = strings.TrimSpace(name)
 	if name == "" {
-		name = filepath.Base(sourcePath)
+		name = basenameAnySeparator(sourcePath)
 	}
 	if filepath.Ext(name) == "" {
 		if ext := filepath.Ext(sourcePath); ext != "" {
@@ -157,6 +165,21 @@ func normalizeExportName(name, sourcePath string) string {
 		}
 	}
 	return name
+}
+
+func basenameAnySeparator(path string) string {
+	path = strings.TrimSpace(path)
+	if path == "" {
+		return ""
+	}
+	path = strings.TrimRight(path, `\/`)
+	if path == "" {
+		return ""
+	}
+	if idx := strings.LastIndexAny(path, `/\`); idx >= 0 {
+		return path[idx+1:]
+	}
+	return path
 }
 
 func validWindowsFilename(name string) bool {

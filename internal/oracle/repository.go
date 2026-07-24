@@ -336,15 +336,23 @@ func (r *Repository) ObtenerDetallePlanilla(ctx context.Context, tramite int64) 
 
 func scanDigitalizacion(rows *sql.Rows) (DigitalizacionRow, error) {
 	var d DigitalizacionRow
+	var (
+		digID             sql.NullInt64
+		digTramite        sql.NullInt64
+		digHC             sql.NullInt64
+		digIDGeneracion   sql.NullInt64
+		digIDTramite      sql.NullInt64
+		digNumeroPermanen  sql.NullInt64
+	)
 	if err := rows.Scan(
-		&d.DigID,
-		&d.DigTramite,
+		&digID,
+		&digTramite,
 		&d.DigAseguradora,
 		&d.DigFechaPlanilla,
 		&d.DigFechaHasta,
 		&d.DigProcesado,
 		&d.DigFechaProceso,
-		&d.DigHC,
+		&digHC,
 		&d.FePlaAniomes,
 		&d.DigExpediente,
 		&d.DigAnio,
@@ -358,18 +366,36 @@ func scanDigitalizacion(rows *sql.Rows) (DigitalizacionRow, error) {
 		&d.DigMenorEdad,
 		&d.DigPlanillado,
 		&d.DigCobertura,
-		&d.DigIdGeneracion,
+		&digIDGeneracion,
 		&d.DigIdTipo,
 		&d.DigBloqueoSgh,
-		&d.DigIdTramite,
+		&digIDTramite,
 		&d.DigUsuario,
 		&d.DigCodigoUsuario,
 		&d.DigFechaAlta,
-		&d.DigNumeroPermanencia,
+		&digNumeroPermanen,
 		&d.DigFechaCobertura,
 		&d.DigPathRepo,
 	); err != nil {
 		return DigitalizacionRow{}, ClassifyOracleError(err)
+	}
+	if digID.Valid {
+		d.DigID = digID.Int64
+	}
+	if digTramite.Valid {
+		d.DigTramite = digTramite.Int64
+	}
+	if digHC.Valid {
+		d.DigHC = digHC.Int64
+	}
+	if digIDGeneracion.Valid {
+		d.DigIdGeneracion = digIDGeneracion.Int64
+	}
+	if digIDTramite.Valid {
+		d.DigIdTramite = digIDTramite.Int64
+	}
+	if digNumeroPermanen.Valid {
+		d.DigNumeroPermanencia = digNumeroPermanen.Int64
 	}
 	return d, nil
 }

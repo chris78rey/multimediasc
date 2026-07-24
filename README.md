@@ -1,16 +1,19 @@
-# MultimediaSC
+# README
 
-App Go de consulta Oracle y exportación local ZIP.
+## About
 
-## Ejecutar
+This template uses plain JS / HTML and CSS.
 
-```bash
-go run ./cmd/multimediasc
-```
+You can configure the project by editing `wails.json`. More information about the project settings can be found
+here: https://wails.io/docs/reference/project-config
 
-Luego se abre una ventana de escritorio.
+## Live Development
 
-## Variables opcionales
+To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
+server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
+and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
+to this in your browser, and you can call your Go code from devtools.
 
-- `ORACLE_CONNECT`: connect string Oracle, por defecto `172.16.60.21:1521/prdsgh2`
-- `MULTIMEDIASC_ALLOW_DUPLICATE_FIX`: `true` para sufijos `_1`, `_2`
+## Building
+
+To build a redistributable, production mode package, use `wails build`.

@@ -1,8 +1,8 @@
 {
   "go.mod": {
-    "mtime": 1784754183.9029896,
-    "ast_hash": "44793992cba471794a44a3f326e28970",
-    "semantic_hash": "44793992cba471794a44a3f326e28970"
+    "mtime": 1784901959.798339,
+    "ast_hash": "c21dea2f0307da1756ef0f5816a69ea2",
+    "semantic_hash": ""
   },
   "internal/oracle/errors.go": {
     "mtime": 1784753038.9871993,
@@ -15,14 +15,9 @@
     "semantic_hash": ""
   },
   "internal/oracle/repository.go": {
-    "mtime": 1784830357.0161421,
-    "ast_hash": "e0717a6303e2be5fee7d020ae8c60fb1",
+    "mtime": 1784922911.8130507,
+    "ast_hash": "1ee6557b8ed884c9083f975624431bc9",
     "semantic_hash": ""
-  },
-  "cmd/multimediasc/main.go": {
-    "mtime": 1784754114.4304316,
-    "ast_hash": "9e5a4486f62f579824e05f5df0303c15",
-    "semantic_hash": "9e5a4486f62f579824e05f5df0303c15"
   },
   "internal/app/config.go": {
     "mtime": 1784839184.0487728,
@@ -30,8 +25,8 @@
     "semantic_hash": ""
   },
   "internal/app/desktop.go": {
-    "mtime": 1784841321.132805,
-    "ast_hash": "153ca9d795d710bb6e122a7b84a5bc3f",
+    "mtime": 1784907418.2869234,
+    "ast_hash": "2bbc83bddb02bb8e3483725d8ea2c374",
     "semantic_hash": ""
   },
   "internal/app/zipwriter.go": {
@@ -55,9 +50,9 @@
     "semantic_hash": "e83acb8d6d39ad81993028c6ec35bb5a"
   },
   "README.md": {
-    "mtime": 1784754665.3738854,
-    "ast_hash": "14c9a05cc4601d37dcbc33576b8af8a8",
-    "semantic_hash": "14c9a05cc4601d37dcbc33576b8af8a8"
+    "mtime": 1784898258.2895086,
+    "ast_hash": "334de86c33a1dba9d8456fa9561101c9",
+    "semantic_hash": ""
   },
   "cmd/oraclecheck/main.go": {
     "mtime": 1784755285.4323678,
@@ -335,7 +330,7 @@
     "semantic_hash": ""
   },
   "config.json": {
-    "mtime": 1784840057.0290847,
+    "mtime": 1784927517.101182,
     "ast_hash": "cff89df19f55b36b18e1f9ebdb499d32",
     "semantic_hash": ""
   },
@@ -350,8 +345,168 @@
     "semantic_hash": ""
   },
   "internal/app/export.go": {
-    "mtime": 1784839508.900317,
-    "ast_hash": "719cc1c63f1c6ad9204a65613c077298",
+    "mtime": 1784927425.8526158,
+    "ast_hash": "afaab31d3df8f7d922cbb283c9f7e2ca",
+    "semantic_hash": ""
+  },
+  "WAILS_MIGRATION_PLAN.md": {
+    "mtime": 1784896779.365162,
+    "ast_hash": "cf4b0c29044bd0d8929a9f2b2adcf884",
+    "semantic_hash": ""
+  },
+  "internal/app/core.go": {
+    "mtime": 1784927433.1786618,
+    "ast_hash": "882df18746b2b2c740d823a211d54fbf",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/app.go": {
+    "mtime": 1784898226.5454857,
+    "ast_hash": "ac942c02b32e798ddba76aef8906c0da",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/package.json": {
+    "mtime": 1784898226.5464857,
+    "ast_hash": "5fbf12469d224a93954efecb5886e8a6",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/src/main.js": {
+    "mtime": 1784898226.5484858,
+    "ast_hash": "5dde16983c09b990a0b20993cf48fa78",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/wailsjs/go/main/App.d.ts": {
+    "mtime": 1784898226.5484858,
+    "ast_hash": "ed521adc455c0a9d1b4af58e7a943c24",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/wailsjs/go/main/App.js": {
+    "mtime": 1784898226.5484858,
+    "ast_hash": "af20590553b1ad068c13d20cfb81190b",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/wailsjs/runtime/package.json": {
+    "mtime": 1784898226.5484858,
+    "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/wailsjs/runtime/runtime.d.ts": {
+    "mtime": 1784898226.5484858,
+    "ast_hash": "429cc8ff2235818137ce4feb457a6ee1",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/wailsjs/runtime/runtime.js": {
+    "mtime": 1784898226.5484858,
+    "ast_hash": "07e792a4613dea35937670a032bf2802",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/go.mod": {
+    "mtime": 1784898226.5454857,
+    "ast_hash": "a6b02768ff3e87e6cf3ecdc0cac8b887",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/main.go": {
+    "mtime": 1784898226.5454857,
+    "ast_hash": "29ef7845136248cc05aa8a43f16658c8",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/wails.json": {
+    "mtime": 1784898226.5454857,
+    "ast_hash": "51d27d1c20e0d766005e3417f93f0332",
+    "semantic_hash": ""
+  },
+  "app.go": {
+    "mtime": 1784926482.451193,
+    "ast_hash": "a38e28dd7ec1dcec2673491f436e24c0",
+    "semantic_hash": ""
+  },
+  "frontend/src/main.js": {
+    "mtime": 1784927224.1603117,
+    "ast_hash": "141911172e7e170116ede6606e3c580b",
+    "semantic_hash": ""
+  },
+  "main.go": {
+    "mtime": 1784898258.2895086,
+    "ast_hash": "301535aa2b1c8ef0b1979c148b3d0a28",
+    "semantic_hash": ""
+  },
+  "wails.json": {
+    "mtime": 1784898258.2895086,
+    "ast_hash": "4b3194e4b46bd49f85c29c0be51e7528",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/README.md": {
+    "mtime": 1784898226.5464857,
+    "ast_hash": "2c93c37846f12c9edab86890bdfcc342",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/index.html": {
+    "mtime": 1784898226.5454857,
+    "ast_hash": "1b408cb20763ccab0dab90bf9d6c24d3",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/src/assets/fonts/OFL.txt": {
+    "mtime": 1784898226.5464857,
+    "ast_hash": "4e3d9becbf87c0341298fadf87ae4d36",
+    "semantic_hash": ""
+  },
+  "frontend/src/assets/fonts/OFL.txt": {
+    "mtime": 1784898258.2895086,
+    "ast_hash": "4e3d9becbf87c0341298fadf87ae4d36",
+    "semantic_hash": ""
+  },
+  "frontend/src/index.html": {
+    "mtime": 1784926755.4958057,
+    "ast_hash": "eb5d0c96c0d1cb47539df91c5aa06b56",
+    "semantic_hash": ""
+  },
+  "MultimediaSC/frontend/src/assets/images/logo-universal.png": {
+    "mtime": 1784898226.5484858,
+    "ast_hash": "220624c4aaab58e09efdafbcd2f49c15",
+    "semantic_hash": ""
+  },
+  "frontend/src/assets/images/logo-universal.png": {
+    "mtime": 1784898258.2915084,
+    "ast_hash": "f7ae2c8bdd62b57052a7ce127fcb3a01",
+    "semantic_hash": ""
+  },
+  "frontend/wailsjs/go/main/App.d.ts": {
+    "mtime": 1784927657.7230325,
+    "ast_hash": "da3c891b56fa51c66f72c224ede58c9c",
+    "semantic_hash": ""
+  },
+  "frontend/wailsjs/go/main/App.js": {
+    "mtime": 1784927657.7230325,
+    "ast_hash": "8a8f8b777f6a2e0e6e62dcc33ba07e3d",
+    "semantic_hash": ""
+  },
+  "frontend/wailsjs/go/models.ts": {
+    "mtime": 1784927657.7240324,
+    "ast_hash": "bbcbf6a9944a18874d444cc0811fcab4",
+    "semantic_hash": ""
+  },
+  "frontend/wailsjs/runtime/package.json": {
+    "mtime": 1784927657.7320325,
+    "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
+    "semantic_hash": ""
+  },
+  "frontend/wailsjs/runtime/runtime.d.ts": {
+    "mtime": 1784927657.7320325,
+    "ast_hash": "51223d7fcb4565ba83c3189c4d0d4741",
+    "semantic_hash": ""
+  },
+  "frontend/wailsjs/runtime/runtime.js": {
+    "mtime": 1784927657.7320325,
+    "ast_hash": "9dee729bc687d2102313ec2b969ae38c",
+    "semantic_hash": ""
+  },
+  "cmd/unhide-share/main.go": {
+    "mtime": 1784909402.4867024,
+    "ast_hash": "310bf0d71f06a0dfa005bc33fe93ebff",
+    "semantic_hash": ""
+  },
+  "internal/app/unhide_windows.go": {
+    "mtime": 1784909393.808692,
+    "ast_hash": "1122b86a60972093ab22ef48b0bc9fa2",
     "semantic_hash": ""
   }
 }

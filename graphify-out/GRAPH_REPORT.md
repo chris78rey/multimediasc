@@ -1,16 +1,16 @@
-# Graph Report - multimediasc  (2026-07-23)
+# Graph Report - multimediasc  (2026-07-24)
 
 ## Corpus Check
-- 70 files · ~163,032 words
+- 95 files · ~184,625 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 590 nodes · 806 edges · 69 communities (65 shown, 4 thin omitted)
-- Extraction: 86% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 109 edges (avg confidence: 0.83)
+- 951 nodes · 1342 edges · 92 communities (87 shown, 5 thin omitted)
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 149 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1693e70c`
+- Built from commit: `d3ae2363`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,7 +18,6 @@
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 1|Community 1]]
 - [[_COMMUNITY_Community 2|Community 2]]
-- [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
@@ -27,8 +26,10 @@
 - [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
 - [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
 - [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
@@ -84,87 +85,112 @@
 - [[_COMMUNITY_Community 69|Community 69]]
 - [[_COMMUNITY_Community 70|Community 70]]
 - [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Files` - 75 edges
-2. `desktopState` - 27 edges
-3. `trimSpace()` - 25 edges
-4. `Repository` - 18 edges
-5. `RunDesktop()` - 16 edges
-6. `Requirements Document inst02.md` - 16 edges
-7. `Open()` - 15 edges
-8. `Communities (19 total, 3 thin omitted)` - 15 edges
-9. `UI + ZIP Export Feature` - 14 edges
-10. `Config` - 13 edges
+2. `trimSpace()` - 42 edges
+3. `BatchCore` - 40 edges
+4. `App` - 31 edges
+5. `desktopState` - 30 edges
+6. `BatchSnapshot` - 23 edges
+7. `$()` - 20 edges
+8. `RunDesktop()` - 20 edges
+9. `Repository` - 18 edges
+10. `Open()` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `QueryListarDocumentos` --references--> `IMAGENES_PACIENTES Table`  [INFERRED]
+  internal/oracle/repository.go → inst01.md
 - `planillaSummary()` --implements--> `Resumen de planilla`  [INFERRED]
   internal/app/desktop.go → prompt2_ui_zip.md
+- `enrichDocuments()` --implements--> `4. Localización de documentos`  [INFERRED]
+  internal/app/fileobs.go → inst02.md
 - `inspectFile()` --implements--> `Archivos físicos`  [INFERRED]
   internal/app/fileobs.go → prompt2_ui_zip.md
 - `classifyFileError()` --implements--> `Error Handling`  [INFERRED]
   internal/app/fileobs.go → inst02.md
-- `ClassifyOracleError()` --implements--> `Error Handling`  [INFERRED]
-  internal/oracle/errors.go → inst02.md
-- `Open()` --implements--> `Oracle Connection`  [INFERRED]
-  internal/oracle/repository.go → inst02.md
 
 ## Import Cycles
 - None detected.
 
-## Communities (69 total, 4 thin omitted)
+## Communities (92 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.33
 Nodes (4): API endpoint: /api/export, API endpoint: /api/preview, API endpoint: /api/search, index.html template
 
 ### Community 1 - "Community 1"
-Cohesion: 0.08
-Nodes (39): Config, getenv(), LoadEnvConfig(), loadKeyValues(), normalizeAllowedNames(), parseNamesText(), parseRangesText(), Context (+31 more)
+Cohesion: 0.10
+Nodes (33): Config JSON (Dynamic Renaming Rules), DIGITALIZACION Table, Go Backend (Database & ZIP Logic), Patient HC 308455 (PADILLA JAIME), IMAGENES_PACIENTES Table, Login Window (Oracle User Authentication), Oracle Database (prdsgh2), PACIENTES Table (+25 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.10
-Nodes (25): batchItem, documentStatusLine(), documentSummary(), ensureZipExtension(), firstNonEmpty(), formatTime(), parsePlanillaInputs(), planillaPatientName() (+17 more)
-
-### Community 3 - "Community 3"
-Cohesion: 0.24
-Nodes (17): Desktop Application, Audit Log, Configuration File, DIGITALIZACION Table, Requirements Document inst02.md, Duplicate Name Avoidance, Error Handling, IMAGENES_PACIENTES Table (+9 more)
+Cohesion: 0.07
+Nodes (45): Config, getenv(), LoadEnvConfig(), loadKeyValues(), normalizeAllowedNames(), parseNamesText(), parseRangesText(), DefaultAutoOutDir() (+37 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.12
 Nodes (30): 1. Encabezado de sesión, 2. Panel de búsqueda, 3. Resumen de planilla, 4. Tabla de documentos, 5. Menú de asignación de nombre, 6. Vista previa PDF, 7. Pie de exportación, Componentes UI (+22 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.15
-Nodes (17): Config JSON (Dynamic Renaming Rules), DIGITALIZACION Table, Go Backend (Database & ZIP Logic), Patient HC 308455 (PADILLA JAIME), IMAGENES_PACIENTES Table, Login Window (Oracle User Authentication), Oracle Database (prdsgh2), PACIENTES Table (+9 more)
+Cohesion: 0.47
+Nodes (4): ClearHiddenAttributes(), fail(), filepathAbs(), main()
 
 ### Community 6 - "Community 6"
-Cohesion: 0.15
-Nodes (12): 10. Manejo de errores, 11. Auditoría, 12. Alcance que no corresponde al desarrollador, 1. Inicio de sesión, 2. Conexión con Oracle, 3. Búsqueda de la planilla, 5. Regla para relacionar documentos, 6. Vista previa (+4 more)
+Cohesion: 0.25
+Nodes (7): Current runtime references, Keep as backend boundaries, Migration phases, New Wails-facing structure, Replace the UI boundary, Risks to watch, Wails Migration Plan
 
 ### Community 8 - "Community 8"
 Cohesion: 0.03
 Nodes (75): File: cmd/multimediasc/main.go, File: cmd/oraclecheck/main.go, File: go.mod, File: graphify-out/2026-07-22/graph.json, File: graphify-out/2026-07-22/GRAPH_REPORT.md, File: graphify-out/2026-07-22/.graphify_analysis.json, File: graphify-out/2026-07-22/.graphify_semantic_marker, File: graphify-out/2026-07-22/manifest.json (+67 more)
 
+### Community 9 - "Community 9"
+Cohesion: 0.16
+Nodes (8): friendlyErr(), NewApp(), BatchCore, Context, App, openNative(), parsePlanillaInputs(), BatchSnapshot
+
 ### Community 10 - "Community 10"
-Cohesion: 0.21
-Nodes (12): countSelected(), createZip(), errorsIs(), exportZip(), normalizeExportName(), validWindowsFilename(), zipDocument, zipWriter (+4 more)
+Cohesion: 0.47
+Nodes (4): zipWriter, newZipWriter(), File, Writer
 
 ### Community 11 - "Community 11"
-Cohesion: 0.29
-Nodes (6): Env var: MULTIMEDIASC_ALLOW_DUPLICATE_FIX, Command: go run ./cmd/multimediasc, Ejecutar, MultimediaSC, Env var: ORACLE_CONNECT, Variables opcionales
+Cohesion: 0.25
+Nodes (7): Env var: MULTIMEDIASC_ALLOW_DUPLICATE_FIX, Command: go run ./cmd/multimediasc, About, Building, Live Development, README, Env var: ORACLE_CONNECT
+
+### Community 12 - "Community 12"
+Cohesion: 0.06
+Nodes (19): BatchCore, BatchSnapshot, documentSummary(), firstNonEmpty(), formatTime(), planillaPatientName(), planillaSummary(), validateZipDestination() (+11 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.08
 Nodes (25): Communities (19 total, 3 thin omitted), Community 0 - "Community 0", Community 10 - "Community 10", Community 11 - "Community 11", Community 14 - "Community 14", Community 15 - "Community 15", Community 16 - "Community 16", Community 1 - "Community 1" (+17 more)
+
+### Community 15 - "Community 15"
+Cohesion: 0.05
+Nodes (3): EventsOn(), EventsOnce(), EventsOnMultiple()
 
 ### Community 16 - "Community 16"
 Cohesion: 0.29
 Nodes (6): 🎨 1. La Interfaz del "Renombrador Inteligente" (UX/UI de Escritorio), 🧠 2. Lo que "No te estás dando cuenta" en este momento (Puntos Ciegos Críticos), 🛡️ 3. Código del Backend en Go (Mapeo, Renombrado y Compresión ZIP), A. El Archivo de Configuración (`config.json`), B. El Motor en Go (`main.go` con Soporte de Oracle y ZIP Estructurado), Oracle 11gR2
 
 ### Community 17 - "Community 17"
-Cohesion: 0.09
-Nodes (17): appendReason(), classifyFileError(), enrichDocuments(), fileKindFromExt(), inspectFile(), isHidden(), isHidden(), fileObservation (+9 more)
+Cohesion: 0.10
+Nodes (15): appendReason(), classifyFileError(), enrichDocuments(), fileKindFromExt(), inspectFile(), isHidden(), isHidden(), fileObservation (+7 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.15
@@ -179,11 +205,11 @@ Cohesion: 0.29
 Nodes (6): Directory Structure, File Format, File Summary, Notes, Purpose, Usage Guidelines
 
 ### Community 22 - "Community 22"
-Cohesion: 0.40
+Cohesion: 0.50
 Nodes (4): cmd/oraclecheck/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 23 - "Community 23"
-Cohesion: 0.40
+Cohesion: 0.50
 Nodes (4): cmd/multimediasc/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 24 - "Community 24"
@@ -191,7 +217,7 @@ Cohesion: 0.40
 Nodes (4): cmd/multimediasc/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 25 - "Community 25"
-Cohesion: 0.50
+Cohesion: 0.40
 Nodes (4): cmd/multimediasc/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 26 - "Community 26"
@@ -247,7 +273,7 @@ Cohesion: 0.50
 Nodes (4): README.md, ast_hash, mtime, semantic_hash
 
 ### Community 39 - "Community 39"
-Cohesion: 0.50
+Cohesion: 0.40
 Nodes (4): cmd/oraclecheck/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 40 - "Community 40"
@@ -374,25 +400,85 @@ Nodes (4): README.md, ast_hash, mtime, semantic_hash
 Cohesion: 0.50
 Nodes (4): scripts/unhide_share.ps1, ast_hash, mtime, semantic_hash
 
+### Community 72 - "Community 72"
+Cohesion: 0.18
+Nodes (10): frontend:build, frontend:dev:serverUrl, frontend:dev:watcher, frontend:install, author, email, name, name (+2 more)
+
+### Community 73 - "Community 73"
+Cohesion: 0.20
+Nodes (9): devDependencies, vite, name, private, scripts, build, dev, preview (+1 more)
+
+### Community 74 - "Community 74"
+Cohesion: 0.19
+Nodes (15): $(), applyTheme(), call(), canonicalName(), escapeHtml(), pickVisibleDoc(), render(), renderNameSelect() (+7 more)
+
+### Community 75 - "Community 75"
+Cohesion: 0.25
+Nodes (7): author, email, name, name, outputfilename, $schema, wailsjsdir
+
+### Community 76 - "Community 76"
+Cohesion: 0.40
+Nodes (3): Greet(), nameElement, resultElement
+
+### Community 78 - "Community 78"
+Cohesion: 0.40
+Nodes (4): About, Building, Live Development, README
+
+### Community 79 - "Community 79"
+Cohesion: 0.12
+Nodes (15): author, bugs, url, description, homepage, keywords, license, main (+7 more)
+
+### Community 82 - "Community 82"
+Cohesion: 0.12
+Nodes (15): author, bugs, url, description, homepage, keywords, license, main (+7 more)
+
+### Community 84 - "Community 84"
+Cohesion: 0.10
+Nodes (34): DB, DigitalizacionRow, Duration, 4. Localización de documentos, ImagenPacienteRow, Time, Context, ImagenPacienteRow (+26 more)
+
+### Community 85 - "Community 85"
+Cohesion: 0.18
+Nodes (3): BatchSnapshot, DocumentoView, PlanillaView
+
+### Community 86 - "Community 86"
+Cohesion: 0.40
+Nodes (4): EnvironmentInfo, Position, Screen, Size
+
+### Community 87 - "Community 87"
+Cohesion: 0.40
+Nodes (4): EnvironmentInfo, Position, Screen, Size
+
+### Community 88 - "Community 88"
+Cohesion: 0.67
+Nodes (3): EventsOn(), EventsOnce(), EventsOnMultiple()
+
+### Community 90 - "Community 90"
+Cohesion: 0.15
+Nodes (12): 10. Manejo de errores, 11. Auditoría, 12. Alcance que no corresponde al desarrollador, 1. Inicio de sesión, 2. Conexión con Oracle, 3. Búsqueda de la planilla, 5. Regla para relacionar documentos, 6. Vista previa (+4 more)
+
+### Community 91 - "Community 91"
+Cohesion: 0.29
+Nodes (3): mustJSON(), IsKind(), OracleError
+
 ## Knowledge Gaps
-- **323 isolated node(s):** `multimediasc`, `mtime`, `ast_hash`, `semantic_hash`, `mtime` (+318 more)
+- **395 isolated node(s):** `name`, `private`, `version`, `dev`, `build` (+390 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Open()` connect `Community 1` to `Community 3`, `Community 17`, `Community 2`, `Community 10`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
-- **Why does `trimSpace()` connect `Community 1` to `Community 17`, `Community 2`, `Community 10`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
-- **Why does `Files` connect `Community 8` to `Community 21`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Are the 23 inferred relationships involving `trimSpace()` (e.g. with `loadKeyValues()` and `normalizeAllowedNames()`) actually correct?**
-  _`trimSpace()` has 23 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 7 inferred relationships involving `RunDesktop()` (e.g. with `getenv()` and `LoadEnvConfig()`) actually correct?**
-  _`RunDesktop()` has 7 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `multimediasc`, `mtime`, `ast_hash` to the rest of the system?**
-  _323 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `trimSpace()` connect `Community 2` to `Community 17`, `Community 12`, `Community 9`, `Community 84`?**
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+- **Why does `Open()` connect `Community 84` to `Community 1`, `Community 2`, `Community 10`, `Community 12`, `Community 17`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `BatchCore` connect `Community 12` to `Community 2`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Are the 40 inferred relationships involving `trimSpace()` (e.g. with `.ExportNameForIndex()` and `.FilteredPlanillaIndexes()`) actually correct?**
+  _`trimSpace()` has 40 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `name`, `private`, `version` to the rest of the system?**
+  _395 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.083710407239819 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10416666666666667 - nodes in this community are weakly interconnected._
+- **Should `Community 2` be split into smaller, more focused modules?**
+  _Cohesion score 0.07191780821917808 - nodes in this community are weakly interconnected._

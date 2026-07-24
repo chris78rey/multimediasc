@@ -1,3 +1,6 @@
+//go:build fyne
+// +build fyne
+
 package app
 
 import (
@@ -17,25 +20,28 @@ import (
 	"fyne.io/fyne/v2"
 	fyneapp "fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/widget"
 )
 
 type desktopState struct {
 	cfg Config
 
-	repo  *oracle.Repository
+	core  *BatchCore
 	items []batchItem
 
-	activeIndex int
-	docChecks   map[int64][]bool
-	docNames    map[int64][]string
+	activeIndex    int
+	activeDocIndex int
+	docChecks      map[int64][]bool
+	docNames       map[int64][]string
 
 	previewPath string
 	status      *widget.Label
 	previewInfo *widget.Label
+	docInfo     *widget.Label
 	exportInfo  *widget.Label
 	batchInfo   *widget.Label
-	docsBox     *fyne.Container
+	docsList    *widget.List
 	planillaBox *fyne.Container
 	planillaUI  *widget.List
 
@@ -44,6 +50,7 @@ type desktopState struct {
 	rangeText     *widget.Entry
 	rangeInfo     *widget.Label
 	namesText     *widget.Entry
+	outDir        *widget.Entry
 	zipDest       *widget.Entry
 	exportReady   string
 	window        fyne.Window
@@ -58,10 +65,11 @@ func RunDesktop() error {
 	cfg := LoadEnvConfig()
 	a := fyneapp.NewWithID("com.multimediasc.desktop")
 	w := a.NewWindow("MultimediaSC")
-	w.Resize(fyne.NewSize(1360, 860))
+	w.Resize(fyne.NewSize(1500, 920))
 
 	state := &desktopState{
 		cfg:       cfg,
+		core:      NewBatchCore(cfg),
 		docChecks: map[int64][]bool{},
 		docNames:  map[int64][]string{},
 		window:    w,
@@ -84,9 +92,10 @@ func RunDesktop() error {
 
 	state.status = widget.NewLabel("Listo")
 	state.previewInfo = widget.NewLabel("Busca planillas para ver documentos.")
+	state.docInfo = widget.NewLabel("Documento activo: ninguno")
 	state.exportInfo = widget.NewLabel("Prepara la exportación para ver el resumen aquí.")
 	state.batchInfo = widget.NewLabel("Planillas cargadas: 0")
-	state.docsBox = container.NewVBox(widget.NewLabel("Sin resultados todavía"))
+	state.docsList = state.documentList()
 	state.rangeInfo = widget.NewLabel("Rangos activos: " + strings.Join(cfg.PlanillaRanges, ", "))
 	state.planillasText = widget.NewMultiLineEntry()
 	state.planillasText.SetPlaceHolder("Una planilla, un rango o una lista separada por comas o saltos de línea")
@@ -109,12 +118,24 @@ func RunDesktop() error {
 
 	state.zipDest = widget.NewEntry()
 	state.zipDest.SetPlaceHolder("Destino ZIP, por ejemplo C:\\Temp\\pl_202607231530.zip")
+	state.outDir = widget.NewEntry()
+	state.outDir.SetPlaceHolder("Carpeta base de salida, por ejemplo C:\\Temp")
+	state.outDir.OnSubmitted = func(string) { state.updateZipDestination() }
 
 	searchPlanillas := widget.NewButton("Buscar planillas", func() {
 		state.search(loginUser.Text, loginPass.Text)
 	})
 	reloadDocs := widget.NewButton("Recargar documentos", func() {
 		state.refreshDocs()
+	})
+	selectOutDir := widget.NewButton("Carpeta ZIP", func() {
+		dialog.ShowFolderOpen(func(lu fyne.ListableURI, err error) {
+			if err != nil || lu == nil {
+				return
+			}
+			state.outDir.SetText(filepath.Join(lu.Path(), defaultExportFolderName()))
+			state.updateZipDestination()
+		}, w)
 	})
 	prevPlanilla := widget.NewButton("Planilla anterior", func() {
 		state.movePlanilla(-1)
@@ -140,6 +161,7 @@ func RunDesktop() error {
 		state.batchInfo,
 		widget.NewLabel("Nombres base permitidos"),
 		state.rangeText,
+		container.NewHBox(selectOutDir, state.outDir),
 		widget.NewLabel("Se agrega la extensión original al exportar."),
 	)
 
@@ -147,12 +169,22 @@ func RunDesktop() error {
 		container.NewVBox(
 			widget.NewLabelWithStyle("Documentos", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
 			state.previewInfo,
+			state.docInfo,
 			container.NewAppTabs(
 				container.NewTabItem("Revisar", container.NewVBox(
+					container.NewHBox(
+						widget.NewButton("Documento anterior", func() {
+							state.moveDocumento(-1)
+						}),
+						widget.NewButton("Documento siguiente", func() {
+							state.moveDocumento(1)
+						}),
+					),
 					reloadDocs,
-					state.docsBox,
+					state.docsList,
 				)),
 				container.NewTabItem("Exportar", container.NewVBox(
+					widget.NewForm(widget.NewFormItem("Carpeta destino", state.outDir)),
 					widget.NewForm(widget.NewFormItem("Destino ZIP", state.zipDest)),
 					state.exportInfo,
 					container.NewHBox(
@@ -181,67 +213,37 @@ func RunDesktop() error {
 	)
 
 	split := container.NewHSplit(container.NewVScroll(leftPanel), rightPanel)
-	split.Offset = 0.34
+	split.Offset = 0.28
 	w.SetContent(split)
 	w.ShowAndRun()
 	return nil
 }
 
 func (s *desktopState) search(user, pass string) {
-	if s.repo == nil {
-		if strings.TrimSpace(user) == "" || pass == "" {
-			s.status.SetText("ingresa usuario y contraseña para abrir la sesión")
-			return
-		}
-		ctx, cancel := context.WithTimeout(context.Background(), 8*time.Second)
-		defer cancel()
-		repo, err := oracle.Open(ctx, user, pass, oracle.OpenConfig{
-			ConnectString: s.cfg.OracleConnect,
-			MaxOpenConns:  s.cfg.DefaultMaxOpen,
-			MaxIdleConns:  s.cfg.DefaultMaxIdle,
-			ConnMaxLife:   10 * time.Minute,
-		})
-		if err != nil {
-			s.status.SetText(friendlyErr(err))
-			return
-		}
-		s.repo = repo
-		s.status.SetText("sesión Oracle abierta")
+	if s.core == nil {
+		s.core = NewBatchCore(s.cfg)
 	}
+	if err := s.core.Login(context.Background(), user, pass); err != nil {
+		s.status.SetText(friendlyErr(err))
+		return
+	}
+	s.status.SetText("sesión Oracle abierta")
 
 	inputs := parsePlanillaInputs(s.planillasText.Text)
 	if len(inputs) == 0 {
 		s.status.SetText("ingresa una o más planillas")
 		return
 	}
-	if max := s.cfg.MaxBatchPlanillasOrDefault(); max > 0 && len(inputs) > max {
-		s.status.SetText(fmt.Sprintf("el lote supera el máximo permitido (%d)", max))
+	items, err := s.core.Search(context.Background(), inputs)
+	if err != nil {
+		s.status.SetText(friendlyErr(err))
 		return
 	}
-
-	s.items = nil
-	s.docChecks = map[int64][]bool{}
-	s.docNames = map[int64][]string{}
-	s.activeIndex = 0
-
-	ctx, cancel := context.WithTimeout(context.Background(), 12*time.Second)
-	defer cancel()
-	for _, tramite := range inputs {
-		det, err := s.repo.ObtenerDetallePlanilla(ctx, tramite)
-		if err != nil {
-			s.items = append(s.items, batchItem{Error: err})
-			continue
-		}
-		enrichDocuments(det.Documentos)
-		s.items = append(s.items, batchItem{Planilla: det})
-		s.docChecks[det.Planilla.DigTramite] = make([]bool, len(det.Documentos))
-		s.docNames[det.Planilla.DigTramite] = make([]string, len(det.Documentos))
-		for i := range det.Documentos {
-			if len(s.cfg.AllowedNames) > 0 {
-				s.docNames[det.Planilla.DigTramite][i] = s.cfg.AllowedNames[0]
-			}
-		}
-	}
+	s.items = items
+	s.activeDocIndex = 0
+	s.docChecks = s.core.docChecks
+	s.docNames = s.core.docNames
+	s.activeIndex = s.core.activeIndex
 
 	if len(s.items) == 0 {
 		s.status.SetText("no se encontraron planillas")
@@ -257,11 +259,11 @@ func (s *desktopState) search(user, pass string) {
 }
 
 func (s *desktopState) logout() {
-	if s.repo != nil {
-		_ = s.repo.Close()
-		s.repo = nil
+	if s.core != nil {
+		s.core.Logout()
 	}
 	s.items = nil
+	s.activeDocIndex = 0
 	s.docChecks = map[int64][]bool{}
 	s.docNames = map[int64][]string{}
 	s.activeIndex = 0
@@ -399,72 +401,95 @@ func (s *desktopState) filteredPlanillaIndexes() []int {
 func (s *desktopState) refreshDocs() {
 	det := s.activeDetalle()
 	if det == nil {
-		s.docsBox.Objects = []fyne.CanvasObject{widget.NewLabel("Sin resultados todavía")}
-		s.docsBox.Refresh()
+		s.docInfo.SetText("Documento activo: ninguno")
+		if s.docsList != nil {
+			s.docsList.Refresh()
+		}
 		return
 	}
-	tramite := det.Planilla.DigTramite
-	checks := s.docChecks[tramite]
-	names := s.docNames[tramite]
-	var rows []fyne.CanvasObject
-	for i, d := range det.Documentos {
-		doc := d
-		i := i
-		checked := i < len(checks) && checks[i]
-		nameText := ""
-		if i < len(names) {
-			nameText = names[i]
-		}
-		cb := widget.NewCheck("", func(v bool) {
-			if i < len(s.docChecks[tramite]) {
-				s.docChecks[tramite][i] = v
-			}
-		})
-		cb.SetChecked(checked)
-		nameSel := widget.NewSelect(s.cfg.AllowedNames, func(v string) {
-			if i < len(s.docNames[tramite]) {
-				s.docNames[tramite][i] = v
-			}
-		})
-		if nameText != "" {
-			nameSel.SetSelected(nameText)
-		} else if len(s.cfg.AllowedNames) > 0 {
-			nameSel.SetSelected(s.cfg.AllowedNames[0])
-		}
-		toggleBtn := widget.NewButton("", nil)
-		if checked {
-			toggleBtn.SetText("Incluido")
-		} else {
-			toggleBtn.SetText("Excluido")
-		}
-		toggleBtn.OnTapped = func() {
-			if i < len(s.docChecks[tramite]) {
-				s.docChecks[tramite][i] = !s.docChecks[tramite][i]
-				if s.docChecks[tramite][i] {
-					toggleBtn.SetText("Incluido")
-				} else {
-					toggleBtn.SetText("Excluido")
-				}
-			}
-		}
-		openBtn := widget.NewButton("Ver", func() {
-			s.openDocument(doc)
-		})
-		actions := container.NewHBox(toggleBtn, openBtn, nameSel)
-		row := container.NewBorder(nil, nil, cb, nil, container.NewVBox(
-			widget.NewLabel(formatTime(doc.Fecha)),
-			widget.NewLabel(doc.Descripcion),
-			widget.NewLabel(documentStatusLine(doc)),
-			actions,
-		))
-		rows = append(rows, row)
-	}
-	s.docsBox.Objects = rows
-	s.docsBox.Refresh()
 	s.previewInfo.SetText(planillaSummary(det))
+	if len(det.Documentos) == 0 {
+		s.activeDocIndex = 0
+		s.docInfo.SetText("Documento activo: ninguno")
+		if s.docsList != nil {
+			s.docsList.Refresh()
+		}
+		return
+	}
+	if s.activeDocIndex < 0 || s.activeDocIndex >= len(det.Documentos) {
+		s.activeDocIndex = 0
+	}
+	s.docInfo.SetText(fmt.Sprintf("Documento activo: %d de %d", s.activeDocIndex+1, len(det.Documentos)))
+	if s.docsList != nil {
+		s.docsList.Refresh()
+	}
+}
+
+func (s *desktopState) documentList() *widget.List {
+	s.docsList = widget.NewList(
+		func() int {
+			det := s.activeDetalle()
+			if det == nil {
+				return 0
+			}
+			return len(det.Documentos)
+		},
+		func() fyne.CanvasObject {
+			title := widget.NewLabel("Documento")
+			desc := widget.NewLabel("Descripción")
+			state := widget.NewLabel("Estado")
+			info := widget.NewLabel("Acciones")
+			return container.NewVBox(title, desc, state, info)
+		},
+		func(i widget.ListItemID, obj fyne.CanvasObject) {
+			det := s.activeDetalle()
+			if det == nil || i < 0 || i >= len(det.Documentos) {
+				return
+			}
+			doc := det.Documentos[i]
+			box := obj.(*fyne.Container)
+			title := box.Objects[0].(*widget.Label)
+			desc := box.Objects[1].(*widget.Label)
+			stateLabel := box.Objects[2].(*widget.Label)
+			info := box.Objects[3].(*widget.Label)
+
+			active := i == s.activeDocIndex
+			if active {
+				title.SetText("▶ Documento activo")
+			} else {
+				title.SetText("Documento")
+			}
+			title.TextStyle = fyne.TextStyle{Bold: active}
+			desc.SetText(fmt.Sprintf("%s | %s", formatTime(doc.Fecha), doc.Descripcion))
+			stateLabel.SetText(documentStatusLine(doc))
+			info.SetText(fmt.Sprintf("Ver: %s | Nombre: %s", filepath.Base(doc.Ruta), s.exportNameForIndex(det.Planilla.DigTramite, i, doc)))
+		},
+	)
+	s.docsList.OnSelected = func(id widget.ListItemID) {
+		det := s.activeDetalle()
+		if det == nil || id < 0 || id >= len(det.Documentos) {
+			return
+		}
+		s.activeDocIndex = id
+		s.docInfo.SetText(fmt.Sprintf("Documento activo: %d de %d", s.activeDocIndex+1, len(det.Documentos)))
+		s.previewInfo.SetText(documentSummary(det.Documentos[id]))
+	}
+	for i := 0; i < 2048; i++ {
+		s.docsList.SetItemHeight(widget.ListItemID(i), 112)
+	}
+	return s.docsList
 }
 
 func (s *desktopState) openDocument(doc oracle.ImagenPacienteRow) {
+	det := s.activeDetalle()
+	if det != nil {
+		for i := range det.Documentos {
+			if det.Documentos[i].Ruta == doc.Ruta {
+				s.activeDocIndex = i
+				break
+			}
+		}
+	}
 	s.previewPath = doc.Ruta
 	s.previewInfo.SetText(documentSummary(doc))
 	if s.window == nil {
@@ -479,7 +504,30 @@ func (s *desktopState) openDocument(doc oracle.ImagenPacienteRow) {
 		s.status.SetText(friendlyErr(err))
 		return
 	}
+	if det != nil && len(det.Documentos) > 0 {
+		s.docInfo.SetText(fmt.Sprintf("Documento activo: %d de %d", s.activeDocIndex+1, len(det.Documentos)))
+	}
 	s.status.SetText("Abriendo archivo: " + filepath.Base(doc.Ruta))
+}
+
+func (s *desktopState) moveDocumento(delta int) {
+	det := s.activeDetalle()
+	if det == nil || len(det.Documentos) == 0 {
+		return
+	}
+	next := s.activeDocIndex + delta
+	if next < 0 {
+		next = 0
+	}
+	if next >= len(det.Documentos) {
+		next = len(det.Documentos) - 1
+	}
+	s.activeDocIndex = next
+	doc := det.Documentos[s.activeDocIndex]
+	s.previewInfo.SetText(documentSummary(doc))
+	s.docInfo.SetText(fmt.Sprintf("Documento activo: %d de %d", s.activeDocIndex+1, len(det.Documentos)))
+	s.status.SetText(fmt.Sprintf("Documento %d de %d", s.activeDocIndex+1, len(det.Documentos)))
+	s.refreshDocs()
 }
 
 func (s *desktopState) prepareExport() {
@@ -487,16 +535,8 @@ func (s *desktopState) prepareExport() {
 		s.exportInfo.SetText("Busca planillas primero.")
 		return
 	}
-	def := defaultZipFilename(s.exportPlanillaLabel(), s.selectedDocCount())
-	if s.zipDest != nil && strings.TrimSpace(s.zipDest.Text) == "" {
-		s.zipDest.SetText(def)
-	}
+	s.updateZipDestination()
 	dest := strings.TrimSpace(s.zipDest.Text)
-	if dest == "" {
-		dest = def
-		s.zipDest.SetText(dest)
-	}
-	dest = ensureZipExtension(dest)
 	if err := s.validateZipDestination(dest); err != nil {
 		s.exportInfo.SetText(friendlyErr(err))
 		s.exportReady = ""
@@ -504,6 +544,22 @@ func (s *desktopState) prepareExport() {
 	}
 	s.exportReady = dest
 	s.exportInfo.SetText(s.zipStructureSummary(dest))
+}
+
+func (s *desktopState) updateZipDestination() {
+	if s == nil || s.zipDest == nil {
+		return
+	}
+	baseDir := strings.TrimSpace(s.outDir.Text)
+	name := defaultZipFilename(s.exportPlanillaLabel(), s.selectedDocCount())
+	if baseDir == "" {
+		baseDir = filepath.Join(".", defaultExportFolderName())
+	}
+	if filepath.Ext(baseDir) == ".zip" {
+		s.zipDest.SetText(baseDir)
+		return
+	}
+	s.zipDest.SetText(filepath.Join(baseDir, name))
 }
 
 func (s *desktopState) exportConfirmed() {

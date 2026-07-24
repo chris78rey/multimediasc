@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MultimediaSC</title>
+  <link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+  <div class="shell" id="loginScreen">
+    <div class="login-card">
+      <div class="eyebrow">MultimediaSC</div>
+      <h1>Acceso Oracle</h1>
+      <p class="muted">Ingresa tus credenciales para abrir la bandeja de revisión.</p>
+      <label>Usuario <input id="user" autocomplete="off" /></label>
+      <label>Contraseña <input id="pass" type="password" autocomplete="off" /></label>
+      <div class="row">
+        <button id="loginBtn" class="primary">Ingresar</button>
+      </div>
+      <div class="status-pill wide" id="statusPillLogin">Listo</div>
+    </div>
+  </div>
+
+  <div class="shell hidden" id="mainScreen">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">MultimediaSC</div>
+        <h1>Revisión por lote</h1>
+      </div>
+      <div class="topbar-actions">
+        <button class="ghost theme-btn" id="themeBtn" aria-label="Cambiar tema">Tema: oscuro</button>
+        <div class="status-pill" id="statusPill">Listo</div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel left">
+        <div class="row between">
+          <h2>Sesión</h2>
+          <button class="ghost" id="logoutBtn">Cerrar sesión</button>
+        </div>
+        <div class="tabbar">
+          <button class="tab active" data-tab="searchTab">Búsqueda</button>
+          <button class="tab" data-tab="namesTab">Nombres</button>
+        </div>
+
+        <div class="tab-panel" id="searchTab">
+          <h2>Búsqueda</h2>
+          <label>Planilla, rango o lista <input id="searchText" placeholder="6076406 o 6076406-6076422" /></label>
+          <div class="row">
+            <button id="searchBtn">Buscar documentos</button>
+            <button class="ghost" id="refreshBtn">Refrescar</button>
+          </div>
+
+          <h2>Exportación</h2>
+          <div class="row">
+            <button class="ghost" id="chooseDirBtn">Elegir carpeta de destino</button>
+            <button class="primary" id="exportBtn">Generar ZIP</button>
+          </div>
+          <div class="stats secondary" id="dirInfo">Ninguna carpeta seleccionada</div>
+          <div class="stats secondary" id="zipInfo">El ZIP se generará automáticamente.</div>
+
+          <h2 class="advanced-title">Rangos permitidos</h2>
+          <label class="advanced"><textarea id="ranges" placeholder="6076406-6076422"></textarea></label>
+        </div>
+        <div class="tab-panel hidden" id="namesTab">
+          <h2>Catálogo de nombres</h2>
+          <p class="muted">Agrega nombres base sin extensión. En cada documento solo podrás elegir uno que no esté repetido dentro de la misma planilla.</p>
+          <label>Nuevo nombre <input id="newAllowedName" placeholder="Epicrisis" /></label>
+          <div class="row">
+            <button class="primary" id="addAllowedNameBtn">Agregar al catálogo</button>
+            <button class="ghost" id="saveNamesBtn">Guardar catálogo</button>
+            <button class="ghost" id="resetNamesBtn">Restaurar por defecto</button>
+          </div>
+          <label class="advanced">Nombres base permitidos <textarea id="names" placeholder="Epicrisis
+Consentimiento_Informado"></textarea></label>
+        </div>
+      </section>
+
+      <section class="panel middle">
+        <div class="section-head">
+          <h2>Planillas</h2>
+          <input id="filter" placeholder="Filtrar por número, paciente o error" />
+        </div>
+        <div class="stats" id="batchInfo">Planillas cargadas: 0</div>
+        <div class="list" id="planillasList"></div>
+      </section>
+
+      <section class="panel right">
+        <div class="section-head">
+          <h2>Documentos</h2>
+          <div class="row">
+            <button id="prevDocBtn" class="ghost nav-btn" aria-label="Documento anterior">&lt;&lt;</button>
+            <button id="nextDocBtn" class="ghost nav-btn" aria-label="Documento siguiente">&gt;&gt;</button>
+          </div>
+        </div>
+        <div class="stats" id="previewInfo">Busca planillas para ver documentos.</div>
+        <div class="stats secondary" id="docInfo">Documento activo: ninguno</div>
+        <div class="row">
+          <button class="ghost" id="clearBasketBtn">Vaciar canasta</button>
+          <button class="ghost" id="showBasketBtn">Canasta (0)</button>
+        </div>
+        <div class="doc-scroll" id="docsList"></div>
+        <div class="zip-card">
+          <div class="zip-card-head">
+            <strong>Salida ZIP</strong>
+            <span class="zip-count" id="basketCount">0 documentos</span>
+          </div>
+          <pre class="summary" id="exportInfo">Prepara la exportación para ver el resumen aquí.</pre>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal hidden" id="basketModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-basket></div>
+    <div class="modal-card">
+      <div class="section-head">
+        <h2>Canasta virtual</h2>
+        <button class="ghost" data-close-basket>Cerrar</button>
+      </div>
+      <div class="basket" id="basketList"></div>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>

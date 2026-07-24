@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "internal/app/desktop.go": {
-    "mtime": 1784841267.4884846,
-    "ast_hash": "90b901615126ade58f6dd13ae5e1f143",
+    "mtime": 1784842439.0740533,
+    "ast_hash": "5708c3b74db1914ae7f59ac84d607e50",
     "semantic_hash": ""
   },
   "internal/app/zipwriter.go": {
@@ -350,8 +350,8 @@
     "semantic_hash": ""
   },
   "internal/app/export.go": {
-    "mtime": 1784839508.900317,
-    "ast_hash": "719cc1c63f1c6ad9204a65613c077298",
+    "mtime": 1784841541.4520307,
+    "ast_hash": "467002cecf7c7c4278ee1110781c1d4c",
     "semantic_hash": ""
   }
 }

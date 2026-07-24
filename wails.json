@@ -1,0 +1,10 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "MultimediaSC",
+  "outputfilename": "multimediasc",
+  "wailsjsdir": "./frontend",
+  "author": {
+    "name": "CRRB",
+    "email": "crrb@example.com"
+  }
+}
