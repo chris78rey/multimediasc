@@ -200,7 +200,7 @@ func (a *App) OpenDocument(planillaIndex, docIndex int) coreapp.BatchSnapshot {
 	}
 	a.status = "Abriendo archivo: " + ruta
 	a.core.SetActiveIndex(planillaIndex)
-	a.core.MoveDocumento(docIndex - a.core.ActiveDocIndex())
+	a.core.SetActiveDocIndex(docIndex)
 	a.refreshPlanillaState()
 	a.preview = a.core.DocSummary(planillaIndex, docIndex)
 	return a.State()

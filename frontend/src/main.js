@@ -2,6 +2,7 @@ const $ = (id) => document.getElementById(id);
 let state = null;
 let activeTab = "searchTab";
 let theme = localStorage.getItem("multimediasc-theme") || "dark";
+const viewedDocs = new Set();
 
 function setStatus(text) {
   $("statusPill").textContent = text || "Listo";
@@ -88,6 +89,14 @@ function shortLabel(value) {
   if (!raw) return "";
   const parts = raw.split(/[\\/]/);
   return parts[parts.length - 1] || raw;
+}
+
+function docKey(planillaIndex, docIndex) {
+  return `${planillaIndex}:${docIndex}`;
+}
+
+function isViewed(planillaIndex, docIndex) {
+  return viewedDocs.has(docKey(planillaIndex, docIndex));
 }
 
 function usedNamesInPlanilla(planilla) {
@@ -192,6 +201,7 @@ function render(snapshot) {
     const doc = visible.doc;
     const usedNames = usedNamesInPlanilla(active);
     if (doc) {
+      const viewed = isViewed(active.index, doc.index);
       const div = document.createElement("div");
       div.className = doc.activo ? "doc active single" : "doc single";
       div.innerHTML = `
@@ -200,24 +210,34 @@ function render(snapshot) {
             <h3>${doc.descripcion || 'Documento'}</h3>
             <small>${doc.fecha || ''} · ${doc.tipo || ''} · ${doc.estado || ''}</small>
           </div>
-          <span class="badge ${doc.seleccionado ? 'ok' : ''}">${doc.seleccionado ? 'Incluido' : 'Pendiente'}</span>
+          <div class="doc-actions">
+            <button class="ghost action-open" data-open="open-${doc.planilla}-${doc.index}">Ver</button>
+            <button class="ghost action-include" data-toggle="toggle-${doc.planilla}-${doc.index}" ${viewed ? "" : "disabled"}>${doc.seleccionado ? 'Excluir' : 'Incluir'}</button>
+            <span class="badge ${doc.seleccionado ? 'ok' : viewed ? 'warn' : ''}">${doc.seleccionado ? 'Incluido' : viewed ? 'Revisado' : 'Pendiente'}</span>
+          </div>
         </div>
         <small>${doc.motivo || ''}</small>
         <div class="doc-meta">Documento ${doc.index + 1} de ${active.documentos.length}</div>
         <div class="name-box"></div>
-        <div class="controls">
-          <button data-open="open-${doc.planilla}-${doc.index}">Ver</button>
-          <button data-toggle="toggle-${doc.planilla}-${doc.index}">${doc.seleccionado ? 'Excluir' : 'Incluir'}</button>
-          <button data-mark="mark-${doc.planilla}-${doc.index}">Marcar</button>
-        </div>
       `;
       docsList.appendChild(div);
 
       const nameBox = div.querySelector('.name-box');
       renderNameSelect(nameBox, { ...doc, planillaIndex: active.index }, state.allowed_names || [], usedNames);
-      div.querySelector('[data-toggle]').onclick = () => call('ToggleDocumento', active.index, doc.index, !doc.seleccionado);
-      div.querySelector('[data-mark]').onclick = () => call('MoveDocumento', doc.index - (state.active_documento || 0));
-      div.querySelector('[data-open]').onclick = () => call('OpenDocument', active.index, doc.index);
+      const openBtn = div.querySelector('[data-open]');
+      const toggleBtn = div.querySelector('[data-toggle]');
+      if (viewed) {
+        toggleBtn.classList.add('primary');
+      }
+      openBtn.onclick = async () => {
+        viewedDocs.add(docKey(active.index, doc.index));
+        await call('OpenDocument', active.index, doc.index);
+        render(state);
+      };
+      toggleBtn.onclick = () => {
+        if (!isViewed(active.index, doc.index)) return;
+        call('ToggleDocumento', active.index, doc.index, !doc.seleccionado);
+      };
     } else {
       docsList.innerHTML = '<div class="stats secondary">No hay documentos pendientes para mostrar.</div>';
     }
@@ -298,9 +318,18 @@ async function call(method, ...args) {
 
 function wire() {
   applyTheme(theme);
-  $("loginBtn").onclick = () => call('Login', $("user").value, $("pass").value);
-  $("logoutBtn").onclick = () => call('Logout');
-  $("searchBtn").onclick = () => call('Search');
+  $("loginBtn").onclick = () => {
+    viewedDocs.clear();
+    call('Login', $("user").value, $("pass").value);
+  };
+  $("logoutBtn").onclick = () => {
+    viewedDocs.clear();
+    call('Logout');
+  };
+  $("searchBtn").onclick = () => {
+    viewedDocs.clear();
+    call('Search');
+  };
   $("refreshBtn").onclick = () => call('State');
   $("exportBtn").onclick = () => call('Export');
   $("prevDocBtn").onclick = () => call('MoveDocumento', -1);
@@ -346,7 +375,10 @@ function wire() {
   $("names").onchange = () => call('SetAllowedNames', $("names").value);
   $("searchText").onchange = () => call('SetSearchText', $("searchText").value);
   $("searchText").onkeyup = (e) => {
-    if (e.key === 'Enter') call('Search');
+    if (e.key === 'Enter') {
+      viewedDocs.clear();
+      call('Search');
+    }
   };
   $("filter").oninput = () => {
     const q = $("filter").value.toLowerCase().trim();
@@ -354,6 +386,7 @@ function wire() {
       el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
     });
   };
+  $("docInfo").title = "Selecciona un documento y presiona Ver para revisarlo antes de incluirlo.";
   setTab(activeTab);
 }
 
