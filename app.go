@@ -32,7 +32,7 @@ func NewApp() *App {
 	return &App{
 		core:       coreapp.NewBatchCore(cfg),
 		status:     "Listo",
-		preview:    "Busca planillas para ver documentos.",
+		preview:    "Busca una o más planillas para revisar documentos.",
 		docInfo:    "Documento activo: ninguno",
 		exportInfo: "Prepara la exportación para ver el resumen aquí.",
 		batchInfo:  "Planillas cargadas: 0",
@@ -58,13 +58,13 @@ func (a *App) Login(user, pass string) coreapp.BatchSnapshot {
 		a.status = friendlyErr(err)
 		return a.State()
 	}
-	a.status = "sesión Oracle abierta"
+	a.status = "sesión iniciada"
 	return a.State()
 }
 
 func (a *App) Logout() coreapp.BatchSnapshot {
 	a.core.Logout()
-	a.status = "sesión Oracle cerrada"
+	a.status = "sesión cerrada"
 	a.preview = "sesión cerrada"
 	a.docInfo = "Documento activo: ninguno"
 	a.exportInfo = "Prepara la exportación para ver el resumen aquí."
@@ -87,14 +87,14 @@ func (a *App) Search() coreapp.BatchSnapshot {
 	a.status = fmt.Sprintf("cargadas %d planillas", len(items))
 	a.batchInfo = fmt.Sprintf("Planillas cargadas: %d | Activa: %d", len(items), 1)
 	if len(items) == 0 {
-		a.preview = "Busca planillas para ver documentos."
+		a.preview = "Busca una o más planillas para revisar documentos."
 	}
 	return a.State()
 }
 
 func (a *App) SelectOutputDirectory() coreapp.BatchSnapshot {
 	dir, err := wailsruntime.OpenDirectoryDialog(a.ctx, wailsruntime.OpenDialogOptions{
-		Title: "Selecciona dónde guardar el ZIP",
+		Title: "Selecciona dónde guardar los archivos",
 	})
 	if err != nil || dir == "" {
 		return a.State()
@@ -234,7 +234,7 @@ func (a *App) Export() coreapp.BatchSnapshot {
 		a.exportInfo = friendlyErr(err)
 		return a.State()
 	}
-	a.status = "ZIP generado: " + a.zipDest
+	a.status = "archivo listo: " + a.zipDest
 	a.exportInfo = "ZIP generado correctamente: " + a.zipDest
 	return a.State()
 }
@@ -337,7 +337,38 @@ func friendlyErr(err error) string {
 	if err == nil {
 		return ""
 	}
-	return err.Error()
+	msg := strings.ToLower(strings.TrimSpace(err.Error()))
+	switch {
+	case strings.Contains(msg, "sesión oracle cerrada"):
+		return "abre la sesión para continuar"
+	case strings.Contains(msg, "ingresa usuario y contraseña"):
+		return "ingresa usuario y contraseña"
+	case strings.Contains(msg, "oracle") && strings.Contains(msg, "bloqueada"):
+		return "la cuenta está bloqueada"
+	case strings.Contains(msg, "oracle") && strings.Contains(msg, "vencida"):
+		return "la contraseña está vencida"
+	case strings.Contains(msg, "nombre duplicado en la planilla"):
+		return "el mismo nombre ya está usado en esta planilla"
+	case strings.Contains(msg, "no se puede guardar dentro de la carpeta"):
+		return "elige una carpeta distinta para guardar el archivo"
+	case strings.Contains(msg, "destino zip vacío"):
+		return "elige una carpeta de destino"
+	case strings.Contains(msg, "busca planillas primero"):
+		return "primero busca una o más planillas"
+	case strings.Contains(msg, "documento fuera de rango"), strings.Contains(msg, "planilla fuera de rango"):
+		return "la selección ya no está disponible"
+	case strings.Contains(msg, "no hay documentos seleccionados"):
+		return "no hay documentos marcados"
+	case strings.Contains(msg, "ingresa una o más planillas"):
+		return "ingresa al menos una planilla"
+	case strings.Contains(msg, "el lote supera el máximo permitido"):
+		return "el lote supera el máximo permitido"
+	default:
+		if strings.Contains(msg, "oracle") {
+			return "no se pudo abrir la sesión de datos"
+		}
+		return err.Error()
+	}
 }
 
 func mustJSON(v any) string {

@@ -1,16 +1,16 @@
 # Graph Report - multimediasc  (2026-07-24)
 
 ## Corpus Check
-- 95 files · ~184,625 words
+- 94 files · ~103,603 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 951 nodes · 1342 edges · 92 communities (87 shown, 5 thin omitted)
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 149 edges (avg confidence: 0.82)
+- 869 nodes · 1262 edges · 88 communities (83 shown, 5 thin omitted)
+- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 150 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d3ae2363`
+- Built from commit: `0e628dd1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,6 @@
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
 - [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
@@ -35,7 +34,6 @@
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
-- [[_COMMUNITY_Community 21|Community 21]]
 - [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 24|Community 24]]
@@ -100,37 +98,35 @@
 - [[_COMMUNITY_Community 86|Community 86]]
 - [[_COMMUNITY_Community 87|Community 87]]
 - [[_COMMUNITY_Community 88|Community 88]]
-- [[_COMMUNITY_Community 90|Community 90]]
-- [[_COMMUNITY_Community 91|Community 91]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Files` - 75 edges
-2. `trimSpace()` - 42 edges
-3. `BatchCore` - 40 edges
-4. `App` - 31 edges
-5. `desktopState` - 30 edges
-6. `BatchSnapshot` - 23 edges
-7. `$()` - 20 edges
-8. `RunDesktop()` - 20 edges
-9. `Repository` - 18 edges
-10. `Open()` - 16 edges
+1. `trimSpace()` - 43 edges
+2. `BatchCore` - 40 edges
+3. `App` - 31 edges
+4. `desktopState` - 30 edges
+5. `BatchSnapshot` - 23 edges
+6. `$()` - 20 edges
+7. `RunDesktop()` - 20 edges
+8. `Repository` - 18 edges
+9. `Open()` - 16 edges
+10. `Requirements Document inst02.md` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `QueryListarDocumentos` --references--> `IMAGENES_PACIENTES Table`  [INFERRED]
   internal/oracle/repository.go → inst01.md
 - `planillaSummary()` --implements--> `Resumen de planilla`  [INFERRED]
   internal/app/desktop.go → prompt2_ui_zip.md
-- `enrichDocuments()` --implements--> `4. Localización de documentos`  [INFERRED]
-  internal/app/fileobs.go → inst02.md
 - `inspectFile()` --implements--> `Archivos físicos`  [INFERRED]
   internal/app/fileobs.go → prompt2_ui_zip.md
 - `classifyFileError()` --implements--> `Error Handling`  [INFERRED]
   internal/app/fileobs.go → inst02.md
+- `ClassifyOracleError()` --implements--> `Error Handling`  [INFERRED]
+  internal/oracle/errors.go → inst02.md
 
 ## Import Cycles
 - None detected.
 
-## Communities (92 total, 5 thin omitted)
+## Communities (88 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.33
@@ -138,35 +134,31 @@ Nodes (4): API endpoint: /api/export, API endpoint: /api/preview, API endpoint: 
 
 ### Community 1 - "Community 1"
 Cohesion: 0.10
-Nodes (33): Config JSON (Dynamic Renaming Rules), DIGITALIZACION Table, Go Backend (Database & ZIP Logic), Patient HC 308455 (PADILLA JAIME), IMAGENES_PACIENTES Table, Login Window (Oracle User Authentication), Oracle Database (prdsgh2), PACIENTES Table (+25 more)
+Nodes (34): parsePlanillaInputs(), Config JSON (Dynamic Renaming Rules), DIGITALIZACION Table, Go Backend (Database & ZIP Logic), Patient HC 308455 (PADILLA JAIME), IMAGENES_PACIENTES Table, Login Window (Oracle User Authentication), Oracle Database (prdsgh2) (+26 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.07
-Nodes (45): Config, getenv(), LoadEnvConfig(), loadKeyValues(), normalizeAllowedNames(), parseNamesText(), parseRangesText(), DefaultAutoOutDir() (+37 more)
+Cohesion: 0.11
+Nodes (24): documentStatusLine(), documentSummary(), ensureZipExtension(), firstNonEmpty(), formatTime(), planillaPatientName(), planillaSummary(), RunDesktop() (+16 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.12
 Nodes (30): 1. Encabezado de sesión, 2. Panel de búsqueda, 3. Resumen de planilla, 4. Tabla de documentos, 5. Menú de asignación de nombre, 6. Vista previa PDF, 7. Pie de exportación, Componentes UI (+22 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.47
-Nodes (4): ClearHiddenAttributes(), fail(), filepathAbs(), main()
+Cohesion: 0.38
+Nodes (5): ClearHiddenAttributes(), Duration, fail(), filepathAbs(), main()
 
 ### Community 6 - "Community 6"
 Cohesion: 0.25
 Nodes (7): Current runtime references, Keep as backend boundaries, Migration phases, New Wails-facing structure, Replace the UI boundary, Risks to watch, Wails Migration Plan
 
-### Community 8 - "Community 8"
-Cohesion: 0.03
-Nodes (75): File: cmd/multimediasc/main.go, File: cmd/oraclecheck/main.go, File: go.mod, File: graphify-out/2026-07-22/graph.json, File: graphify-out/2026-07-22/GRAPH_REPORT.md, File: graphify-out/2026-07-22/.graphify_analysis.json, File: graphify-out/2026-07-22/.graphify_semantic_marker, File: graphify-out/2026-07-22/manifest.json (+67 more)
-
 ### Community 9 - "Community 9"
-Cohesion: 0.16
-Nodes (8): friendlyErr(), NewApp(), BatchCore, Context, App, openNative(), parsePlanillaInputs(), BatchSnapshot
+Cohesion: 0.11
+Nodes (16): Config, getenv(), LoadEnvConfig(), loadKeyValues(), normalizeAllowedNames(), parseNamesText(), parseRangesText(), friendlyErr() (+8 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.47
-Nodes (4): zipWriter, newZipWriter(), File, Writer
+Cohesion: 0.22
+Nodes (12): basenameAnySeparator(), countSelected(), createZip(), exportZip(), normalizeExportName(), validWindowsFilename(), zipDocument, zipWriter (+4 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.25
@@ -174,7 +166,7 @@ Nodes (7): Env var: MULTIMEDIASC_ALLOW_DUPLICATE_FIX, Command: go run ./cmd/mult
 
 ### Community 12 - "Community 12"
 Cohesion: 0.06
-Nodes (19): BatchCore, BatchSnapshot, documentSummary(), firstNonEmpty(), formatTime(), planillaPatientName(), planillaSummary(), validateZipDestination() (+11 more)
+Nodes (23): BatchCore, BatchSnapshot, DefaultAutoOutDir(), DefaultZipPath(), documentSummary(), firstNonEmpty(), formatTime(), NewBatchCore() (+15 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.08
@@ -189,8 +181,8 @@ Cohesion: 0.29
 Nodes (6): 🎨 1. La Interfaz del "Renombrador Inteligente" (UX/UI de Escritorio), 🧠 2. Lo que "No te estás dando cuenta" en este momento (Puntos Ciegos Críticos), 🛡️ 3. Código del Backend en Go (Mapeo, Renombrado y Compresión ZIP), A. El Archivo de Configuración (`config.json`), B. El Motor en Go (`main.go` con Soporte de Oracle y ZIP Estructurado), Oracle 11gR2
 
 ### Community 17 - "Community 17"
-Cohesion: 0.10
-Nodes (15): appendReason(), classifyFileError(), enrichDocuments(), fileKindFromExt(), inspectFile(), isHidden(), isHidden(), fileObservation (+7 more)
+Cohesion: 0.06
+Nodes (29): appendReason(), classifyFileError(), enrichDocuments(), fileKindFromExt(), inspectFile(), isHidden(), isHidden(), fileObservation (+21 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.15
@@ -200,16 +192,12 @@ Nodes (12): Communities (2 total, 0 thin omitted), Community 0 - "Community 0", 
 Cohesion: 0.15
 Nodes (12): Communities (2 total, 0 thin omitted), Community 0 - "Community 0", Community 1 - "Community 1", Community Hubs (Navigation), Corpus Check, God Nodes (most connected - your core abstractions), Graph Report - .  (2026-07-22), Import Cycles (+4 more)
 
-### Community 21 - "Community 21"
-Cohesion: 0.29
-Nodes (6): Directory Structure, File Format, File Summary, Notes, Purpose, Usage Guidelines
-
 ### Community 22 - "Community 22"
-Cohesion: 0.50
+Cohesion: 0.40
 Nodes (4): cmd/oraclecheck/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 23 - "Community 23"
-Cohesion: 0.50
+Cohesion: 0.40
 Nodes (4): cmd/multimediasc/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 24 - "Community 24"
@@ -217,7 +205,7 @@ Cohesion: 0.40
 Nodes (4): cmd/multimediasc/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 25 - "Community 25"
-Cohesion: 0.40
+Cohesion: 0.50
 Nodes (4): cmd/multimediasc/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 26 - "Community 26"
@@ -273,7 +261,7 @@ Cohesion: 0.50
 Nodes (4): README.md, ast_hash, mtime, semantic_hash
 
 ### Community 39 - "Community 39"
-Cohesion: 0.40
+Cohesion: 0.50
 Nodes (4): cmd/oraclecheck/main.go, ast_hash, mtime, semantic_hash
 
 ### Community 40 - "Community 40"
@@ -433,8 +421,8 @@ Cohesion: 0.12
 Nodes (15): author, bugs, url, description, homepage, keywords, license, main (+7 more)
 
 ### Community 84 - "Community 84"
-Cohesion: 0.10
-Nodes (34): DB, DigitalizacionRow, Duration, 4. Localización de documentos, ImagenPacienteRow, Time, Context, ImagenPacienteRow (+26 more)
+Cohesion: 0.08
+Nodes (34): mustJSON(), DB, DigitalizacionRow, Time, Context, ImagenPacienteRow, PlanillaDetalle, NullString (+26 more)
 
 ### Community 85 - "Community 85"
 Cohesion: 0.18
@@ -452,33 +440,25 @@ Nodes (4): EnvironmentInfo, Position, Screen, Size
 Cohesion: 0.67
 Nodes (3): EventsOn(), EventsOnce(), EventsOnMultiple()
 
-### Community 90 - "Community 90"
-Cohesion: 0.15
-Nodes (12): 10. Manejo de errores, 11. Auditoría, 12. Alcance que no corresponde al desarrollador, 1. Inicio de sesión, 2. Conexión con Oracle, 3. Búsqueda de la planilla, 5. Regla para relacionar documentos, 6. Vista previa (+4 more)
-
-### Community 91 - "Community 91"
-Cohesion: 0.29
-Nodes (3): mustJSON(), IsKind(), OracleError
-
 ## Knowledge Gaps
-- **395 isolated node(s):** `name`, `private`, `version`, `dev`, `build` (+390 more)
+- **316 isolated node(s):** `name`, `private`, `version`, `dev`, `build` (+311 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `trimSpace()` connect `Community 2` to `Community 17`, `Community 12`, `Community 9`, `Community 84`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
-- **Why does `Open()` connect `Community 84` to `Community 1`, `Community 2`, `Community 10`, `Community 12`, `Community 17`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `trimSpace()` connect `Community 9` to `Community 1`, `Community 2`, `Community 10`, `Community 12`, `Community 17`, `Community 84`?**
+  _High betweenness centrality (0.049) - this node is a cross-community bridge._
+- **Why does `Open()` connect `Community 84` to `Community 1`, `Community 9`, `Community 10`, `Community 12`, `Community 17`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Why does `BatchCore` connect `Community 12` to `Community 2`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
-- **Are the 40 inferred relationships involving `trimSpace()` (e.g. with `.ExportNameForIndex()` and `.FilteredPlanillaIndexes()`) actually correct?**
-  _`trimSpace()` has 40 INFERRED edges - model-reasoned connections that need verification._
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Are the 41 inferred relationships involving `trimSpace()` (e.g. with `.ExportNameForIndex()` and `.FilteredPlanillaIndexes()`) actually correct?**
+  _`trimSpace()` has 41 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _395 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _316 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.10416666666666667 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09915966386554621 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07191780821917808 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._

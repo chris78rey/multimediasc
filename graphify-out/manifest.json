@@ -324,11 +324,6 @@
     "ast_hash": "9984f46b2fe4474dbcb52bff5ec438e4",
     "semantic_hash": ""
   },
-  "repomix-multimediasc.md": {
-    "mtime": 1784822079.8399522,
-    "ast_hash": "12365ab8b5beb64636b3cdccbbe10d76",
-    "semantic_hash": ""
-  },
   "config.json": {
     "mtime": 1784927517.101182,
     "ast_hash": "cff89df19f55b36b18e1f9ebdb499d32",
@@ -415,8 +410,8 @@
     "semantic_hash": ""
   },
   "app.go": {
-    "mtime": 1784926482.451193,
-    "ast_hash": "a38e28dd7ec1dcec2673491f436e24c0",
+    "mtime": 1784927818.3609788,
+    "ast_hash": "2ad53dd2ffd1ca4ac1aadab8f60a0ec3",
     "semantic_hash": ""
   },
   "frontend/src/main.js": {
@@ -425,7 +420,7 @@
     "semantic_hash": ""
   },
   "main.go": {
-    "mtime": 1784898258.2895086,
+    "mtime": 1784927753.5455997,
     "ast_hash": "301535aa2b1c8ef0b1979c148b3d0a28",
     "semantic_hash": ""
   },
@@ -455,8 +450,8 @@
     "semantic_hash": ""
   },
   "frontend/src/index.html": {
-    "mtime": 1784926755.4958057,
-    "ast_hash": "eb5d0c96c0d1cb47539df91c5aa06b56",
+    "mtime": 1784927828.0540352,
+    "ast_hash": "c9bd5ea01bcbc5123746187a39cbefda",
     "semantic_hash": ""
   },
   "MultimediaSC/frontend/src/assets/images/logo-universal.png": {
@@ -470,32 +465,32 @@
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/main/App.d.ts": {
-    "mtime": 1784927657.7230325,
+    "mtime": 1784927839.8931038,
     "ast_hash": "da3c891b56fa51c66f72c224ede58c9c",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/main/App.js": {
-    "mtime": 1784927657.7230325,
+    "mtime": 1784927839.8931038,
     "ast_hash": "8a8f8b777f6a2e0e6e62dcc33ba07e3d",
     "semantic_hash": ""
   },
   "frontend/wailsjs/go/models.ts": {
-    "mtime": 1784927657.7240324,
+    "mtime": 1784927839.894104,
     "ast_hash": "bbcbf6a9944a18874d444cc0811fcab4",
     "semantic_hash": ""
   },
   "frontend/wailsjs/runtime/package.json": {
-    "mtime": 1784927657.7320325,
+    "mtime": 1784927839.902104,
     "ast_hash": "a79e9c39ebcda0fdeb14a44939bc489e",
     "semantic_hash": ""
   },
   "frontend/wailsjs/runtime/runtime.d.ts": {
-    "mtime": 1784927657.7320325,
+    "mtime": 1784927839.903104,
     "ast_hash": "51223d7fcb4565ba83c3189c4d0d4741",
     "semantic_hash": ""
   },
   "frontend/wailsjs/runtime/runtime.js": {
-    "mtime": 1784927657.7320325,
+    "mtime": 1784927839.903104,
     "ast_hash": "9dee729bc687d2102313ec2b969ae38c",
     "semantic_hash": ""
   },

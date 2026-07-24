@@ -1349,17 +1349,17 @@
       "label": "mustJSON()",
       "file_type": "code",
       "source_file": "app.go",
-      "source_location": "L343",
+      "source_location": "L374",
       "_origin": "ast",
       "id": "app_mustjson",
-      "community": 91,
+      "community": 84,
       "norm_label": "mustjson()"
     },
     {
       "label": "openNative()",
       "file_type": "code",
       "source_file": "app.go",
-      "source_location": "L348",
+      "source_location": "L379",
       "_origin": "ast",
       "id": "app_opennative",
       "community": 9,
@@ -2774,7 +2774,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "2026_07_22_manifest",
-      "community": 25,
+      "community": 22,
       "norm_label": "manifest.json"
     },
     {
@@ -3384,7 +3384,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "2026_07_23_manifest",
-      "community": 39,
+      "community": 23,
       "norm_label": "manifest.json"
     },
     {
@@ -4764,7 +4764,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_config",
-      "community": 2,
+      "community": 9,
       "norm_label": "config"
     },
     {
@@ -4774,7 +4774,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "app_config_loadenvconfig",
-      "community": 2,
+      "community": 9,
       "norm_label": "loadenvconfig()"
     },
     {
@@ -4784,7 +4784,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "app_config_getenv",
-      "community": 2,
+      "community": 9,
       "norm_label": "getenv()"
     },
     {
@@ -4794,7 +4794,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "app_config_configpath",
-      "community": 2,
+      "community": 9,
       "norm_label": ".configpath()"
     },
     {
@@ -4804,7 +4804,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "app_config_save",
-      "community": 2,
+      "community": 9,
       "norm_label": ".save()"
     },
     {
@@ -4814,7 +4814,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "app_config_allowedrangestext",
-      "community": 2,
+      "community": 9,
       "norm_label": ".allowedrangestext()"
     },
     {
@@ -4824,7 +4824,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "app_config_allowednamestext",
-      "community": 2,
+      "community": 9,
       "norm_label": ".allowednamestext()"
     },
     {
@@ -4834,7 +4834,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "app_config_parserangestext",
-      "community": 2,
+      "community": 9,
       "norm_label": "parserangestext()"
     },
     {
@@ -4844,7 +4844,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "app_config_parsenamestext",
-      "community": 2,
+      "community": 9,
       "norm_label": "parsenamestext()"
     },
     {
@@ -4854,7 +4854,7 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "app_config_normalizeallowednames",
-      "community": 2,
+      "community": 9,
       "norm_label": "normalizeallowednames()"
     },
     {
@@ -4864,7 +4864,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "app_config_maxbatchplanillasordefault",
-      "community": 2,
+      "community": 9,
       "norm_label": ".maxbatchplanillasordefault()"
     },
     {
@@ -4874,7 +4874,7 @@
       "source_location": "L144",
       "_origin": "ast",
       "id": "app_config_loadkeyvalues",
-      "community": 2,
+      "community": 9,
       "norm_label": "loadkeyvalues()"
     },
     {
@@ -4994,7 +4994,7 @@
       "source_location": "L76",
       "_origin": "ast",
       "id": "app_core_newbatchcore",
-      "community": 2,
+      "community": 12,
       "norm_label": "newbatchcore()"
     },
     {
@@ -5474,7 +5474,7 @@
       "source_location": "L690",
       "_origin": "ast",
       "id": "app_core_defaultzippath",
-      "community": 2,
+      "community": 12,
       "norm_label": "defaultzippath()"
     },
     {
@@ -5484,7 +5484,7 @@
       "source_location": "L699",
       "_origin": "ast",
       "id": "app_core_defaultautooutdir",
-      "community": 2,
+      "community": 12,
       "norm_label": "defaultautooutdir()"
     },
     {
@@ -5624,7 +5624,7 @@
       "source_location": "L222",
       "_origin": "ast",
       "id": "app_desktopstate_search",
-      "community": 2,
+      "community": 1,
       "norm_label": ".search()"
     },
     {
@@ -5844,7 +5844,7 @@
       "source_location": "L724",
       "_origin": "ast",
       "id": "app_desktop_parseplanillainputs",
-      "community": 2,
+      "community": 1,
       "norm_label": "parseplanillainputs()"
     },
     {
@@ -5924,7 +5924,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "internal_app_export_go_app_export",
-      "community": 2,
+      "community": 10,
       "norm_label": "export.go"
     },
     {
@@ -5934,7 +5934,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "app_zipdocument",
-      "community": 2,
+      "community": 10,
       "norm_label": "zipdocument"
     },
     {
@@ -5964,7 +5964,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "app_export_exportzip",
-      "community": 2,
+      "community": 10,
       "norm_label": "exportzip()"
     },
     {
@@ -5974,7 +5974,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "app_export_createzip",
-      "community": 2,
+      "community": 10,
       "norm_label": "createzip()"
     },
     {
@@ -5984,7 +5984,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "internal_app_export_go_writer",
-      "community": 2,
+      "community": 10,
       "norm_label": "writer"
     },
     {
@@ -5994,7 +5994,7 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "app_export_countselected",
-      "community": 2,
+      "community": 10,
       "norm_label": "countselected()"
     },
     {
@@ -6014,7 +6014,7 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "app_export_defaultexportfoldername",
-      "community": 2,
+      "community": 12,
       "norm_label": "defaultexportfoldername()"
     },
     {
@@ -6024,7 +6024,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "app_export_normalizeexportname",
-      "community": 2,
+      "community": 10,
       "norm_label": "normalizeexportname()"
     },
     {
@@ -6034,7 +6034,7 @@
       "source_location": "L170",
       "_origin": "ast",
       "id": "app_export_basenameanyseparator",
-      "community": 2,
+      "community": 10,
       "norm_label": "basenameanyseparator()"
     },
     {
@@ -6044,7 +6044,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "app_export_validwindowsfilename",
-      "community": 2,
+      "community": 10,
       "norm_label": "validwindowsfilename()"
     },
     {
@@ -6074,7 +6074,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "internal_app_fileobs_go_imagenpacienterow",
-      "community": 84,
+      "community": 17,
       "norm_label": "imagenpacienterow"
     },
     {
@@ -6494,7 +6494,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "oracle_errors",
-      "community": 91,
+      "community": 84,
       "norm_label": "errors.go"
     },
     {
@@ -6504,7 +6504,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "oracle_oracleerror",
-      "community": 91,
+      "community": 84,
       "norm_label": "oracleerror"
     },
     {
@@ -6514,7 +6514,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "oracle_oracleerror_error",
-      "community": 91,
+      "community": 84,
       "norm_label": ".error()"
     },
     {
@@ -6524,7 +6524,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "oracle_oracleerror_unwrap",
-      "community": 91,
+      "community": 84,
       "norm_label": ".unwrap()"
     },
     {
@@ -6544,7 +6544,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "oracle_errors_iskind",
-      "community": 91,
+      "community": 84,
       "norm_label": "iskind()"
     },
     {
@@ -6554,7 +6554,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "oracle_oracleerror_string",
-      "community": 91,
+      "community": 84,
       "norm_label": ".string()"
     },
     {
@@ -6644,7 +6644,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "oracle_models_trimspace",
-      "community": 2,
+      "community": 9,
       "norm_label": "trimspace()"
     },
     {
@@ -6684,7 +6684,7 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "duration",
-      "community": 84,
+      "community": 5,
       "norm_label": "duration"
     },
     {
@@ -7814,7 +7814,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "inst02_md",
-      "community": 90,
+      "community": 17,
       "norm_label": "inst02.md"
     },
     {
@@ -7824,7 +7824,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "inst02_requerimientos_para_entregar_al_desarrollador",
-      "community": 90,
+      "community": 17,
       "norm_label": "requerimientos para entregar al desarrollador"
     },
     {
@@ -7834,7 +7834,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "inst02_1_inicio_de_sesi\u00f3n",
-      "community": 90,
+      "community": 17,
       "norm_label": "1. inicio de sesion"
     },
     {
@@ -7844,7 +7844,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "inst02_2_conexi\u00f3n_con_oracle",
-      "community": 90,
+      "community": 17,
       "norm_label": "2. conexion con oracle"
     },
     {
@@ -7854,7 +7854,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "inst02_3_b\u00fasqueda_de_la_planilla",
-      "community": 90,
+      "community": 17,
       "norm_label": "3. busqueda de la planilla"
     },
     {
@@ -7864,7 +7864,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "inst02_4_localizaci\u00f3n_de_documentos",
-      "community": 84,
+      "community": 17,
       "norm_label": "4. localizacion de documentos"
     },
     {
@@ -7874,7 +7874,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "inst02_5_regla_para_relacionar_documentos",
-      "community": 90,
+      "community": 17,
       "norm_label": "5. regla para relacionar documentos"
     },
     {
@@ -7884,7 +7884,7 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "inst02_6_vista_previa",
-      "community": 90,
+      "community": 17,
       "norm_label": "6. vista previa"
     },
     {
@@ -7894,7 +7894,7 @@
       "source_location": "L105",
       "_origin": "ast",
       "id": "inst02_7_renombrado_estandarizado",
-      "community": 90,
+      "community": 17,
       "norm_label": "7. renombrado estandarizado"
     },
     {
@@ -7904,7 +7904,7 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "inst02_8_nombres_duplicados",
-      "community": 90,
+      "community": 17,
       "norm_label": "8. nombres duplicados"
     },
     {
@@ -7914,7 +7914,7 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "inst02_9_generaci\u00f3n_del_zip",
-      "community": 90,
+      "community": 17,
       "norm_label": "9. generacion del zip"
     },
     {
@@ -7924,7 +7924,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "inst02_10_manejo_de_errores",
-      "community": 90,
+      "community": 17,
       "norm_label": "10. manejo de errores"
     },
     {
@@ -7934,7 +7934,7 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "inst02_11_auditor\u00eda",
-      "community": 90,
+      "community": 17,
       "norm_label": "11. auditoria"
     },
     {
@@ -7944,7 +7944,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "inst02_12_alcance_que_no_corresponde_al_desarrollador",
-      "community": 90,
+      "community": 17,
       "norm_label": "12. alcance que no corresponde al desarrollador"
     },
     {
@@ -8186,826 +8186,6 @@
       "id": "prompt2_ui_zip_fuera_de_alcance",
       "community": 4,
       "norm_label": "fuera de alcance"
-    },
-    {
-      "label": "repomix-multimediasc.md",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "repomix_multimediasc",
-      "community": 21,
-      "norm_label": "repomix-multimediasc.md"
-    },
-    {
-      "label": "File Summary",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_summary",
-      "community": 21,
-      "norm_label": "file summary"
-    },
-    {
-      "label": "Purpose",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_purpose",
-      "community": 21,
-      "norm_label": "purpose"
-    },
-    {
-      "label": "File Format",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_format",
-      "community": 21,
-      "norm_label": "file format"
-    },
-    {
-      "label": "Usage Guidelines",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_usage_guidelines",
-      "community": 21,
-      "norm_label": "usage guidelines"
-    },
-    {
-      "label": "Notes",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_notes",
-      "community": 21,
-      "norm_label": "notes"
-    },
-    {
-      "label": "Directory Structure",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L37",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_directory_structure",
-      "community": 21,
-      "norm_label": "directory structure"
-    },
-    {
-      "label": "Files",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L132",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_files",
-      "community": 8,
-      "norm_label": "files"
-    },
-    {
-      "label": "File: cmd/multimediasc/main.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L134",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_cmd_multimediasc_main_go",
-      "community": 8,
-      "norm_label": "file: cmd/multimediasc/main.go"
-    },
-    {
-      "label": "File: cmd/oraclecheck/main.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L151",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_cmd_oraclecheck_main_go",
-      "community": 8,
-      "norm_label": "file: cmd/oraclecheck/main.go"
-    },
-    {
-      "label": "File: graphify-out/2026-07-22/.graphify_analysis.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L243",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_22_graphify_analysis_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-22/.graphify_analysis.json"
-    },
-    {
-      "label": "File: graphify-out/2026-07-22/.graphify_semantic_marker",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L554",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_22_graphify_semantic_marker",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-22/.graphify_semantic_marker"
-    },
-    {
-      "label": "File: graphify-out/2026-07-22/GRAPH_REPORT.md",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L559",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_22_graph_report_md",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-22/graph_report.md"
-    },
-    {
-      "label": "File: graphify-out/2026-07-22/graph.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L616",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_22_graph_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-22/graph.json"
-    },
-    {
-      "label": "File: graphify-out/2026-07-22/manifest.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5001",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_22_manifest_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-22/manifest.json"
-    },
-    {
-      "label": "File: graphify-out/2026-07-23/.graphify_analysis.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5082",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_23_graphify_analysis_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-23/.graphify_analysis.json"
-    },
-    {
-      "label": "File: graphify-out/2026-07-23/.graphify_semantic_marker",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5403",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_23_graphify_semantic_marker",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-23/.graphify_semantic_marker"
-    },
-    {
-      "label": "File: graphify-out/2026-07-23/GRAPH_REPORT.md",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5408",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_23_graph_report_md",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-23/graph_report.md"
-    },
-    {
-      "label": "File: graphify-out/2026-07-23/graph.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5465",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_23_graph_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-23/graph.json"
-    },
-    {
-      "label": "File: graphify-out/2026-07-23/manifest.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L9934",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_2026_07_23_manifest_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/2026-07-23/manifest.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/04429e0ee22e90b447ed25004abf546387a519b72ec9139cd23da1adad2d7f18.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10015",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_04429e0ee22e90b447ed25004abf546387a519b72ec9139cd23da1adad2d7f18_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/04429e0ee22e90b447ed25004abf546387a519b72ec9139cd23da1adad2d7f18.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/099f97f41f2acb7fb77f9d2bf971eb6cbc3a3a9f25c202ad844d5a8344cf2f3a.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10020",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_099f97f41f2acb7fb77f9d2bf971eb6cbc3a3a9f25c202ad844d5a8344cf2f3a_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/099f97f41f2acb7fb77f9d2bf971eb6cbc3a3a9f25c202ad844d5a8344cf2f3a.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/18e9fe8cc6522e79fdbab65ed8694431e63c46b119f7daff21c5a0d0dc9febe3.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10025",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_18e9fe8cc6522e79fdbab65ed8694431e63c46b119f7daff21c5a0d0dc9febe3_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/18e9fe8cc6522e79fdbab65ed8694431e63c46b119f7daff21c5a0d0dc9febe3.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/1c091b9cb58e5d367c98be71f8d8fb9e7c0f9da70684cddc0a9b28c24014bbfe.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10030",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_1c091b9cb58e5d367c98be71f8d8fb9e7c0f9da70684cddc0a9b28c24014bbfe_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/1c091b9cb58e5d367c98be71f8d8fb9e7c0f9da70684cddc0a9b28c24014bbfe.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/2333447f959ea8985b410c5f8ec899b89919f51f9b434d64d8b307c11103fbf5.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10035",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_2333447f959ea8985b410c5f8ec899b89919f51f9b434d64d8b307c11103fbf5_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/2333447f959ea8985b410c5f8ec899b89919f51f9b434d64d8b307c11103fbf5.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/23771967715aa88a311e126a07b65d3edc49dcfd09d52b055805d3137448c38d.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10040",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_23771967715aa88a311e126a07b65d3edc49dcfd09d52b055805d3137448c38d_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/23771967715aa88a311e126a07b65d3edc49dcfd09d52b055805d3137448c38d.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/2b98814d27542a5655bc83723315827318a1793bd82794f62f9364b7ab065f66.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10045",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_2b98814d27542a5655bc83723315827318a1793bd82794f62f9364b7ab065f66_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/2b98814d27542a5655bc83723315827318a1793bd82794f62f9364b7ab065f66.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/2f059dd9588b85bcd8fa76d35c63b8de29dbe210f42a138f176d6564c590c2cc.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10050",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_2f059dd9588b85bcd8fa76d35c63b8de29dbe210f42a138f176d6564c590c2cc_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/2f059dd9588b85bcd8fa76d35c63b8de29dbe210f42a138f176d6564c590c2cc.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/37d753cd6f85b85fec11f342ec37220cc540b4bfdd5387c227f35cf763be6b94.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10055",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_37d753cd6f85b85fec11f342ec37220cc540b4bfdd5387c227f35cf763be6b94_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/37d753cd6f85b85fec11f342ec37220cc540b4bfdd5387c227f35cf763be6b94.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/39bc83368adba3a0ed40aa8fcf49decbcb4af4f88ebcf7e7d43652eb5951dbb2.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10060",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_39bc83368adba3a0ed40aa8fcf49decbcb4af4f88ebcf7e7d43652eb5951dbb2_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/39bc83368adba3a0ed40aa8fcf49decbcb4af4f88ebcf7e7d43652eb5951dbb2.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/4221749a14e961ec64f403b10ce6b2d7435ced50e988637b7419511c527c5411.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10065",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_4221749a14e961ec64f403b10ce6b2d7435ced50e988637b7419511c527c5411_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/4221749a14e961ec64f403b10ce6b2d7435ced50e988637b7419511c527c5411.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/455f7fca1fc344ebfa55676d29088e29f9b8bab4b3221611ade595f334ca55aa.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10070",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_455f7fca1fc344ebfa55676d29088e29f9b8bab4b3221611ade595f334ca55aa_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/455f7fca1fc344ebfa55676d29088e29f9b8bab4b3221611ade595f334ca55aa.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/55f5f6044b50ab24f88ff9ac379bfc92552838e83bf145fcbc987feea17ae034.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10075",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_55f5f6044b50ab24f88ff9ac379bfc92552838e83bf145fcbc987feea17ae034_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/55f5f6044b50ab24f88ff9ac379bfc92552838e83bf145fcbc987feea17ae034.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/63c4e8787262aa63e480c4f1670725bbdc2631ba02f564e379142a3685115ca6.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10080",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_63c4e8787262aa63e480c4f1670725bbdc2631ba02f564e379142a3685115ca6_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/63c4e8787262aa63e480c4f1670725bbdc2631ba02f564e379142a3685115ca6.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/7387c48ad1c4e9e113f89085067f2da9c51abcf51514e67e926adb9748cfd90d.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10085",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_7387c48ad1c4e9e113f89085067f2da9c51abcf51514e67e926adb9748cfd90d_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/7387c48ad1c4e9e113f89085067f2da9c51abcf51514e67e926adb9748cfd90d.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/8bbba7253dd8428070320a647c9ed53cbe320f7ca4d4e23b4d3e7a92cd62f93a.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10090",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_8bbba7253dd8428070320a647c9ed53cbe320f7ca4d4e23b4d3e7a92cd62f93a_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/8bbba7253dd8428070320a647c9ed53cbe320f7ca4d4e23b4d3e7a92cd62f93a.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/a2084224740c33812731bcfb21c219909f94b0ccaf54b92a410ae93358cc679e.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10095",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_a2084224740c33812731bcfb21c219909f94b0ccaf54b92a410ae93358cc679e_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/a2084224740c33812731bcfb21c219909f94b0ccaf54b92a410ae93358cc679e.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/a9ad8ce1f731169100a6af2c498035fb95deb13237be9ec5b0ae7083b2cf5689.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10100",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_a9ad8ce1f731169100a6af2c498035fb95deb13237be9ec5b0ae7083b2cf5689_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/a9ad8ce1f731169100a6af2c498035fb95deb13237be9ec5b0ae7083b2cf5689.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/aae693f9b211450eccff1eb7ebd4278de68951e0313f095b980e587b398914a5.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10105",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_aae693f9b211450eccff1eb7ebd4278de68951e0313f095b980e587b398914a5_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/aae693f9b211450eccff1eb7ebd4278de68951e0313f095b980e587b398914a5.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/b37ce9ce975b3ad8c3a42d35f8e2977d435166ed22970abe0d99a3b961d12a74.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10110",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_b37ce9ce975b3ad8c3a42d35f8e2977d435166ed22970abe0d99a3b961d12a74_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/b37ce9ce975b3ad8c3a42d35f8e2977d435166ed22970abe0d99a3b961d12a74.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/b7f697c84551c201bf1f0e13ff33ba30af44ebf53f2314e6c606e0a709bbf428.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10115",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_b7f697c84551c201bf1f0e13ff33ba30af44ebf53f2314e6c606e0a709bbf428_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/b7f697c84551c201bf1f0e13ff33ba30af44ebf53f2314e6c606e0a709bbf428.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/bcd4b1ee3526167287ade02b49f1f8a3f0cb648144b7979dcf1d5359653482fe.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10120",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_bcd4b1ee3526167287ade02b49f1f8a3f0cb648144b7979dcf1d5359653482fe_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/bcd4b1ee3526167287ade02b49f1f8a3f0cb648144b7979dcf1d5359653482fe.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/d449e5f054b729373f7df03a6cfc3306c408f975ee04d818c16d81db32761f15.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10125",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_d449e5f054b729373f7df03a6cfc3306c408f975ee04d818c16d81db32761f15_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/d449e5f054b729373f7df03a6cfc3306c408f975ee04d818c16d81db32761f15.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/eb4bb9628510daa9cc71d9d5a29aa3833b06b758c5314200aee28293b61a796a.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10130",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_eb4bb9628510daa9cc71d9d5a29aa3833b06b758c5314200aee28293b61a796a_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/eb4bb9628510daa9cc71d9d5a29aa3833b06b758c5314200aee28293b61a796a.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/ec91a9b78d1d0569b32c3255ee7426bc0f67975c9a958694f4904941d5076f29.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10135",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_ec91a9b78d1d0569b32c3255ee7426bc0f67975c9a958694f4904941d5076f29_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/ec91a9b78d1d0569b32c3255ee7426bc0f67975c9a958694f4904941d5076f29.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/f62c30483b8f9cbae11afe15be5e8ae2d209f43c773497170b6c83fbddfa2bb2.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10140",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_f62c30483b8f9cbae11afe15be5e8ae2d209f43c773497170b6c83fbddfa2bb2_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/f62c30483b8f9cbae11afe15be5e8ae2d209f43c773497170b6c83fbddfa2bb2.json"
-    },
-    {
-      "label": "File: graphify-out/cache/ast/v0.8.49/f938126290c3820018ae71fcbec1b4c9064d9fee14476dab11ba89037eb19b0c.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10145",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_f938126290c3820018ae71fcbec1b4c9064d9fee14476dab11ba89037eb19b0c_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/ast/v0.8.49/f938126290c3820018ae71fcbec1b4c9064d9fee14476dab11ba89037eb19b0c.json"
-    },
-    {
-      "label": "File: graphify-out/cache/semantic/2f059dd9588b85bcd8fa76d35c63b8de29dbe210f42a138f176d6564c590c2cc.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10150",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_semantic_2f059dd9588b85bcd8fa76d35c63b8de29dbe210f42a138f176d6564c590c2cc_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/semantic/2f059dd9588b85bcd8fa76d35c63b8de29dbe210f42a138f176d6564c590c2cc.json"
-    },
-    {
-      "label": "File: graphify-out/cache/semantic/4221749a14e961ec64f403b10ce6b2d7435ced50e988637b7419511c527c5411.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10155",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_semantic_4221749a14e961ec64f403b10ce6b2d7435ced50e988637b7419511c527c5411_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/semantic/4221749a14e961ec64f403b10ce6b2d7435ced50e988637b7419511c527c5411.json"
-    },
-    {
-      "label": "File: graphify-out/cache/semantic/6fa5f93976d1c143aecc6ed271fe75b5e0dd991e5d522e3f69c4a536c592ddae.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10160",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_semantic_6fa5f93976d1c143aecc6ed271fe75b5e0dd991e5d522e3f69c4a536c592ddae_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/semantic/6fa5f93976d1c143aecc6ed271fe75b5e0dd991e5d522e3f69c4a536c592ddae.json"
-    },
-    {
-      "label": "File: graphify-out/cache/semantic/7387c48ad1c4e9e113f89085067f2da9c51abcf51514e67e926adb9748cfd90d.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10165",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_semantic_7387c48ad1c4e9e113f89085067f2da9c51abcf51514e67e926adb9748cfd90d_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/semantic/7387c48ad1c4e9e113f89085067f2da9c51abcf51514e67e926adb9748cfd90d.json"
-    },
-    {
-      "label": "File: graphify-out/cache/semantic/d449e5f054b729373f7df03a6cfc3306c408f975ee04d818c16d81db32761f15.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10170",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_semantic_d449e5f054b729373f7df03a6cfc3306c408f975ee04d818c16d81db32761f15_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/semantic/d449e5f054b729373f7df03a6cfc3306c408f975ee04d818c16d81db32761f15.json"
-    },
-    {
-      "label": "File: graphify-out/.graphify_detect.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10175",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graphify_detect_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/.graphify_detect.json"
-    },
-    {
-      "label": "File: graphify-out/.graphify_extract.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10180",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graphify_extract_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/.graphify_extract.json"
-    },
-    {
-      "label": "File: graphify-out/.graphify_labels.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10531",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graphify_labels_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/.graphify_labels.json"
-    },
-    {
-      "label": "File: graphify-out/.graphify_python",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10556",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graphify_python",
-      "community": 8,
-      "norm_label": "file: graphify-out/.graphify_python"
-    },
-    {
-      "label": "File: graphify-out/.graphify_semantic_marker",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10561",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graphify_semantic_marker",
-      "community": 8,
-      "norm_label": "file: graphify-out/.graphify_semantic_marker"
-    },
-    {
-      "label": "File: internal/app/fileobs_other.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10566",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_app_fileobs_other_go",
-      "community": 8,
-      "norm_label": "file: internal/app/fileobs_other.go"
-    },
-    {
-      "label": "File: internal/app/fileobs_windows.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10583",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_app_fileobs_windows_go",
-      "community": 8,
-      "norm_label": "file: internal/app/fileobs_windows.go"
-    },
-    {
-      "label": "File: internal/app/fileobs.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10607",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_app_fileobs_go",
-      "community": 8,
-      "norm_label": "file: internal/app/fileobs.go"
-    },
-    {
-      "label": "File: internal/app/zipwriter.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10731",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_app_zipwriter_go",
-      "community": 8,
-      "norm_label": "file: internal/app/zipwriter.go"
-    },
-    {
-      "label": "File: internal/oracle/errors.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10769",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_oracle_errors_go",
-      "community": 8,
-      "norm_label": "file: internal/oracle/errors.go"
-    },
-    {
-      "label": "File: internal/oracle/repository.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10839",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_oracle_repository_go",
-      "community": 8,
-      "norm_label": "file: internal/oracle/repository.go"
-    },
-    {
-      "label": "File: scripts/unhide_share.ps1",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11206",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_scripts_unhide_share_ps1",
-      "community": 8,
-      "norm_label": "file: scripts/unhide_share.ps1"
-    },
-    {
-      "label": "File: go.mod",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11246",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_go_mod",
-      "community": 8,
-      "norm_label": "file: go.mod"
-    },
-    {
-      "label": "File: inst01.md",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11298",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_inst01_md",
-      "community": 8,
-      "norm_label": "file: inst01.md"
-    },
-    {
-      "label": "File: inst02.md",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11614",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_inst02_md",
-      "community": 8,
-      "norm_label": "file: inst02.md"
-    },
-    {
-      "label": "File: oracle.local.env.example",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11822",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_oracle_local_env_example",
-      "community": 8,
-      "norm_label": "file: oracle.local.env.example"
-    },
-    {
-      "label": "File: prompt2_ui_zip.md",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11830",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_prompt2_ui_zip_md",
-      "community": 8,
-      "norm_label": "file: prompt2_ui_zip.md"
-    },
-    {
-      "label": "File: README.md",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12078",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_readme_md",
-      "community": 8,
-      "norm_label": "file: readme.md"
-    },
-    {
-      "label": "File: graphify-out/.graphify_analysis.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12098",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graphify_analysis_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/.graphify_analysis.json"
-    },
-    {
-      "label": "File: graphify-out/.graphify_root",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12419",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graphify_root",
-      "community": 8,
-      "norm_label": "file: graphify-out/.graphify_root"
-    },
-    {
-      "label": "File: graphify-out/GRAPH_REPORT.md",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12424",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graph_report_md",
-      "community": 8,
-      "norm_label": "file: graphify-out/graph_report.md"
-    },
-    {
-      "label": "File: graphify-out/graph.html",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12570",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graph_html",
-      "community": 8,
-      "norm_label": "file: graphify-out/graph.html"
-    },
-    {
-      "label": "File: graphify-out/manifest.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12881",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_manifest_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/manifest.json"
-    },
-    {
-      "label": "File: internal/app/templates/index.html",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12982",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_app_templates_index_html",
-      "community": 8,
-      "norm_label": "file: internal/app/templates/index.html"
-    },
-    {
-      "label": "File: internal/app/config.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L13147",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_app_config_go",
-      "community": 8,
-      "norm_label": "file: internal/app/config.go"
-    },
-    {
-      "label": "File: internal/app/desktop.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L13229",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_app_desktop_go",
-      "community": 8,
-      "norm_label": "file: internal/app/desktop.go"
-    },
-    {
-      "label": "File: internal/app/server.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L13559",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_app_server_go",
-      "community": 8,
-      "norm_label": "file: internal/app/server.go"
-    },
-    {
-      "label": "File: internal/oracle/models.go",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L13892",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_internal_oracle_models_go",
-      "community": 8,
-      "norm_label": "file: internal/oracle/models.go"
-    },
-    {
-      "label": "File: graphify-out/cache/stat-index.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L14005",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_cache_stat_index_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/cache/stat-index.json"
-    },
-    {
-      "label": "File: graphify-out/graph.json",
-      "file_type": "document",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L14010",
-      "_origin": "ast",
-      "id": "repomix_multimediasc_file_graphify_out_graph_json",
-      "community": 8,
-      "norm_label": "file: graphify-out/graph.json"
     },
     {
       "author": null,
@@ -11869,6 +11049,17 @@
       "source_location": "L185",
       "weight": 1.0,
       "source": "app_parseplanillainputs",
+      "target": "oracle_models_trimspace"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app.go",
+      "source_location": "L340",
+      "weight": 1.0,
+      "source": "app_friendlyerr",
       "target": "oracle_models_trimspace"
     },
     {
@@ -18740,9 +17931,9 @@
       "source_file": "internal/app/export.go",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "internal_app_export_go_app_export",
-      "target": "app_export_basenameanyseparator",
-      "confidence_score": 1.0
+      "target": "app_export_basenameanyseparator"
     },
     {
       "relation": "contains",
@@ -18983,9 +18174,9 @@
       "source_file": "internal/app/export.go",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_export_normalizeexportname",
-      "target": "app_export_basenameanyseparator",
-      "confidence_score": 1.0
+      "target": "app_export_basenameanyseparator"
     },
     {
       "relation": "calls",
@@ -22053,816 +21244,6 @@
       "target": "prompt2_ui_zip_fuera_de_alcance"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc",
-      "target": "repomix_multimediasc_directory_structure"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc",
-      "target": "repomix_multimediasc_file_summary"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L132",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc",
-      "target": "repomix_multimediasc_files"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_file_summary",
-      "target": "repomix_multimediasc_file_format"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_file_summary",
-      "target": "repomix_multimediasc_notes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_file_summary",
-      "target": "repomix_multimediasc_purpose"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_file_summary",
-      "target": "repomix_multimediasc_usage_guidelines"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L134",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_cmd_multimediasc_main_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L151",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_cmd_oraclecheck_main_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11246",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_go_mod"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L616",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_22_graph_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L559",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_22_graph_report_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L243",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_22_graphify_analysis_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L554",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_22_graphify_semantic_marker"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5001",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_22_manifest_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5465",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_23_graph_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5408",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_23_graph_report_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5082",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_23_graphify_analysis_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L5403",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_23_graphify_semantic_marker"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L9934",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_2026_07_23_manifest_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10015",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_04429e0ee22e90b447ed25004abf546387a519b72ec9139cd23da1adad2d7f18_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10020",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_099f97f41f2acb7fb77f9d2bf971eb6cbc3a3a9f25c202ad844d5a8344cf2f3a_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10025",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_18e9fe8cc6522e79fdbab65ed8694431e63c46b119f7daff21c5a0d0dc9febe3_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10030",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_1c091b9cb58e5d367c98be71f8d8fb9e7c0f9da70684cddc0a9b28c24014bbfe_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10035",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_2333447f959ea8985b410c5f8ec899b89919f51f9b434d64d8b307c11103fbf5_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10040",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_23771967715aa88a311e126a07b65d3edc49dcfd09d52b055805d3137448c38d_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10045",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_2b98814d27542a5655bc83723315827318a1793bd82794f62f9364b7ab065f66_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10050",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_2f059dd9588b85bcd8fa76d35c63b8de29dbe210f42a138f176d6564c590c2cc_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10055",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_37d753cd6f85b85fec11f342ec37220cc540b4bfdd5387c227f35cf763be6b94_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10060",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_39bc83368adba3a0ed40aa8fcf49decbcb4af4f88ebcf7e7d43652eb5951dbb2_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10065",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_4221749a14e961ec64f403b10ce6b2d7435ced50e988637b7419511c527c5411_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10070",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_455f7fca1fc344ebfa55676d29088e29f9b8bab4b3221611ade595f334ca55aa_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10075",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_55f5f6044b50ab24f88ff9ac379bfc92552838e83bf145fcbc987feea17ae034_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10080",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_63c4e8787262aa63e480c4f1670725bbdc2631ba02f564e379142a3685115ca6_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10085",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_7387c48ad1c4e9e113f89085067f2da9c51abcf51514e67e926adb9748cfd90d_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10090",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_8bbba7253dd8428070320a647c9ed53cbe320f7ca4d4e23b4d3e7a92cd62f93a_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10095",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_a2084224740c33812731bcfb21c219909f94b0ccaf54b92a410ae93358cc679e_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_a9ad8ce1f731169100a6af2c498035fb95deb13237be9ec5b0ae7083b2cf5689_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10105",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_aae693f9b211450eccff1eb7ebd4278de68951e0313f095b980e587b398914a5_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10110",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_b37ce9ce975b3ad8c3a42d35f8e2977d435166ed22970abe0d99a3b961d12a74_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10115",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_b7f697c84551c201bf1f0e13ff33ba30af44ebf53f2314e6c606e0a709bbf428_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10120",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_bcd4b1ee3526167287ade02b49f1f8a3f0cb648144b7979dcf1d5359653482fe_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10125",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_d449e5f054b729373f7df03a6cfc3306c408f975ee04d818c16d81db32761f15_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10130",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_eb4bb9628510daa9cc71d9d5a29aa3833b06b758c5314200aee28293b61a796a_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10135",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_ec91a9b78d1d0569b32c3255ee7426bc0f67975c9a958694f4904941d5076f29_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10140",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_f62c30483b8f9cbae11afe15be5e8ae2d209f43c773497170b6c83fbddfa2bb2_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_ast_v0_8_49_f938126290c3820018ae71fcbec1b4c9064d9fee14476dab11ba89037eb19b0c_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10150",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_semantic_2f059dd9588b85bcd8fa76d35c63b8de29dbe210f42a138f176d6564c590c2cc_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10155",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_semantic_4221749a14e961ec64f403b10ce6b2d7435ced50e988637b7419511c527c5411_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10160",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_semantic_6fa5f93976d1c143aecc6ed271fe75b5e0dd991e5d522e3f69c4a536c592ddae_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10165",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_semantic_7387c48ad1c4e9e113f89085067f2da9c51abcf51514e67e926adb9748cfd90d_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10170",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_semantic_d449e5f054b729373f7df03a6cfc3306c408f975ee04d818c16d81db32761f15_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L14005",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_cache_stat_index_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12570",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graph_html"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L14010",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graph_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12424",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graph_report_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12098",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graphify_analysis_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10175",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graphify_detect_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10180",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graphify_extract_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10531",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graphify_labels_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10556",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graphify_python"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12419",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graphify_root"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10561",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_graphify_semantic_marker"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12881",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_graphify_out_manifest_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11298",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_inst01_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11614",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_inst02_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L13147",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_app_config_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L13229",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_app_desktop_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10607",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_app_fileobs_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10566",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_app_fileobs_other_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10583",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_app_fileobs_windows_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L13559",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_app_server_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12982",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_app_templates_index_html"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10731",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_app_zipwriter_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10769",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_oracle_errors_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L13892",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_oracle_models_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L10839",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_internal_oracle_repository_go"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11822",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_oracle_local_env_example"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11830",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_prompt2_ui_zip_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L12078",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_readme_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "repomix-multimediasc.md",
-      "source_location": "L11206",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "repomix_multimediasc_files",
-      "target": "repomix_multimediasc_file_scripts_unhide_share_ps1"
-    },
-    {
       "confidence": "INFERRED",
       "confidence_score": 0.7,
       "relation": "conceptually_related_to",
@@ -23544,5 +21925,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d3ae236373c895b1743b712e50b8fad3a44e2c01"
+  "built_at_commit": "0e628dd122e20afe37c0e0fb660a9312080e2b7e"
 }
